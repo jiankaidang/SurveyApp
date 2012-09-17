@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[ListController startReceive]:ListController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "NSUserDefaults standardUserDefaults">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ListController viewDidLoad]:ListController.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
