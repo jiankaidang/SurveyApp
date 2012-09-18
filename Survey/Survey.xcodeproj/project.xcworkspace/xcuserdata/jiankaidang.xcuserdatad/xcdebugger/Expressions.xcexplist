@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "-[GetController startReceive]:GetController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.surveyFilePath">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[ListController startReceive]:ListController.m">
          <PersistentStrings>
             <PersistentString
@@ -12,6 +20,23 @@
       </ContextState>
       <ContextState
          contextName = "-[ListController viewDidLoad]:ListController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ListController prepareForSegue:sender:]:ListController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.listEntries">
+            </PersistentString>
+            <PersistentString
+               value = "detailViewController.surveyFilePath">
+            </PersistentString>
+            <PersistentString
+               value = "[self.tableView indexPathForSelectedRow]">
+            </PersistentString>
+            <PersistentString
+               value = "((NSUInteger) [self.tableView indexPathForSelectedRow].row)">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
    </ContextStates>
 </VariablesViewState>

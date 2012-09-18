@@ -78,7 +78,7 @@
 @property (nonatomic, strong, readwrite) NSMutableData *   listData;
 @property (nonatomic, strong, readwrite) NSMutableArray *  listEntries;
 @property (nonatomic, copy,   readwrite) NSString *        status;
-
+@property (nonatomic, weak) NSString * surveySourceFolder;
 - (void)updateStatus:(NSString *)statusString;
 
 @end
@@ -155,7 +155,7 @@
 
     // First get and check the URL.
     
-    url = [[NetworkManager sharedInstance] smartURLForString:@"ftp://soclunitedcom:!QAZ2wsx@ftp.soclunited.com/SurveySources/"];
+    url = [[NetworkManager sharedInstance] smartURLForString:self.surveySourceFolder];
     success = (url != nil);
 
     // If the URL is bogus, let the user know.  Otherwise kick off the connection.
@@ -576,6 +576,7 @@ static NSDateFormatter *    sDateFormatter;
 - (void)viewDidLoad
 {    
     [super viewDidLoad];
+    self.surveySourceFolder = @"ftp://soclunitedcom:!QAZ2wsx@ftp.soclunited.com/SurveySources/";
     assert(self.tableView != nil);
     
     self.listOrCancelButton.possibleTitles = [NSSet setWithObjects:@"List", @"Cancel", nil];
@@ -613,8 +614,7 @@ static NSDateFormatter *    sDateFormatter;
     if ([[segue identifier] isEqualToString:@"ToDownload"]) {
         
         GetController *detailViewController = [segue destinationViewController];
-        
-        detailViewController.surveyFilePath = [self.listEntries objectAtIndex:((NSUInteger) [self.tableView indexPathForSelectedRow].row) - 1];
+        detailViewController.surveyFilePath = [self.surveySourceFolder stringByAppendingString:[[self.listEntries objectAtIndex:((NSUInteger) [self.tableView indexPathForSelectedRow].row) - 1] objectForKey:(id) kCFFTPResourceName]];
         
     }
 }

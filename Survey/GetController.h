@@ -53,6 +53,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GetController : UIViewController
+@interface GetController : UITableViewController
 @property (nonatomic,weak) NSString * surveyFilePath;
 @end

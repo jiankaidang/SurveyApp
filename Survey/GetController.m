@@ -156,8 +156,7 @@
     } else {
 
         // Open a stream for the file we're going to receive into.
-
-        self.filePath = [[NetworkManager sharedInstance] pathForTemporaryFileWithPrefix:@"Get"];
+        self.filePath = [[[[NetworkManager sharedInstance] createDirectory:@"sources"] URLByAppendingPathComponent:[[NSURL fileURLWithPath:self.surveyFilePath] lastPathComponent]] path];
         assert(self.filePath != nil);
         
         self.fileStream = [NSOutputStream outputStreamToFileAtPath:self.filePath append:NO];
@@ -308,12 +307,6 @@
 - (void)viewDidLoad
 {    
     [super viewDidLoad];
-
-    assert(self.urlText != nil);
-    assert(self.imageView != nil);
-    assert(self.statusLabel != nil);
-    assert(self.activityIndicator != nil);
-    assert(self.getOrCancelButton != nil);
     
     self.getOrCancelButton.possibleTitles = [NSSet setWithObjects:@"Get", @"Cancel", nil];
 
@@ -321,6 +314,11 @@
     
     self.activityIndicator.hidden = YES;
     self.statusLabel.text = @"Tap Get to start getting";
+    if (self.isReceiving) {
+        [self stopReceiveWithStatus:@"Cancelled"];
+    } else {
+        [self startReceive];
+    }
 }
 
 - (void)viewDidUnload

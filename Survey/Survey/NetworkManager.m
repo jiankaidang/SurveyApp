@@ -260,5 +260,47 @@
     assert([NSThread isMainThread]);
     self.networkOperationCount -= 1;
 }
-
+- (NSURL*)applicationDirectory {
+    NSFileManager* sharedFM = [NSFileManager defaultManager];
+    NSArray* possibleURLs = [sharedFM URLsForDirectory:NSApplicationSupportDirectory
+                                             inDomains:NSUserDomainMask];
+    NSURL* appSupportDir = nil;
+    NSURL* appDirectory = nil;
+    
+    if ([possibleURLs count] >= 1) {
+        // Use the first directory (if multiple are returned)
+        appSupportDir = [possibleURLs objectAtIndex:0];
+    }
+    
+    // If a valid app support directory exists, add the
+    // app's bundle ID to it to specify the final directory.
+    if (appSupportDir) {
+        NSString* appBundleID = [[NSBundle mainBundle] bundleIdentifier];
+        appDirectory = [appSupportDir URLByAppendingPathComponent:appBundleID];
+    }
+    
+    return appDirectory;
+}
+- (NSURL*)createDirectory:(NSString *)dir
+{
+    NSFileManager*fm = [NSFileManager defaultManager];    
+    // Find the application support directory in the home directory.
+    NSURL* dirPath = [[self applicationDirectory] URLByAppendingPathComponent:dir];
+    if (dirPath)
+    {
+        
+        // If the directory does not exist, this method creates it.
+        // This method call works in OS X 10.7 and later only.
+        NSError*    theError = nil;
+        if (![fm createDirectoryAtURL:dirPath withIntermediateDirectories:YES
+                           attributes:nil error:&theError])
+        {
+            // Handle the error.
+            
+            return nil;
+        }
+    }
+    
+    return dirPath;
+}
 @end
