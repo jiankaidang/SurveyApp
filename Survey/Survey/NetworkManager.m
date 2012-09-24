@@ -58,7 +58,6 @@
 // read/write redeclaration of public read-only property
 
 @property (nonatomic, assign, readwrite) NSUInteger     networkOperationCount;
-
 @end
 
 @implementation NetworkManager
@@ -302,5 +301,11 @@
     }
     
     return dirPath;
+}
+-(NSURL *)sourcesDir{
+    return [self createDirectory:@"sources"];
+}
+-(NSURL *)resultsDir{
+    return [self createDirectory:@"sources"];
 }
 @end

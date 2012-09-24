@@ -67,5 +67,6 @@
 
 - (void)didStartNetworkOperation;
 - (void)didStopNetworkOperation;
--(NSURL *) createDirectory:(NSString *)dir;
+-(NSURL *) sourcesDir;
+-(NSURL *)resultsDir;
 @end

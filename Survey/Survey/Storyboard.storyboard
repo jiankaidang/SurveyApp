@@ -151,21 +151,21 @@
             </objects>
             <point key="canvasLocation" x="1441" y="-206"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Survey Results View Controller - Survey Results-->
         <scene sceneID="Qbb-WL-wVc">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EDE-Ov-stf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="bxh-Tg-Azi" sceneMemberID="viewController">
+                <tableViewController id="bxh-Tg-Azi" customClass="SurveyResultsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="EZo-TC-vjz">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ResultsCell" id="qeZ-sz-1dK">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ResultsCell" id="qeZ-sz-1dK">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
@@ -176,7 +176,7 @@
                             <outlet property="delegate" destination="bxh-Tg-Azi" id="4t5-R6-o8f"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="3Hc-R5-VKE"/>
+                    <navigationItem key="navigationItem" title="Survey Results" id="3Hc-R5-VKE"/>
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="948" y="379"/>
@@ -222,6 +222,9 @@
         </class>
         <class className="SurveyManagerViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SurveyManagerViewController.h"/>
+        </class>
+        <class className="SurveyResultsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SurveyResultsViewController.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

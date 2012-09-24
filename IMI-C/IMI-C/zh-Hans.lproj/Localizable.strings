@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  IMI-C
+
+  Created by Jiankai Dang on 9/21/12.
+  Copyright (c) 2012 Jiankai Dang. All rights reserved.
+*/
+"settingLabel"="设置（街道）";
+"observerLabel"="调查员（输入姓名首字母缩写）";
+"segmentLabel"="区段号码";
+"questions1_6Title"="基于这一区段回答问题1-6";
+"intersectionTitle"="交叉口";
+"blockLabel"="街段名称";
+"intersectionLabel"="交叉口名称";
+"neighborhoodIdentificationTitle"="邻居鉴定";
+"question1Title"="1。有古迹或标志物，包括附近进入的迹象表明，正在进入一个特殊的区域或地区的吗？";

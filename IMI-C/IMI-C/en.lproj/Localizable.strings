@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  IMI-C
+
+  Created by Jiankai Dang on 9/21/12.
+  Copyright (c) 2012 Jiankai Dang. All rights reserved.
+*/
+"settingLabel"="Setting (Neighborhood)";
+"observerLabel"="Observer (Enter Initials)";
+"segmentLabel"="Segment #";
+"questions1_6Title"="Answer questions 1-6 based on this end of the segment";
+"intersectionTitle"="Intersection";
+"blockLabel"="Name of Block";
+"intersectionLabel"="Name of Intersection";
+"neighborhoodIdentificationTitle"="Neighborhood Identification";
+"question1Title"="1. Are there monuments or markers including neighborhood entry signs that indicate that one is entering a special district or area?";
+"question2aAnswer0"="No";
+"question2aAnswer1"="segment is inside a gated community";
+"question2aAnswer2"="one side of the segment is on the edge of a gated community";
+"question2aAnswer3"="both sides of the segment are on the edge of a gated community";
+"question2cAnswer0"="There does not seem to be any enforcement of who is allowed entry";
+"question2cAnswer1"="Pedestrains are allowed to enter";
+"question2cAnswer2"="Entrance is strictly enforced and only residents  or residents' visistors are allowed entry";
+"question2aTitle"="2a. Is this segment part of a gated community?";
+"question2bTitle"="2b. How many entrances into the gated community are present? ";
+"question2cTitle"="2c. How accessible is the gated community to the general public?";

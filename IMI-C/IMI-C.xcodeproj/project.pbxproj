@@ -1,0 +1,333 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D5B6572160DF90E00FD5762 /* IMI-CCommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5B6571160DF90E00FD5762 /* IMI-CCommunityViewController.m */; };
+		8D70DFBE160D49A500AB5D4B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D70DFBC160D49A500AB5D4B /* Localizable.strings */; };
+		8D824AF31609696600768A95 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D824AF21609696600768A95 /* UIKit.framework */; };
+		8D824AF51609696600768A95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D824AF41609696600768A95 /* Foundation.framework */; };
+		8D824AF71609696600768A95 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D824AF61609696600768A95 /* CoreGraphics.framework */; };
+		8D824AFD1609696600768A95 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D824AFB1609696600768A95 /* InfoPlist.strings */; };
+		8D824AFF1609696600768A95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D824AFE1609696600768A95 /* main.m */; };
+		8D824B031609696600768A95 /* IMI_CAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D824B021609696600768A95 /* IMI_CAppDelegate.m */; };
+		8D824B061609696600768A95 /* IMI_CRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D824B051609696600768A95 /* IMI_CRootViewController.m */; };
+		8D824B091609696600768A95 /* IMI_CDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D824B081609696600768A95 /* IMI_CDataViewController.m */; };
+		8D824B0C1609696600768A95 /* IMI_CModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D824B0B1609696600768A95 /* IMI_CModelController.m */; };
+		8D824B0F1609696600768A95 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D824B0D1609696600768A95 /* MainStoryboard.storyboard */; };
+		8D9B6D5A160C023A00EE79C6 /* IMI-CSettingDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9B6D59160C023A00EE79C6 /* IMI-CSettingDataViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8D5B6570160DF90D00FD5762 /* IMI-CCommunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CCommunityViewController.h"; sourceTree = "<group>"; };
+		8D5B6571160DF90E00FD5762 /* IMI-CCommunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CCommunityViewController.m"; sourceTree = "<group>"; };
+		8D70DFBD160D49A500AB5D4B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8D70DFC0160D4BBB00AB5D4B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		8D70DFC1160D4BBB00AB5D4B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		8D824AEE1609696600768A95 /* IMI-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IMI-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D824AF21609696600768A95 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8D824AF41609696600768A95 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8D824AF61609696600768A95 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8D824AFA1609696600768A95 /* IMI-C-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IMI-C-Info.plist"; sourceTree = "<group>"; };
+		8D824AFC1609696600768A95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8D824AFE1609696600768A95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D824B001609696600768A95 /* IMI-C-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IMI-C-Prefix.pch"; sourceTree = "<group>"; };
+		8D824B011609696600768A95 /* IMI_CAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMI_CAppDelegate.h; sourceTree = "<group>"; };
+		8D824B021609696600768A95 /* IMI_CAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMI_CAppDelegate.m; sourceTree = "<group>"; };
+		8D824B041609696600768A95 /* IMI_CRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMI_CRootViewController.h; sourceTree = "<group>"; };
+		8D824B051609696600768A95 /* IMI_CRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMI_CRootViewController.m; sourceTree = "<group>"; };
+		8D824B071609696600768A95 /* IMI_CDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMI_CDataViewController.h; sourceTree = "<group>"; };
+		8D824B081609696600768A95 /* IMI_CDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMI_CDataViewController.m; sourceTree = "<group>"; };
+		8D824B0A1609696600768A95 /* IMI_CModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMI_CModelController.h; sourceTree = "<group>"; };
+		8D824B0B1609696600768A95 /* IMI_CModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMI_CModelController.m; sourceTree = "<group>"; };
+		8D824B0E1609696600768A95 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		8D9B6D58160C023A00EE79C6 /* IMI-CSettingDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CSettingDataViewController.h"; sourceTree = "<group>"; };
+		8D9B6D59160C023A00EE79C6 /* IMI-CSettingDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CSettingDataViewController.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D824AEB1609696600768A95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D824AF31609696600768A95 /* UIKit.framework in Frameworks */,
+				8D824AF51609696600768A95 /* Foundation.framework in Frameworks */,
+				8D824AF71609696600768A95 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D824AE31609696600768A95 = {
+			isa = PBXGroup;
+			children = (
+				8D824AF81609696600768A95 /* IMI-C */,
+				8D824AF11609696600768A95 /* Frameworks */,
+				8D824AEF1609696600768A95 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8D824AEF1609696600768A95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D824AEE1609696600768A95 /* IMI-C.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D824AF11609696600768A95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D824AF21609696600768A95 /* UIKit.framework */,
+				8D824AF41609696600768A95 /* Foundation.framework */,
+				8D824AF61609696600768A95 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D824AF81609696600768A95 /* IMI-C */ = {
+			isa = PBXGroup;
+			children = (
+				8D824B011609696600768A95 /* IMI_CAppDelegate.h */,
+				8D824B021609696600768A95 /* IMI_CAppDelegate.m */,
+				8D824B041609696600768A95 /* IMI_CRootViewController.h */,
+				8D824B051609696600768A95 /* IMI_CRootViewController.m */,
+				8D824B071609696600768A95 /* IMI_CDataViewController.h */,
+				8D824B081609696600768A95 /* IMI_CDataViewController.m */,
+				8D9B6D58160C023A00EE79C6 /* IMI-CSettingDataViewController.h */,
+				8D9B6D59160C023A00EE79C6 /* IMI-CSettingDataViewController.m */,
+				8D5B6570160DF90D00FD5762 /* IMI-CCommunityViewController.h */,
+				8D5B6571160DF90E00FD5762 /* IMI-CCommunityViewController.m */,
+				8D824B0A1609696600768A95 /* IMI_CModelController.h */,
+				8D824B0B1609696600768A95 /* IMI_CModelController.m */,
+				8D824B0D1609696600768A95 /* MainStoryboard.storyboard */,
+				8D824AF91609696600768A95 /* Supporting Files */,
+			);
+			path = "IMI-C";
+			sourceTree = "<group>";
+		};
+		8D824AF91609696600768A95 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8D824AFB1609696600768A95 /* InfoPlist.strings */,
+				8D824AFA1609696600768A95 /* IMI-C-Info.plist */,
+				8D824AFE1609696600768A95 /* main.m */,
+				8D824B001609696600768A95 /* IMI-C-Prefix.pch */,
+				8D70DFBC160D49A500AB5D4B /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D824AED1609696600768A95 /* IMI-C */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D824B121609696600768A95 /* Build configuration list for PBXNativeTarget "IMI-C" */;
+			buildPhases = (
+				8D824AEA1609696600768A95 /* Sources */,
+				8D824AEB1609696600768A95 /* Frameworks */,
+				8D824AEC1609696600768A95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IMI-C";
+			productName = "IMI-C";
+			productReference = 8D824AEE1609696600768A95 /* IMI-C.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D824AE51609696600768A95 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = "IMI-C";
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Jiankai Dang";
+			};
+			buildConfigurationList = 8D824AE81609696600768A95 /* Build configuration list for PBXProject "IMI-C" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+			);
+			mainGroup = 8D824AE31609696600768A95;
+			productRefGroup = 8D824AEF1609696600768A95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D824AED1609696600768A95 /* IMI-C */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D824AEC1609696600768A95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D824AFD1609696600768A95 /* InfoPlist.strings in Resources */,
+				8D824B0F1609696600768A95 /* MainStoryboard.storyboard in Resources */,
+				8D70DFBE160D49A500AB5D4B /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D824AEA1609696600768A95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D824AFF1609696600768A95 /* main.m in Sources */,
+				8D824B031609696600768A95 /* IMI_CAppDelegate.m in Sources */,
+				8D824B061609696600768A95 /* IMI_CRootViewController.m in Sources */,
+				8D824B091609696600768A95 /* IMI_CDataViewController.m in Sources */,
+				8D824B0C1609696600768A95 /* IMI_CModelController.m in Sources */,
+				8D9B6D5A160C023A00EE79C6 /* IMI-CSettingDataViewController.m in Sources */,
+				8D5B6572160DF90E00FD5762 /* IMI-CCommunityViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8D70DFBC160D49A500AB5D4B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D70DFBD160D49A500AB5D4B /* en */,
+				8D70DFC1160D4BBB00AB5D4B /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		8D824AFB1609696600768A95 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D824AFC1609696600768A95 /* en */,
+				8D70DFC0160D4BBB00AB5D4B /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8D824B0D1609696600768A95 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D824B0E1609696600768A95 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8D824B101609696600768A95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		8D824B111609696600768A95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8D824B131609696600768A95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IMI-C/IMI-C-Prefix.pch";
+				INFOPLIST_FILE = "IMI-C/IMI-C-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8D824B141609696600768A95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IMI-C/IMI-C-Prefix.pch";
+				INFOPLIST_FILE = "IMI-C/IMI-C-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D824AE81609696600768A95 /* Build configuration list for PBXProject "IMI-C" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D824B101609696600768A95 /* Debug */,
+				8D824B111609696600768A95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D824B121609696600768A95 /* Build configuration list for PBXNativeTarget "IMI-C" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D824B131609696600768A95 /* Debug */,
+				8D824B141609696600768A95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8D824AE51609696600768A95 /* Project object */;
+}

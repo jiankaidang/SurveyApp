@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D84F5C51608C65600A4EF50 /* SurveyResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D84F5C41608C65600A4EF50 /* SurveyResultsViewController.m */; };
 		8D86416C1606CFDB009E1E0F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D86416B1606CFDB009E1E0F /* UIKit.framework */; };
 		8D86416E1606CFDB009E1E0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D86416D1606CFDB009E1E0F /* Foundation.framework */; };
 		8D8641701606CFDB009E1E0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D86416F1606CFDB009E1E0F /* CoreGraphics.framework */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D84F5C31608C65600A4EF50 /* SurveyResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveyResultsViewController.h; sourceTree = "<group>"; };
+		8D84F5C41608C65600A4EF50 /* SurveyResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveyResultsViewController.m; sourceTree = "<group>"; };
 		8D8641671606CFDB009E1E0F /* Survey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Survey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D86416B1606CFDB009E1E0F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8D86416D1606CFDB009E1E0F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -97,6 +100,8 @@
 				8DAB195A160758460085A7A9 /* NetworkManager.h */,
 				8DAB198C16075F230085A7A9 /* NetworkManager.m */,
 				8D8641821606CFF6009E1E0F /* Storyboard.storyboard */,
+				8D84F5C31608C65600A4EF50 /* SurveyResultsViewController.h */,
+				8D84F5C41608C65600A4EF50 /* SurveyResultsViewController.m */,
 				8D8641841606D240009E1E0F /* SurveyManagerViewController.h */,
 				8D8641851606D240009E1E0F /* SurveyManagerViewController.m */,
 				8D86417A1606CFDB009E1E0F /* SurveyAppDelegate.h */,
@@ -187,6 +192,7 @@
 				8DAB198E16075F230085A7A9 /* ListController.m in Sources */,
 				8DAB198F16075F230085A7A9 /* NetworkManager.m in Sources */,
 				8DAB1997160785140085A7A9 /* GetController.m in Sources */,
+				8D84F5C51608C65600A4EF50 /* SurveyResultsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

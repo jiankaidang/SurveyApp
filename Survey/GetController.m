@@ -156,7 +156,7 @@
     } else {
 
         // Open a stream for the file we're going to receive into.
-        self.filePath = [[[[NetworkManager sharedInstance] createDirectory:@"sources"] URLByAppendingPathComponent:[[NSURL fileURLWithPath:self.surveyFilePath] lastPathComponent]] path];
+        self.filePath = [[[[NetworkManager sharedInstance] sourcesDir] URLByAppendingPathComponent:[[NSURL fileURLWithPath:self.surveyFilePath] lastPathComponent]] path];
         assert(self.filePath != nil);
         
         self.fileStream = [NSOutputStream outputStreamToFileAtPath:self.filePath append:NO];
