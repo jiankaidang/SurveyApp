@@ -21,7 +21,6 @@
 
 @interface IMI_CModelController()
 @property (readonly, strong, nonatomic) NSArray *pageData;
-@property (readonly, strong, nonatomic) NSMutableArray *pageDataViewController;
 @end
 
 @implementation IMI_CModelController
@@ -31,8 +30,8 @@
     self = [super init];
     if (self) {
         // Create the data model.
-        _pageData = @[@"Setting",@"Community"];
-        _pageDataViewController=[NSMutableArray arrayWithCapacity:[_pageData count]];
+        _pageData = @[@"Setting",@"Community", @"Submit"];
+        self.pageDataViewController=[NSMutableArray arrayWithCapacity:[_pageData count]];
     }
     return self;
 }

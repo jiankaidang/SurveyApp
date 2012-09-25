@@ -11,7 +11,7 @@
 @class IMI_CDataViewController;
 
 @interface IMI_CModelController : NSObject <UIPageViewControllerDataSource>
-
+@property (strong, nonatomic) NSMutableArray *pageDataViewController;
 - (IMI_CDataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard;
 - (NSUInteger)indexOfViewController:(IMI_CDataViewController *)viewController;
 @end

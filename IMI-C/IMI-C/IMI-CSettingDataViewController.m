@@ -65,7 +65,7 @@
     [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
     NSString *dateString=[dateFormatter stringFromDate:date];
     [dateFormatter setTimeStyle:NSDateFormatterShortStyle];
-    self.dataArray=[NSArray arrayWithObjects:dateString,[dateFormatter stringFromDate:date],self.settingText.text,self.observerText.text,self.segmentText.text,self.blockText.text,self.intersectionText.text, nil];
+    self.dataArray = [NSArray arrayWithObjects:dateString,[dateFormatter stringFromDate:date],self.settingText.text,self.observerText.text,self.segmentText.text,self.blockText.text,self.intersectionText.text, [self.question1Answer isOn] ? @"1" : @"0", nil];
     [super setImi_cResults];
 }
 @end

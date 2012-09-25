@@ -24,3 +24,7 @@
 "question2aTitle"="2a. Is this segment part of a gated community?";
 "question2bTitle"="2b. How many entrances into the gated community are present? ";
 "question2cTitle"="2c. How accessible is the gated community to the general public?";
+"thankYouTitle" = "Thank you very much!";
+"submitButton" = "Save";
+"startButton" = "Start a New Survey";
+"uploadButton" = "Upload Survey Results";

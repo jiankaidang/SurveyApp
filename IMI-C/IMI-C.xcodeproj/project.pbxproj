@@ -20,6 +20,9 @@
 		8D824B0C1609696600768A95 /* IMI_CModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D824B0B1609696600768A95 /* IMI_CModelController.m */; };
 		8D824B0F1609696600768A95 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D824B0D1609696600768A95 /* MainStoryboard.storyboard */; };
 		8D9B6D5A160C023A00EE79C6 /* IMI-CSettingDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9B6D59160C023A00EE79C6 /* IMI-CSettingDataViewController.m */; };
+		8DD319011611EEAE00CF6E3A /* IMI-CSubmitDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD319001611EEAE00CF6E3A /* IMI-CSubmitDataViewController.m */; };
+		8DD319171612019300CF6E3A /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD319151612019300CF6E3A /* NetworkManager.m */; };
+		8DD3191D1612092E00CF6E3A /* IMI-CStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD3191C1612092E00CF6E3A /* IMI-CStartViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,14 @@
 		8D824B0E1609696600768A95 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		8D9B6D58160C023A00EE79C6 /* IMI-CSettingDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CSettingDataViewController.h"; sourceTree = "<group>"; };
 		8D9B6D59160C023A00EE79C6 /* IMI-CSettingDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CSettingDataViewController.m"; sourceTree = "<group>"; };
+		8DD318FF1611EEAE00CF6E3A /* IMI-CSubmitDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CSubmitDataViewController.h"; sourceTree = "<group>"; };
+		8DD319001611EEAE00CF6E3A /* IMI-CSubmitDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CSubmitDataViewController.m"; sourceTree = "<group>"; };
+		8DD3190A1611FF1600CF6E3A /* CHCSVWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCSVWriter.h; sourceTree = "<group>"; };
+		8DD319151612019300CF6E3A /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		8DD319161612019300CF6E3A /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		8DD31919161203D300CF6E3A /* ListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListController.h; sourceTree = "<group>"; };
+		8DD3191B1612092E00CF6E3A /* IMI-CStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CStartViewController.h"; sourceTree = "<group>"; };
+		8DD3191C1612092E00CF6E3A /* IMI-CStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CStartViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +104,10 @@
 		8D824AF81609696600768A95 /* IMI-C */ = {
 			isa = PBXGroup;
 			children = (
+				8DD31919161203D300CF6E3A /* ListController.h */,
+				8DD319151612019300CF6E3A /* NetworkManager.m */,
+				8DD319161612019300CF6E3A /* NetworkManager.h */,
+				8DD3190A1611FF1600CF6E3A /* CHCSVWriter.h */,
 				8D824B011609696600768A95 /* IMI_CAppDelegate.h */,
 				8D824B021609696600768A95 /* IMI_CAppDelegate.m */,
 				8D824B041609696600768A95 /* IMI_CRootViewController.h */,
@@ -106,7 +121,11 @@
 				8D824B0A1609696600768A95 /* IMI_CModelController.h */,
 				8D824B0B1609696600768A95 /* IMI_CModelController.m */,
 				8D824B0D1609696600768A95 /* MainStoryboard.storyboard */,
+				8DD318FF1611EEAE00CF6E3A /* IMI-CSubmitDataViewController.h */,
+				8DD319001611EEAE00CF6E3A /* IMI-CSubmitDataViewController.m */,
 				8D824AF91609696600768A95 /* Supporting Files */,
+				8DD3191B1612092E00CF6E3A /* IMI-CStartViewController.h */,
+				8DD3191C1612092E00CF6E3A /* IMI-CStartViewController.m */,
 			);
 			path = "IMI-C";
 			sourceTree = "<group>";
@@ -196,6 +215,9 @@
 				8D824B0C1609696600768A95 /* IMI_CModelController.m in Sources */,
 				8D9B6D5A160C023A00EE79C6 /* IMI-CSettingDataViewController.m in Sources */,
 				8D5B6572160DF90E00FD5762 /* IMI-CCommunityViewController.m in Sources */,
+				8DD319011611EEAE00CF6E3A /* IMI-CSubmitDataViewController.m in Sources */,
+				8DD319171612019300CF6E3A /* NetworkManager.m in Sources */,
+				8DD3191D1612092E00CF6E3A /* IMI-CStartViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

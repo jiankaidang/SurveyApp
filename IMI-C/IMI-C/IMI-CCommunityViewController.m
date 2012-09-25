@@ -78,9 +78,7 @@
     }
 }
 -(void)setImi_cResults{
-    /*
-     self.dataArray=[NSArray arrayWithObjects:self.settingText.text,self.observerText.text,self.segmentText.text,self.blockText.text,self.intersectionText.text, nil];
+    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", [self.question2aAnswer selectedRowInComponent:0]],self.question2bAnswer.text,[NSString stringWithFormat:@"%d", [self.question2cAnswer selectedRowInComponent:0]], nil];
     [super setImi_cResults];
-     */
 }
 @end
