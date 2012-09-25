@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>URLGetURLText</key>
+	<string>ftp://nssdcftp.gsfc.nasa.gov/photo_gallery/image/spacecraft/pioneer10-11.jpg</string>
+	<key>GetURLText</key>
+	<string>ftp://soclunitedcom:!QAZ2wsx@ftp.soclunited.com/SurveySources/TestImage1.png</string>
+	<key>ListURLText</key>
+	<string>ftp://soclunitedcom:!QAZ2wsx@ftp.soclunited.com/SurveySources/</string>
+	<key>PutURLText</key>
+	<string>ftp://ftp.soclunited.com/SurveySources/</string>
+	<key>CreateDirURLText</key>
+	<string>ftp://localhost/</string>
+	<key>CreateDirNameText</key>
+	<string>untitled</string>
+	<key>Username</key>
+	<string>soclunitedcom</string>
+	<key>Password</key>
+	<string>!QAZ2wsx</string>
+</dict>
+</plist>
