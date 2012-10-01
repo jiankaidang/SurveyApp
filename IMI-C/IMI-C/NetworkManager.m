@@ -52,12 +52,13 @@
 */
 
 #import "NetworkManager.h"
-
+#include <stdlib.h>
 @interface NetworkManager ()
 
 // read/write redeclaration of public read-only property
 
 @property (nonatomic, assign, readwrite) NSUInteger     networkOperationCount;
+@property (nonatomic, strong)NSString * resultsDirName;
 @end
 
 @implementation NetworkManager
@@ -71,6 +72,7 @@
 
     dispatch_once(&onceToken, ^{
         sSharedInstance = [[NetworkManager alloc] init];
+        sSharedInstance.resultsDirName=@"results";
     });
     return sSharedInstance;
 }
@@ -307,5 +309,17 @@
 }
 -(NSURL *)resultsDir{
     return [self createDirectory:@"results"];
+}
+-(NSString *)resultsFilePath{
+    NSString * resultsDirPath=[[[self applicationDirectory] URLByAppendingPathComponent:@"results"] path];
+    NSLog(@"%@",resultsDirPath);
+    if ([self isResultsDirExisted]) {
+        return [NSString stringWithFormat:@"%@/%@",resultsDirPath, [[[NSFileManager defaultManager] contentsOfDirectoryAtPath:resultsDirPath error:nil] objectAtIndex:0]];
+    }
+    
+    return [[[[NetworkManager sharedInstance] resultsDir] URLByAppendingPathComponent:[NSString stringWithFormat:@"results%u.csv",arc4random()]] path];
+}
+-(BOOL)isResultsDirExisted{
+    return [[NSFileManager defaultManager] fileExistsAtPath:[[[self applicationDirectory] URLByAppendingPathComponent:@"results"] path]];
 }
 @end

@@ -69,4 +69,6 @@
 - (void)didStopNetworkOperation;
 -(NSURL *) sourcesDir;
 -(NSURL *)resultsDir;
+-(NSString *)resultsFilePath;
+-(BOOL)isResultsDirExisted;
 @end

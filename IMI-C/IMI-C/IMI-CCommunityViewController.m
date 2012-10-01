@@ -9,13 +9,13 @@
 #import "IMI-CCommunityViewController.h"
 
 @interface IMI_CCommunityViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *question2aTitle;
-@property (weak, nonatomic) IBOutlet UIPickerView *question2aAnswer;
+@property (strong, nonatomic) IBOutlet UILabel *question2aTitle;
+@property (strong, nonatomic) IBOutlet UIPickerView *question2aAnswer;
 @property (nonatomic, retain) NSArray *pickerViewArray;
-@property (weak, nonatomic) IBOutlet UILabel *question2bTitle;
-@property (weak, nonatomic) IBOutlet UITextField *question2bAnswer;
-@property (weak, nonatomic) IBOutlet UILabel *question2cTitle;
-@property (weak, nonatomic) IBOutlet UIPickerView *question2cAnswer;
+@property (strong, nonatomic) IBOutlet UILabel *question2bTitle;
+@property (strong, nonatomic) IBOutlet UITextField *question2bAnswer;
+@property (strong, nonatomic) IBOutlet UILabel *question2cTitle;
+@property (strong, nonatomic) IBOutlet UIPickerView *question2cAnswer;
 @property (nonatomic, retain) NSArray *pickerQuestion2cAnswerArray;
 @end
 

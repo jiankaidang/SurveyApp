@@ -10,7 +10,7 @@
 @class IMI_CModelController;
 @interface IMI_CDataViewController : UIViewController
 @property (strong, nonatomic) id dataObject;
-@property (weak,nonatomic) IMI_CModelController *imi_cModelController;
-@property (weak, nonatomic)NSArray *dataArray;
+@property (strong,nonatomic) IMI_CModelController *imi_cModelController;
+@property (strong, nonatomic)NSMutableArray *dataArray;
 -(void)setImi_cResults;
 @end

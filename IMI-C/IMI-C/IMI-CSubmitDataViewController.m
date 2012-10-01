@@ -8,11 +8,10 @@
 
 #import "IMI-CSubmitDataViewController.h"
 #import "IMI_CModelController.h"
-#import "CHCSVWriter.h"
-#import "NetworkManager.h"
+
 @interface IMI_CSubmitDataViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *thankYouTitle;
-@property (weak, nonatomic) IBOutlet UIButton *submitButton;
+@property (strong, nonatomic) IBOutlet UILabel *thankYouTitle;
+@property (strong, nonatomic) IBOutlet UIButton *submitButton;
 - (IBAction)submit:(UIButton *)sender;
 
 @end
@@ -43,13 +42,6 @@
 }
 
 - (IBAction)submit:(UIButton *)sender {
-    NSMutableArray *controllers = self.imi_cModelController.pageDataViewController;
-    NSMutableArray *results = [NSMutableArray arrayWithCapacity:[controllers count]];
-    for (IMI_CDataViewController *controller in controllers) {
-        [results addObjectsFromArray:controller.dataArray];
-    }
-    /*
-    [[[CHCSVWriter alloc] initWithCSVFile:[[[[NetworkManager sharedInstance] resultsDir] URLByAppendingPathComponent:@"results.csv"] path] atomic:NO] writeLineOfFields:results, nil];
-     */
+    [self.imi_cModelController submitResults];
 }
 @end

@@ -10,5 +10,19 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "-[NetworkManager resultsFilePath]:NetworkManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[fm contentsOfDirectoryAtPath:resultsDirPath error:nil]">
+            </PersistentString>
+            <PersistentString
+               value = "self applicationDirectory">
+            </PersistentString>
+            <PersistentString
+               value = "resultsDirPath">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

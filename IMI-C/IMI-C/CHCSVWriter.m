@@ -31,17 +31,22 @@
 
 - (id) initWithCSVFile:(NSString *)outputFile atomic:(BOOL)atomicWrite {
 	if ((self = [super init])) {
+        destinationFile=outputFile;
 		if (atomically) {
 			handleFile = [NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"%d-%@", arc4random(), [destinationFile lastPathComponent]]];
 		} else {
 			handleFile = destinationFile;
 		}
-		
+        /*
 		if ([[NSFileManager defaultManager] fileExistsAtPath:handleFile]) {
 			[[NSFileManager defaultManager] removeItemAtPath:handleFile error:nil];
 		}
+        return self;
+         */
+		if (![[NSFileManager defaultManager] fileExistsAtPath:handleFile]) {
+			[[NSFileManager defaultManager] createFileAtPath:handleFile contents:nil attributes:nil];
+		}
 		
-		[[NSFileManager defaultManager] createFileAtPath:handleFile contents:nil attributes:nil];
 		outputHandle = [NSFileHandle fileHandleForWritingAtPath:handleFile];
 		
 		encoding = 0;
@@ -112,6 +117,7 @@
 	}
     
     if (outputHandle != nil) {
+        [outputHandle seekToEndOfFile];
         [outputHandle writeData:[string dataUsingEncoding:encoding]];
     } else {
         if (stringValue == nil) {

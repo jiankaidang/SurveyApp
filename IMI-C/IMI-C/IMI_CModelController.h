@@ -14,4 +14,6 @@
 @property (strong, nonatomic) NSMutableArray *pageDataViewController;
 - (IMI_CDataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard;
 - (NSUInteger)indexOfViewController:(IMI_CDataViewController *)viewController;
+- (void)submitResults;
++(void)initResultsFile;
 @end

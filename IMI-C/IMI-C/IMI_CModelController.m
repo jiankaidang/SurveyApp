@@ -9,7 +9,8 @@
 #import "IMI_CModelController.h"
 
 #import "IMI_CDataViewController.h"
-
+#import "CHCSVWriter.h"
+#import "NetworkManager.h"
 /*
  A controller object that manages a simple model -- a collection of month names.
  
@@ -30,7 +31,7 @@
     self = [super init];
     if (self) {
         // Create the data model.
-        _pageData = @[@"Setting",@"Community", @"Submit"];
+        _pageData = [NSArray arrayWithObjects:@"Setting",@"Community", @"Submit", nil ];
         self.pageDataViewController=[NSMutableArray arrayWithCapacity:[_pageData count]];
     }
     return self;
@@ -85,4 +86,33 @@
     }
     return [self viewControllerAtIndex:index storyboard:viewController.storyboard];
 }
+
+-(void)submitResults {
+    NSMutableArray *controllers = self.pageDataViewController;
+    NSMutableArray *results = [NSMutableArray arrayWithCapacity:[controllers count]];
+    for (IMI_CDataViewController *controller in controllers) {
+        [results addObjectsFromArray:controller.dataArray];
+    }
+    
+    [[[CHCSVWriter alloc] initWithCSVFile:[[NetworkManager sharedInstance] resultsFilePath] atomic:NO] writeLineWithFields:results];
+}
++(void)initResultsFile{
+    /*
+    [[NSFileManager defaultManager] removeItemAtPath:[[[NetworkManager sharedInstance] resultsDir] path] error:nil];
+    return;
+     */
+    NetworkManager * manager=[NetworkManager sharedInstance];
+    if ([manager isResultsDirExisted]) {
+        return;
+    }
+    int capacity=230;
+    NSMutableArray * questionNumbers=[NSMutableArray arrayWithCapacity:capacity];
+    for (int i = 1; i < capacity; i++) {
+        [questionNumbers addObject:[NSString stringWithFormat:@"%u", i]];
+    }
+    NSMutableArray * titleRow=(NSMutableArray *)[NSMutableArray arrayWithObjects:@"Date", @"Time",@"Setting",@"Observer",@"Segment",@"Block",@"Intersection", nil];
+    [titleRow addObjectsFromArray:questionNumbers];
+    [[[CHCSVWriter alloc] initWithCSVFile:[manager resultsFilePath] atomic:NO] writeLineWithFields:titleRow];
+}
+
 @end

@@ -9,14 +9,14 @@
 	<key>ListURLText</key>
 	<string>ftp://soclunitedcom:!QAZ2wsx@ftp.soclunited.com/SurveySources/</string>
 	<key>PutURLText</key>
-	<string>ftp://ftp.soclunited.com/SurveySources/</string>
+	<string>ftp://urbanimprint.com/public_ftp/incoming/SurveyResults/</string>
 	<key>CreateDirURLText</key>
 	<string>ftp://localhost/</string>
 	<key>CreateDirNameText</key>
 	<string>untitled</string>
 	<key>Username</key>
-	<string>soclunitedcom</string>
+	<string>urimprin</string>
 	<key>Password</key>
-	<string>!QAZ2wsx</string>
+	<string>China2012!</string>
 </dict>
 </plist>

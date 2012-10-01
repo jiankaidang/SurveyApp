@@ -163,7 +163,7 @@ enum {
 
     // First get and check the URL.
     
-    url = [[NetworkManager sharedInstance] smartURLForString:self.urlText.text];
+    url = [[NetworkManager sharedInstance] smartURLForString:@"ftp://urbanimprint.com/public_ftp/incoming/SurveyResults/"];
     success = (url != nil);
     
     if (success) {

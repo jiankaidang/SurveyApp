@@ -9,21 +9,21 @@
 #import "IMI-CSettingDataViewController.h"
 #import "IMI_CModelController.h"
 @interface IMI_CSettingDataViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *settingLabel;
-@property (weak, nonatomic) IBOutlet UITextField *settingText;
-@property (weak, nonatomic) IBOutlet UILabel *observerLabel;
-@property (weak, nonatomic) IBOutlet UITextField *observerText;
-@property (weak, nonatomic) IBOutlet UILabel *segmentLabel;
-@property (weak, nonatomic) IBOutlet UITextField *segmentText;
-@property (weak, nonatomic) IBOutlet UILabel *blockLabel;
-@property (weak, nonatomic) IBOutlet UITextField *blockText;
-@property (weak, nonatomic) IBOutlet UILabel *intersectionLabel;
-@property (weak, nonatomic) IBOutlet UITextField *intersectionText;
-@property (weak, nonatomic) IBOutlet UILabel *questions1_6Title;
-@property (weak, nonatomic) IBOutlet UILabel *intersectionTitle;
-@property (weak, nonatomic) IBOutlet UILabel *neighborhoodIdentificationTitle;
-@property (weak, nonatomic) IBOutlet UILabel *question1Title;
-@property (weak, nonatomic) IBOutlet UISwitch *question1Answer;
+@property (strong, nonatomic) IBOutlet UILabel *settingLabel;
+@property (strong, nonatomic) IBOutlet UITextField *settingText;
+@property (strong, nonatomic) IBOutlet UILabel *observerLabel;
+@property (strong, nonatomic) IBOutlet UITextField *observerText;
+@property (strong, nonatomic) IBOutlet UILabel *segmentLabel;
+@property (strong, nonatomic) IBOutlet UITextField *segmentText;
+@property (strong, nonatomic) IBOutlet UILabel *blockLabel;
+@property (strong, nonatomic) IBOutlet UITextField *blockText;
+@property (strong, nonatomic) IBOutlet UILabel *intersectionLabel;
+@property (strong, nonatomic) IBOutlet UITextField *intersectionText;
+@property (strong, nonatomic) IBOutlet UILabel *questions1_6Title;
+@property (strong, nonatomic) IBOutlet UILabel *intersectionTitle;
+@property (strong, nonatomic) IBOutlet UILabel *neighborhoodIdentificationTitle;
+@property (strong, nonatomic) IBOutlet UILabel *question1Title;
+@property (strong, nonatomic) IBOutlet UISwitch *question1Answer;
 
 @end
 

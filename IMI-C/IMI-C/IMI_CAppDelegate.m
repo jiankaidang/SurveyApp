@@ -7,12 +7,13 @@
 //
 
 #import "IMI_CAppDelegate.h"
-
+#import "IMI_CModelController.h"
 @implementation IMI_CAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [IMI_CModelController initResultsFile];
     return YES;
 }
 
