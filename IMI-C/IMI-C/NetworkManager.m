@@ -312,7 +312,6 @@
 }
 -(NSString *)resultsFilePath{
     NSString * resultsDirPath=[[[self applicationDirectory] URLByAppendingPathComponent:@"results"] path];
-    NSLog(@"%@",resultsDirPath);
     if ([self isResultsDirExisted]) {
         return [NSString stringWithFormat:@"%@/%@",resultsDirPath, [[[NSFileManager defaultManager] contentsOfDirectoryAtPath:resultsDirPath error:nil] objectAtIndex:0]];
     }

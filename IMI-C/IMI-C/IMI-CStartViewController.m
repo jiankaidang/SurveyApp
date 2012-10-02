@@ -126,12 +126,7 @@ enum {
 
 - (void)sendDidStopWithStatus:(NSString *)statusString
 {
-    if (statusString == nil) {
-        statusString = @"Put succeeded";
-    }
-    self.statusLabel.text = statusString;
-    self.cancelButton.enabled = NO;
-    [self.activityIndicator stopAnimating];
+    [[[UIAlertView alloc] initWithTitle:@"Upload Survey Results" message:@"Upload succeeded!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
     [[NetworkManager sharedInstance] didStopNetworkOperation];
 }
 
@@ -357,14 +352,8 @@ enum {
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.urlText.text = [[NSUserDefaults standardUserDefaults] stringForKey:@"PutURLText"];
-    // The setup of usernameText and passwordText deferred to -viewWillAppear:
-    // because those values are shared by multiple tabs.
-    
-    self.activityIndicator.hidden = YES;
-    self.statusLabel.text = @"Tap a picture to start the put";
-    self.cancelButton.enabled = NO;
+    [self.startButton setTitle:NSLocalizedString(@"startButton", nil) forState:UIControlStateNormal];
+    [self.uploadButton setTitle:NSLocalizedString(@"uploadButton", nil) forState:UIControlStateNormal];
 }
 
 - (void)viewWillAppear:(BOOL)animated
