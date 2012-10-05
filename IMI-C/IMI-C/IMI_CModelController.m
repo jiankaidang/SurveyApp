@@ -31,7 +31,7 @@
     self = [super init];
     if (self) {
         // Create the data model.
-        _pageData = [NSArray arrayWithObjects:@"Setting",@"Community",@"StreetCrossing",@"Question4a",@"Question4c",@"Q5d",@"Q6a",@"Q8",@"Q11",@"Q13a",@"PublicCivicBuilding",@"IndustrialManufacturing",@"Question13e",@"Question14a",@"Questioin14b",@"OtherLandUses",@"Conveniencestore",@"Question17c",@"Question17e",@"Question17f",@"Submit", nil ];
+        _pageData = [NSArray arrayWithObjects:@"Setting",@"Community",@"StreetCrossing",@"Question4a",@"Question4c",@"Q5d",@"Q6a",@"Q8",@"Q11",@"Residentialbyheight",@"Residentialbytype",@"School",@"Commercial",@"Office",@"Question13b",@"Question13e",@"Question14a",@"Questioin14b",@"Question15",@"Question16",@"Sidewalks",@"Question17c",@"Question17e",@"Question17f",@"Question17g",@"Question17gOther",@"Bicycles",@"Question20",@"MidBlockCrossing",@"Question26",@"StreetTrees",@"Buildings",@"Streetscape",@"Windows",@"Qustion36",@"Parking",@"Question39a",@"Maintenance",@"Question43",@"Freeways",@"Question49",@"Architecture",@"Question53",@"Question55",@"Question58",@"Submit", nil ];
         self.pageDataViewController=[NSMutableArray arrayWithCapacity:[_pageData count]];
     }
     return self;

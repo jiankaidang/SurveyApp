@@ -35,7 +35,7 @@
     self.question14bL.text=NSLocalizedString(@"question14bL", nil);
     self.question14bAArray = [NSArray arrayWithObjects: NSLocalizedString(@"question14b8", nil),NSLocalizedString(@"question14b0", nil),NSLocalizedString(@"question14b1", nil),NSLocalizedString(@"question14b2", nil),nil];
     self.question14cL.text=NSLocalizedString(@"question14cL", nil);
-    self.question14cAArray = [NSArray arrayWithObjects: NSLocalizedString(@"question14c0", nil),NSLocalizedString(@"question14c1", nil),NSLocalizedString(@"question14c2", nil),nil];
+    self.question14cAArray = [NSArray arrayWithObjects: NSLocalizedString(@"question14c8", nil),NSLocalizedString(@"question14c0", nil),NSLocalizedString(@"question14c1", nil),NSLocalizedString(@"question14c2", nil),nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -70,7 +70,14 @@
     } else {
         question14bAValue=selectedRow-1;
     }
-    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", question14bAValue],[NSString stringWithFormat:@"%d",[self.question14cA selectedRowInComponent:0]], nil];
+    NSInteger question14cAValue;
+    NSInteger question14cAselectedRow=[self.question14cA selectedRowInComponent:0];
+    if (!question14cAselectedRow) {
+        question14cAValue=8;
+    } else {
+        question14cAValue=selectedRow-1;
+    }
+    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", question14bAValue],[NSString stringWithFormat:@"%d",question14cAValue], nil];
 }
 
 @end

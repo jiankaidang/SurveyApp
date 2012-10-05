@@ -8,6 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		8D15F11016191427009976B4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D15F10F16191427009976B4 /* CFNetwork.framework */; };
+		8D2525D3161C7F7A00D742CB /* IMI-CQuestion20DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2525D2161C7F7A00D742CB /* IMI-CQuestion20DataViewController.m */; };
+		8D2525D7161C87D000D742CB /* IMI-CMidBlockCrossingDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2525D6161C87D000D742CB /* IMI-CMidBlockCrossingDataViewController.m */; };
+		8D2525DA161C9CB900D742CB /* IMI-CQuestion26DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2525D9161C9CB900D742CB /* IMI-CQuestion26DataViewController.m */; };
+		8D2525DD161CA20900D742CB /* IMI-CStreetTreesDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2525DC161CA20900D742CB /* IMI-CStreetTreesDataViewController.m */; };
+		8D2525E0161CAB6700D742CB /* IMI-CBuildingsDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2525DF161CAB6700D742CB /* IMI-CBuildingsDataViewController.m */; };
+		8D2525E3161CB3EB00D742CB /* IMI-CStreetscapeDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2525E2161CB3EA00D742CB /* IMI-CStreetscapeDataViewController.m */; };
+		8D2525E6161CC35800D742CB /* IMI-CWindowsDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2525E5161CC35700D742CB /* IMI-CWindowsDataViewController.m */; };
+		8D2525ED161CE83800D742CB /* IMI-CQustion36DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2525EC161CE83800D742CB /* IMI-CQustion36DataViewController.m */; };
+		8D2525F0161CEBB000D742CB /* IMI-CParkingDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2525EF161CEBB000D742CB /* IMI-CParkingDataViewController.m */; };
+		8D2525F3161CF31800D742CB /* IMI-CQuestion39aDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2525F2161CF31800D742CB /* IMI-CQuestion39aDataViewController.m */; };
+		8D2525F6161CF9C900D742CB /* IMI-CMaintenanceDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2525F5161CF9C900D742CB /* IMI-CMaintenanceDataViewController.m */; };
+		8D2525F9161CFD9500D742CB /* IMI-CQuestion43DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2525F8161CFD9500D742CB /* IMI-CQuestion43DataViewController.m */; };
+		8D252600161D35A100D742CB /* IMI-CFreewaysDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2525FF161D35A000D742CB /* IMI-CFreewaysDataViewController.m */; };
+		8D252603161D3AFB00D742CB /* IMI-CQuestion49DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D252602161D3AFB00D742CB /* IMI-CQuestion49DataViewController.m */; };
 		8D3FFAA8161AB49200F21FE9 /* IMI-CPublicCivicBuildingDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3FFAA7161AB49200F21FE9 /* IMI-CPublicCivicBuildingDataViewController.m */; };
 		8D3FFAAC161AC29800F21FE9 /* IMI-CIndustrialManufacturingDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3FFAAB161AC29800F21FE9 /* IMI-CIndustrialManufacturingDataViewController.m */; };
 		8D3FFAAF161AD74B00F21FE9 /* IMI-CQuestion13eDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3FFAAE161AD74B00F21FE9 /* IMI-CQuestion13eDataViewController.m */; };
@@ -18,6 +32,9 @@
 		8D3FFABE161B33DA00F21FE9 /* IMI-CQuestion17cDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3FFABD161B33DA00F21FE9 /* IMI-CQuestion17cDataViewController.m */; };
 		8D3FFAC1161B38D400F21FE9 /* IMI-CQuestion17eDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3FFAC0161B38D400F21FE9 /* IMI-CQuestion17eDataViewController.m */; };
 		8D3FFAC4161B3F4100F21FE9 /* IMI-CQuestion17fDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3FFAC3161B3F4100F21FE9 /* IMI-CQuestion17fDataViewController.m */; };
+		8D3FFAF7161B89DE00F21FE9 /* IMI-CQuestion17gDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3FFAF6161B89DE00F21FE9 /* IMI-CQuestion17gDataViewController.m */; };
+		8D3FFAFA161B930100F21FE9 /* IMI-CQuestion17gOtherDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3FFAF9161B930000F21FE9 /* IMI-CQuestion17gOtherDataViewController.m */; };
+		8D3FFAFD161BD22100F21FE9 /* IMI-CBicyclesDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3FFAFC161BD22000F21FE9 /* IMI-CBicyclesDataViewController.m */; };
 		8D5B6572160DF90E00FD5762 /* IMI-CCommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5B6571160DF90E00FD5762 /* IMI-CCommunityViewController.m */; };
 		8D70DFBE160D49A500AB5D4B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D70DFBC160D49A500AB5D4B /* Localizable.strings */; };
 		8D7340CA1619E83300BC2311 /* IMI-CStreetCrossingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7340C91619E83300BC2311 /* IMI-CStreetCrossingViewController.m */; };
@@ -39,6 +56,19 @@
 		8D824B091609696600768A95 /* IMI_CDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D824B081609696600768A95 /* IMI_CDataViewController.m */; };
 		8D824B0C1609696600768A95 /* IMI_CModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D824B0B1609696600768A95 /* IMI_CModelController.m */; };
 		8D824B0F1609696600768A95 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D824B0D1609696600768A95 /* MainStoryboard.storyboard */; };
+		8D8915C9161DD0AC006643F2 /* IMI-CArchitectureDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8915C8161DD0AC006643F2 /* IMI-CArchitectureDataViewController.m */; };
+		8D8915CD161DD4BC006643F2 /* IMI-CQuestion53DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8915CC161DD4BC006643F2 /* IMI-CQuestion53DataViewController.m */; };
+		8D8915D0161DD805006643F2 /* IMI-CQuestion55DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8915CF161DD805006643F2 /* IMI-CQuestion55DataViewController.m */; };
+		8D8915D3161DDAAB006643F2 /* IMI-CQuestion58DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8915D2161DDAAB006643F2 /* IMI-CQuestion58DataViewController.m */; };
+		8D8915D6161DDF8F006643F2 /* IMI-CResidentialbyheightDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8915D5161DDF8F006643F2 /* IMI-CResidentialbyheightDataViewController.m */; };
+		8D8915D9161DE374006643F2 /* IMI-CResidentialbytypeDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8915D8161DE374006643F2 /* IMI-CResidentialbytypeDataViewController.m */; };
+		8D8915DC161DE7CB006643F2 /* IMI-CSchoolDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8915DB161DE7CB006643F2 /* IMI-CSchoolDataViewController.m */; };
+		8D8915DF161DEF7E006643F2 /* IMI-CCommercialDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8915DE161DEF7E006643F2 /* IMI-CCommercialDataViewController.m */; };
+		8D8915E2161DF39C006643F2 /* IMI-COfficeDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8915E1161DF39C006643F2 /* IMI-COfficeDataViewController.m */; };
+		8D8915E5161DFA6E006643F2 /* IMI-CQuestion13bDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8915E4161DFA6E006643F2 /* IMI-CQuestion13bDataViewController.m */; };
+		8D8915E8161E01CC006643F2 /* IMI-CQuestion15DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8915E7161E01CC006643F2 /* IMI-CQuestion15DataViewController.m */; };
+		8D8915EB161E0476006643F2 /* IMI-CQuestion16DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8915EA161E0476006643F2 /* IMI-CQuestion16DataViewController.m */; };
+		8D8915EE161E0853006643F2 /* IMI-CSidewalksDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8915ED161E0852006643F2 /* IMI-CSidewalksDataViewController.m */; };
 		8D9B6D5A160C023A00EE79C6 /* IMI-CSettingDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9B6D59160C023A00EE79C6 /* IMI-CSettingDataViewController.m */; };
 		8DD319011611EEAE00CF6E3A /* IMI-CSubmitDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD319001611EEAE00CF6E3A /* IMI-CSubmitDataViewController.m */; };
 		8DD319171612019300CF6E3A /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD319151612019300CF6E3A /* NetworkManager.m */; };
@@ -47,6 +77,34 @@
 
 /* Begin PBXFileReference section */
 		8D15F10F16191427009976B4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8D2525D1161C7F7A00D742CB /* IMI-CQuestion20DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion20DataViewController.h"; sourceTree = "<group>"; };
+		8D2525D2161C7F7A00D742CB /* IMI-CQuestion20DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion20DataViewController.m"; sourceTree = "<group>"; };
+		8D2525D5161C87D000D742CB /* IMI-CMidBlockCrossingDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CMidBlockCrossingDataViewController.h"; sourceTree = "<group>"; };
+		8D2525D6161C87D000D742CB /* IMI-CMidBlockCrossingDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CMidBlockCrossingDataViewController.m"; sourceTree = "<group>"; };
+		8D2525D8161C9CB900D742CB /* IMI-CQuestion26DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion26DataViewController.h"; sourceTree = "<group>"; };
+		8D2525D9161C9CB900D742CB /* IMI-CQuestion26DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion26DataViewController.m"; sourceTree = "<group>"; };
+		8D2525DB161CA20900D742CB /* IMI-CStreetTreesDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CStreetTreesDataViewController.h"; sourceTree = "<group>"; };
+		8D2525DC161CA20900D742CB /* IMI-CStreetTreesDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CStreetTreesDataViewController.m"; sourceTree = "<group>"; };
+		8D2525DE161CAB6700D742CB /* IMI-CBuildingsDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CBuildingsDataViewController.h"; sourceTree = "<group>"; };
+		8D2525DF161CAB6700D742CB /* IMI-CBuildingsDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CBuildingsDataViewController.m"; sourceTree = "<group>"; };
+		8D2525E1161CB3EA00D742CB /* IMI-CStreetscapeDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CStreetscapeDataViewController.h"; sourceTree = "<group>"; };
+		8D2525E2161CB3EA00D742CB /* IMI-CStreetscapeDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CStreetscapeDataViewController.m"; sourceTree = "<group>"; };
+		8D2525E4161CC35700D742CB /* IMI-CWindowsDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CWindowsDataViewController.h"; sourceTree = "<group>"; };
+		8D2525E5161CC35700D742CB /* IMI-CWindowsDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CWindowsDataViewController.m"; sourceTree = "<group>"; };
+		8D2525EB161CE83800D742CB /* IMI-CQustion36DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQustion36DataViewController.h"; sourceTree = "<group>"; };
+		8D2525EC161CE83800D742CB /* IMI-CQustion36DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQustion36DataViewController.m"; sourceTree = "<group>"; };
+		8D2525EE161CEBB000D742CB /* IMI-CParkingDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CParkingDataViewController.h"; sourceTree = "<group>"; };
+		8D2525EF161CEBB000D742CB /* IMI-CParkingDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CParkingDataViewController.m"; sourceTree = "<group>"; };
+		8D2525F1161CF31800D742CB /* IMI-CQuestion39aDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion39aDataViewController.h"; sourceTree = "<group>"; };
+		8D2525F2161CF31800D742CB /* IMI-CQuestion39aDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion39aDataViewController.m"; sourceTree = "<group>"; };
+		8D2525F4161CF9C800D742CB /* IMI-CMaintenanceDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CMaintenanceDataViewController.h"; sourceTree = "<group>"; };
+		8D2525F5161CF9C900D742CB /* IMI-CMaintenanceDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CMaintenanceDataViewController.m"; sourceTree = "<group>"; };
+		8D2525F7161CFD9500D742CB /* IMI-CQuestion43DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion43DataViewController.h"; sourceTree = "<group>"; };
+		8D2525F8161CFD9500D742CB /* IMI-CQuestion43DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion43DataViewController.m"; sourceTree = "<group>"; };
+		8D2525FE161D35A000D742CB /* IMI-CFreewaysDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CFreewaysDataViewController.h"; sourceTree = "<group>"; };
+		8D2525FF161D35A000D742CB /* IMI-CFreewaysDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CFreewaysDataViewController.m"; sourceTree = "<group>"; };
+		8D252601161D3AFB00D742CB /* IMI-CQuestion49DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion49DataViewController.h"; sourceTree = "<group>"; };
+		8D252602161D3AFB00D742CB /* IMI-CQuestion49DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion49DataViewController.m"; sourceTree = "<group>"; };
 		8D3FFAA6161AB49200F21FE9 /* IMI-CPublicCivicBuildingDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CPublicCivicBuildingDataViewController.h"; sourceTree = "<group>"; };
 		8D3FFAA7161AB49200F21FE9 /* IMI-CPublicCivicBuildingDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CPublicCivicBuildingDataViewController.m"; sourceTree = "<group>"; };
 		8D3FFAAA161AC29800F21FE9 /* IMI-CIndustrialManufacturingDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CIndustrialManufacturingDataViewController.h"; sourceTree = "<group>"; };
@@ -67,6 +125,12 @@
 		8D3FFAC0161B38D400F21FE9 /* IMI-CQuestion17eDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion17eDataViewController.m"; sourceTree = "<group>"; };
 		8D3FFAC2161B3F4100F21FE9 /* IMI-CQuestion17fDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion17fDataViewController.h"; sourceTree = "<group>"; };
 		8D3FFAC3161B3F4100F21FE9 /* IMI-CQuestion17fDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion17fDataViewController.m"; sourceTree = "<group>"; };
+		8D3FFAF5161B89DE00F21FE9 /* IMI-CQuestion17gDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion17gDataViewController.h"; sourceTree = "<group>"; };
+		8D3FFAF6161B89DE00F21FE9 /* IMI-CQuestion17gDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion17gDataViewController.m"; sourceTree = "<group>"; };
+		8D3FFAF8161B930000F21FE9 /* IMI-CQuestion17gOtherDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion17gOtherDataViewController.h"; sourceTree = "<group>"; };
+		8D3FFAF9161B930000F21FE9 /* IMI-CQuestion17gOtherDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion17gOtherDataViewController.m"; sourceTree = "<group>"; };
+		8D3FFAFB161BD22000F21FE9 /* IMI-CBicyclesDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CBicyclesDataViewController.h"; sourceTree = "<group>"; };
+		8D3FFAFC161BD22000F21FE9 /* IMI-CBicyclesDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CBicyclesDataViewController.m"; sourceTree = "<group>"; };
 		8D5B6570160DF90D00FD5762 /* IMI-CCommunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CCommunityViewController.h"; sourceTree = "<group>"; };
 		8D5B6571160DF90E00FD5762 /* IMI-CCommunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CCommunityViewController.m"; sourceTree = "<group>"; };
 		8D70DFBD160D49A500AB5D4B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -106,6 +170,32 @@
 		8D824B0A1609696600768A95 /* IMI_CModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMI_CModelController.h; sourceTree = "<group>"; };
 		8D824B0B1609696600768A95 /* IMI_CModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMI_CModelController.m; sourceTree = "<group>"; };
 		8D824B0E1609696600768A95 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		8D8915C7161DD0AC006643F2 /* IMI-CArchitectureDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CArchitectureDataViewController.h"; sourceTree = "<group>"; };
+		8D8915C8161DD0AC006643F2 /* IMI-CArchitectureDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CArchitectureDataViewController.m"; sourceTree = "<group>"; };
+		8D8915CB161DD4BC006643F2 /* IMI-CQuestion53DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion53DataViewController.h"; sourceTree = "<group>"; };
+		8D8915CC161DD4BC006643F2 /* IMI-CQuestion53DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion53DataViewController.m"; sourceTree = "<group>"; };
+		8D8915CE161DD805006643F2 /* IMI-CQuestion55DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion55DataViewController.h"; sourceTree = "<group>"; };
+		8D8915CF161DD805006643F2 /* IMI-CQuestion55DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion55DataViewController.m"; sourceTree = "<group>"; };
+		8D8915D1161DDAAB006643F2 /* IMI-CQuestion58DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion58DataViewController.h"; sourceTree = "<group>"; };
+		8D8915D2161DDAAB006643F2 /* IMI-CQuestion58DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion58DataViewController.m"; sourceTree = "<group>"; };
+		8D8915D4161DDF8F006643F2 /* IMI-CResidentialbyheightDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CResidentialbyheightDataViewController.h"; sourceTree = "<group>"; };
+		8D8915D5161DDF8F006643F2 /* IMI-CResidentialbyheightDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CResidentialbyheightDataViewController.m"; sourceTree = "<group>"; };
+		8D8915D7161DE374006643F2 /* IMI-CResidentialbytypeDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CResidentialbytypeDataViewController.h"; sourceTree = "<group>"; };
+		8D8915D8161DE374006643F2 /* IMI-CResidentialbytypeDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CResidentialbytypeDataViewController.m"; sourceTree = "<group>"; };
+		8D8915DA161DE7CB006643F2 /* IMI-CSchoolDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CSchoolDataViewController.h"; sourceTree = "<group>"; };
+		8D8915DB161DE7CB006643F2 /* IMI-CSchoolDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CSchoolDataViewController.m"; sourceTree = "<group>"; };
+		8D8915DD161DEF7E006643F2 /* IMI-CCommercialDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CCommercialDataViewController.h"; sourceTree = "<group>"; };
+		8D8915DE161DEF7E006643F2 /* IMI-CCommercialDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CCommercialDataViewController.m"; sourceTree = "<group>"; };
+		8D8915E0161DF39C006643F2 /* IMI-COfficeDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-COfficeDataViewController.h"; sourceTree = "<group>"; };
+		8D8915E1161DF39C006643F2 /* IMI-COfficeDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-COfficeDataViewController.m"; sourceTree = "<group>"; };
+		8D8915E3161DFA6E006643F2 /* IMI-CQuestion13bDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion13bDataViewController.h"; sourceTree = "<group>"; };
+		8D8915E4161DFA6E006643F2 /* IMI-CQuestion13bDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion13bDataViewController.m"; sourceTree = "<group>"; };
+		8D8915E6161E01CC006643F2 /* IMI-CQuestion15DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion15DataViewController.h"; sourceTree = "<group>"; };
+		8D8915E7161E01CC006643F2 /* IMI-CQuestion15DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion15DataViewController.m"; sourceTree = "<group>"; };
+		8D8915E9161E0475006643F2 /* IMI-CQuestion16DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion16DataViewController.h"; sourceTree = "<group>"; };
+		8D8915EA161E0476006643F2 /* IMI-CQuestion16DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion16DataViewController.m"; sourceTree = "<group>"; };
+		8D8915EC161E0852006643F2 /* IMI-CSidewalksDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CSidewalksDataViewController.h"; sourceTree = "<group>"; };
+		8D8915ED161E0852006643F2 /* IMI-CSidewalksDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CSidewalksDataViewController.m"; sourceTree = "<group>"; };
 		8D9B6D58160C023A00EE79C6 /* IMI-CSettingDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CSettingDataViewController.h"; sourceTree = "<group>"; };
 		8D9B6D59160C023A00EE79C6 /* IMI-CSettingDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CSettingDataViewController.m"; sourceTree = "<group>"; };
 		8DD318FF1611EEAE00CF6E3A /* IMI-CSubmitDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CSubmitDataViewController.h"; sourceTree = "<group>"; };
@@ -135,6 +225,12 @@
 		8D824AE31609696600768A95 = {
 			isa = PBXGroup;
 			children = (
+				8D8915C7161DD0AC006643F2 /* IMI-CArchitectureDataViewController.h */,
+				8D8915C8161DD0AC006643F2 /* IMI-CArchitectureDataViewController.m */,
+				8D2525F1161CF31800D742CB /* IMI-CQuestion39aDataViewController.h */,
+				8D2525F2161CF31800D742CB /* IMI-CQuestion39aDataViewController.m */,
+				8D2525D1161C7F7A00D742CB /* IMI-CQuestion20DataViewController.h */,
+				8D2525D2161C7F7A00D742CB /* IMI-CQuestion20DataViewController.m */,
 				8D3FFABF161B38D400F21FE9 /* IMI-CQuestion17eDataViewController.h */,
 				8D3FFAC0161B38D400F21FE9 /* IMI-CQuestion17eDataViewController.m */,
 				8D15F10F16191427009976B4 /* CFNetwork.framework */,
@@ -181,7 +277,61 @@
 				8D5B6571160DF90E00FD5762 /* IMI-CCommunityViewController.m */,
 				8D824B0A1609696600768A95 /* IMI_CModelController.h */,
 				8D824B0B1609696600768A95 /* IMI_CModelController.m */,
+				8D2525D5161C87D000D742CB /* IMI-CMidBlockCrossingDataViewController.h */,
+				8D2525D6161C87D000D742CB /* IMI-CMidBlockCrossingDataViewController.m */,
+				8D2525D8161C9CB900D742CB /* IMI-CQuestion26DataViewController.h */,
+				8D2525D9161C9CB900D742CB /* IMI-CQuestion26DataViewController.m */,
 				8D824B0D1609696600768A95 /* MainStoryboard.storyboard */,
+				8D8915EC161E0852006643F2 /* IMI-CSidewalksDataViewController.h */,
+				8D8915ED161E0852006643F2 /* IMI-CSidewalksDataViewController.m */,
+				8D8915E9161E0475006643F2 /* IMI-CQuestion16DataViewController.h */,
+				8D8915EA161E0476006643F2 /* IMI-CQuestion16DataViewController.m */,
+				8D8915E6161E01CC006643F2 /* IMI-CQuestion15DataViewController.h */,
+				8D8915E7161E01CC006643F2 /* IMI-CQuestion15DataViewController.m */,
+				8D8915E3161DFA6E006643F2 /* IMI-CQuestion13bDataViewController.h */,
+				8D8915E4161DFA6E006643F2 /* IMI-CQuestion13bDataViewController.m */,
+				8D8915E0161DF39C006643F2 /* IMI-COfficeDataViewController.h */,
+				8D8915E1161DF39C006643F2 /* IMI-COfficeDataViewController.m */,
+				8D8915DD161DEF7E006643F2 /* IMI-CCommercialDataViewController.h */,
+				8D8915DE161DEF7E006643F2 /* IMI-CCommercialDataViewController.m */,
+				8D8915DA161DE7CB006643F2 /* IMI-CSchoolDataViewController.h */,
+				8D8915DB161DE7CB006643F2 /* IMI-CSchoolDataViewController.m */,
+				8D8915D7161DE374006643F2 /* IMI-CResidentialbytypeDataViewController.h */,
+				8D8915D8161DE374006643F2 /* IMI-CResidentialbytypeDataViewController.m */,
+				8D8915D4161DDF8F006643F2 /* IMI-CResidentialbyheightDataViewController.h */,
+				8D8915D5161DDF8F006643F2 /* IMI-CResidentialbyheightDataViewController.m */,
+				8D8915D1161DDAAB006643F2 /* IMI-CQuestion58DataViewController.h */,
+				8D8915D2161DDAAB006643F2 /* IMI-CQuestion58DataViewController.m */,
+				8D8915CE161DD805006643F2 /* IMI-CQuestion55DataViewController.h */,
+				8D8915CF161DD805006643F2 /* IMI-CQuestion55DataViewController.m */,
+				8D8915CB161DD4BC006643F2 /* IMI-CQuestion53DataViewController.h */,
+				8D8915CC161DD4BC006643F2 /* IMI-CQuestion53DataViewController.m */,
+				8D252601161D3AFB00D742CB /* IMI-CQuestion49DataViewController.h */,
+				8D252602161D3AFB00D742CB /* IMI-CQuestion49DataViewController.m */,
+				8D2525FE161D35A000D742CB /* IMI-CFreewaysDataViewController.h */,
+				8D2525FF161D35A000D742CB /* IMI-CFreewaysDataViewController.m */,
+				8D2525F7161CFD9500D742CB /* IMI-CQuestion43DataViewController.h */,
+				8D2525F8161CFD9500D742CB /* IMI-CQuestion43DataViewController.m */,
+				8D2525F4161CF9C800D742CB /* IMI-CMaintenanceDataViewController.h */,
+				8D2525F5161CF9C900D742CB /* IMI-CMaintenanceDataViewController.m */,
+				8D2525EE161CEBB000D742CB /* IMI-CParkingDataViewController.h */,
+				8D2525EF161CEBB000D742CB /* IMI-CParkingDataViewController.m */,
+				8D2525EB161CE83800D742CB /* IMI-CQustion36DataViewController.h */,
+				8D2525EC161CE83800D742CB /* IMI-CQustion36DataViewController.m */,
+				8D2525E4161CC35700D742CB /* IMI-CWindowsDataViewController.h */,
+				8D2525E5161CC35700D742CB /* IMI-CWindowsDataViewController.m */,
+				8D2525DE161CAB6700D742CB /* IMI-CBuildingsDataViewController.h */,
+				8D2525DF161CAB6700D742CB /* IMI-CBuildingsDataViewController.m */,
+				8D2525E1161CB3EA00D742CB /* IMI-CStreetscapeDataViewController.h */,
+				8D2525E2161CB3EA00D742CB /* IMI-CStreetscapeDataViewController.m */,
+				8D2525DB161CA20900D742CB /* IMI-CStreetTreesDataViewController.h */,
+				8D2525DC161CA20900D742CB /* IMI-CStreetTreesDataViewController.m */,
+				8D3FFAF8161B930000F21FE9 /* IMI-CQuestion17gOtherDataViewController.h */,
+				8D3FFAF9161B930000F21FE9 /* IMI-CQuestion17gOtherDataViewController.m */,
+				8D3FFAFB161BD22000F21FE9 /* IMI-CBicyclesDataViewController.h */,
+				8D3FFAFC161BD22000F21FE9 /* IMI-CBicyclesDataViewController.m */,
+				8D3FFAF5161B89DE00F21FE9 /* IMI-CQuestion17gDataViewController.h */,
+				8D3FFAF6161B89DE00F21FE9 /* IMI-CQuestion17gDataViewController.m */,
 				8D3FFAC2161B3F4100F21FE9 /* IMI-CQuestion17fDataViewController.h */,
 				8D3FFAC3161B3F4100F21FE9 /* IMI-CQuestion17fDataViewController.m */,
 				8D3FFABC161B33DA00F21FE9 /* IMI-CQuestion17cDataViewController.h */,
@@ -332,6 +482,36 @@
 				8D3FFABE161B33DA00F21FE9 /* IMI-CQuestion17cDataViewController.m in Sources */,
 				8D3FFAC1161B38D400F21FE9 /* IMI-CQuestion17eDataViewController.m in Sources */,
 				8D3FFAC4161B3F4100F21FE9 /* IMI-CQuestion17fDataViewController.m in Sources */,
+				8D3FFAF7161B89DE00F21FE9 /* IMI-CQuestion17gDataViewController.m in Sources */,
+				8D3FFAFA161B930100F21FE9 /* IMI-CQuestion17gOtherDataViewController.m in Sources */,
+				8D3FFAFD161BD22100F21FE9 /* IMI-CBicyclesDataViewController.m in Sources */,
+				8D2525D3161C7F7A00D742CB /* IMI-CQuestion20DataViewController.m in Sources */,
+				8D2525D7161C87D000D742CB /* IMI-CMidBlockCrossingDataViewController.m in Sources */,
+				8D2525DA161C9CB900D742CB /* IMI-CQuestion26DataViewController.m in Sources */,
+				8D2525DD161CA20900D742CB /* IMI-CStreetTreesDataViewController.m in Sources */,
+				8D2525E0161CAB6700D742CB /* IMI-CBuildingsDataViewController.m in Sources */,
+				8D2525E3161CB3EB00D742CB /* IMI-CStreetscapeDataViewController.m in Sources */,
+				8D2525E6161CC35800D742CB /* IMI-CWindowsDataViewController.m in Sources */,
+				8D2525ED161CE83800D742CB /* IMI-CQustion36DataViewController.m in Sources */,
+				8D2525F0161CEBB000D742CB /* IMI-CParkingDataViewController.m in Sources */,
+				8D2525F3161CF31800D742CB /* IMI-CQuestion39aDataViewController.m in Sources */,
+				8D2525F6161CF9C900D742CB /* IMI-CMaintenanceDataViewController.m in Sources */,
+				8D2525F9161CFD9500D742CB /* IMI-CQuestion43DataViewController.m in Sources */,
+				8D252600161D35A100D742CB /* IMI-CFreewaysDataViewController.m in Sources */,
+				8D252603161D3AFB00D742CB /* IMI-CQuestion49DataViewController.m in Sources */,
+				8D8915C9161DD0AC006643F2 /* IMI-CArchitectureDataViewController.m in Sources */,
+				8D8915CD161DD4BC006643F2 /* IMI-CQuestion53DataViewController.m in Sources */,
+				8D8915D0161DD805006643F2 /* IMI-CQuestion55DataViewController.m in Sources */,
+				8D8915D3161DDAAB006643F2 /* IMI-CQuestion58DataViewController.m in Sources */,
+				8D8915D6161DDF8F006643F2 /* IMI-CResidentialbyheightDataViewController.m in Sources */,
+				8D8915D9161DE374006643F2 /* IMI-CResidentialbytypeDataViewController.m in Sources */,
+				8D8915DC161DE7CB006643F2 /* IMI-CSchoolDataViewController.m in Sources */,
+				8D8915DF161DEF7E006643F2 /* IMI-CCommercialDataViewController.m in Sources */,
+				8D8915E2161DF39C006643F2 /* IMI-COfficeDataViewController.m in Sources */,
+				8D8915E5161DFA6E006643F2 /* IMI-CQuestion13bDataViewController.m in Sources */,
+				8D8915E8161E01CC006643F2 /* IMI-CQuestion15DataViewController.m in Sources */,
+				8D8915EB161E0476006643F2 /* IMI-CQuestion16DataViewController.m in Sources */,
+				8D8915EE161E0853006643F2 /* IMI-CSidewalksDataViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
