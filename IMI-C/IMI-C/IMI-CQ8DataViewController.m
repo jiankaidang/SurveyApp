@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *q9T;
 @property (weak, nonatomic) IBOutlet UISwitch *q9A;
 @property (weak, nonatomic) IBOutlet UILabel *q7_11T;
+@property (weak, nonatomic) IBOutlet UILabel *NeighborhoodIdentificationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *q10T;
 @property (weak, nonatomic) IBOutlet UIPickerView *q10A;
 @property (nonatomic, retain) NSArray *q10AArray;
@@ -39,6 +40,7 @@
     self.q8AArray = [NSArray arrayWithObjects: NSLocalizedString(@"q7A8", nil),NSLocalizedString(@"q7A0", nil),NSLocalizedString(@"q7A1", nil),NSLocalizedString(@"q7A2", nil),nil];
     self.q9T.text=NSLocalizedString(@"q9T", nil);
     self.q7_11T.text=NSLocalizedString(@"q7_11T", nil);
+    self.NeighborhoodIdentificationLabel.text=NSLocalizedString(@"neighborhoodIdentificationTitle", nil);
     self.q10T.text=NSLocalizedString(@"q10T", nil);
     self.q10AArray = [NSArray arrayWithObjects: NSLocalizedString(@"q10A0", nil),NSLocalizedString(@"q10A1", nil),NSLocalizedString(@"q10A2", nil),nil];
 }

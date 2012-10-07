@@ -7,7 +7,7 @@
 //
 
 #import "IMI-CQuestion4cDataViewController.h"
-
+#import "IMI_CModelController.h"
 @interface IMI_CQuestion4cDataViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *q4cTitle;
 @property (weak, nonatomic) IBOutlet UIPickerView *q4cAnswer;
@@ -35,6 +35,15 @@
 @property (weak, nonatomic) IBOutlet UISwitch *q5bA;
 @property (weak, nonatomic) IBOutlet UILabel *q5cL;
 @property (weak, nonatomic) IBOutlet UISwitch *q5cA;
+- (IBAction)TrafficsignalAction:(UISwitch *)sender;
+- (IBAction)StopsignAction:(UISwitch *)sender;
+- (IBAction)YieldsignAction:(UISwitch *)sender;
+- (IBAction)Pedestriansignalactivated:(UISwitch *)sender;
+- (IBAction)PedestriansignalautomatedAction:(UISwitch *)sender;
+- (IBAction)PedestriansignalwithcountdownAction:(UISwitch *)sender;
+- (IBAction)PedestriansignalwithsoundAction:(UISwitch *)sender;
+- (IBAction)PedestriancrossingsignAction:(UISwitch *)sender;
+- (IBAction)PedestrianoverpassunderpassbridgeAction:(UISwitch *)sender;
 
 @end
 
@@ -98,4 +107,51 @@
     self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", question4cAnswerValue],[NSString stringWithFormat:@"%d",[self.trafficA isOn]],[NSString stringWithFormat:@"%d",[self.stopA isOn]],[NSString stringWithFormat:@"%d",[self.yieldA isOn]],[NSString stringWithFormat:@"%d",[self.activatedA isOn]],[NSString stringWithFormat:@"%d",[self.automatedA isOn]],[NSString stringWithFormat:@"%d",[self.countdownA isOn]],[NSString stringWithFormat:@"%d",[self.soundA isOn]],[NSString stringWithFormat:@"%d",[self.crossingA isOn]],[NSString stringWithFormat:@"%d",[self.overpassA isOn]],[NSString stringWithFormat:@"%d",[self.q5bA isOn]],[NSString stringWithFormat:@"%d",[self.q5cA isOn]], nil];
 }
 
+- (IBAction)TrafficsignalAction:(UISwitch *)sender {
+    [self isQuestion5bHidden:sender];
+    [self.imi_cModelController.gloableData setObject:[NSNumber numberWithBool:[sender isOn]] forKeyedSubscript:@"question5aTrafficsignalIsOn"];
+}
+
+- (IBAction)StopsignAction:(UISwitch *)sender {
+    [self isQuestion5bHidden:sender];
+}
+
+- (IBAction)YieldsignAction:(UISwitch *)sender {
+    [self isQuestion5bHidden:sender];
+}
+
+- (IBAction)Pedestriansignalactivated:(UISwitch *)sender {
+    [self isQuestion5bHidden:sender];
+    [self isPedestriansignalOn];
+}
+
+- (IBAction)PedestriansignalautomatedAction:(UISwitch *)sender {
+    [self isQuestion5bHidden:sender];
+    [self isPedestriansignalOn];
+}
+
+- (IBAction)PedestriansignalwithcountdownAction:(UISwitch *)sender {
+    [self isQuestion5bHidden:sender];
+    [self isPedestriansignalOn];
+}
+
+- (IBAction)PedestriansignalwithsoundAction:(UISwitch *)sender {
+    [self isQuestion5bHidden:sender];
+    [self isPedestriansignalOn];
+}
+
+- (IBAction)PedestriancrossingsignAction:(UISwitch *)sender {
+    [self isQuestion5bHidden:sender];
+}
+
+- (IBAction)PedestrianoverpassunderpassbridgeAction:(UISwitch *)sender {
+    [self isQuestion5bHidden:sender];
+    [self.imi_cModelController.gloableData setObject:[NSNumber numberWithBool:[self.overpassA isOn]] forKeyedSubscript:@"question5aPedestrianoverpassunderpassbridgeIsOn"];
+}
+-(void)isQuestion5bHidden:(UISwitch *)sender{
+    self.q5bT.hidden=self.q5bA.hidden= [self.trafficA isOn]||[self.stopA isOn]||[self.yieldA isOn]||[self.activatedA isOn]||[self.automatedA isOn]||[self.countdownA isOn]||[self.soundA isOn]||[self.crossingA isOn]||[self.overpassA isOn];
+}
+-(void)isPedestriansignalOn{
+    [self.imi_cModelController.gloableData setObject:[NSNumber numberWithBool:[self.activatedA isOn]||[self.automatedA isOn]||[self.countdownA isOn]||[self.soundA isOn]] forKeyedSubscript:@"question5aPedestriansignalactivatedIsOn"];
+}
 @end

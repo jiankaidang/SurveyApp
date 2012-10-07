@@ -7,7 +7,7 @@
 //
 
 #import "IMI-CSidewalksDataViewController.h"
-
+#import "IMI_CModelController.h"
 @interface IMI_CSidewalksDataViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *SidewalksL;
 @property (weak, nonatomic) IBOutlet UILabel *question17aL;
@@ -38,7 +38,7 @@
     self.question17aL.text=NSLocalizedString(@"question17aL", nil);
     self.question17bL.text=NSLocalizedString(@"question17bL", nil);
     self.otherLandUsesAArray = [NSArray arrayWithObjects: NSLocalizedString(@"question17a0", nil),NSLocalizedString(@"question17a1", nil),NSLocalizedString(@"question17a2", nil),nil];
-    self.question17bAArray = [NSArray arrayWithObjects: NSLocalizedString(@"question17bA8", nil),NSLocalizedString(@"question17bA0", nil),NSLocalizedString(@"question17bA1", nil),NSLocalizedString(@"question17bA2", nil),nil];
+    self.question17bAArray = [NSArray arrayWithObjects:NSLocalizedString(@"question17bA0", nil),NSLocalizedString(@"question17bA1", nil),NSLocalizedString(@"question17bA2", nil),nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,13 +65,19 @@
 {
 	return 1;
 }
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+    if (pickerView==self.question17aA) {
+        [self.imi_cModelController.gloableData setObject:[NSNumber numberWithInt:[self.question17aA selectedRowInComponent:0]] forKeyedSubscript:@"question17aAnswer"];
+        self.question17bL.hidden=self.question17bA.hidden=![self.question17aA selectedRowInComponent:0];
+    }
+}
 -(void)setImi_cResults{
     NSInteger question17bAValue;
     NSInteger selectedRow=[self.question17bA selectedRowInComponent:0];
-    if (!selectedRow) {
+    if (self.question17bA.isHidden) {
         question17bAValue=8;
     } else {
-        question17bAValue=selectedRow-1;
+        question17bAValue=selectedRow;
     }
     self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d",[self.question17aA selectedRowInComponent:0]],[NSString stringWithFormat:@"%d", question17bAValue], nil];
 }

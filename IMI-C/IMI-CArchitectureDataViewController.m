@@ -7,7 +7,7 @@
 //
 
 #import "IMI-CArchitectureDataViewController.h"
-
+#import "IMI_CModelController.h"
 @interface IMI_CArchitectureDataViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *ArchitectureLabel;
 @property (weak, nonatomic) IBOutlet UILabel *question51Label;
@@ -37,7 +37,8 @@
     self.question51Label.text=NSLocalizedString(@"question51Label", nil);
     self.question51AnswerArray = [NSArray arrayWithObjects: NSLocalizedString(@"attractiveneutralunattractiveNA1", nil),NSLocalizedString(@"attractiveneutralunattractiveNA2", nil),NSLocalizedString(@"attractiveneutralunattractiveNA3", nil),nil];
     self.question52Label.text=NSLocalizedString(@"question52Label", nil);
-    self.question52AnswerArray = [NSArray arrayWithObjects: NSLocalizedString(@"question52Answer8", nil),NSLocalizedString(@"question52Answer0", nil),NSLocalizedString(@"question52Answer1", nil),NSLocalizedString(@"question52Answer2", nil),NSLocalizedString(@"question52Answer3", nil),NSLocalizedString(@"question52Answer4", nil),nil];
+    self.question52AnswerArray = [NSArray arrayWithObjects:NSLocalizedString(@"question52Answer0", nil),NSLocalizedString(@"question52Answer1", nil),NSLocalizedString(@"question52Answer2", nil),NSLocalizedString(@"question52Answer3", nil),NSLocalizedString(@"question52Answer4", nil),nil];
+    self.question52Label.hidden=self.question52Answer.hidden=[[self.imi_cModelController.gloableData objectForKeyedSubscript:@"isQuestion29aNAnobuildingsOn"] boolValue];
 }
 
 - (void)didReceiveMemoryWarning
@@ -66,9 +67,8 @@
 }
 -(void)setImi_cResults{
     NSInteger question52AnswerValue=8;
-    NSInteger question52SelectedRow=[self.question52Answer selectedRowInComponent:0];
-    if (question52SelectedRow) {
-        question52AnswerValue=[self.question52Answer selectedRowInComponent:0]-1;
+    if (!self.question52Answer.isHidden) {
+        question52AnswerValue=[self.question52Answer selectedRowInComponent:0];
     }
     self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", [self.question51Answer selectedRowInComponent:0]],[NSString stringWithFormat:@"%d", question52AnswerValue], nil];
 }

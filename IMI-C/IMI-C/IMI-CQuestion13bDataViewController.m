@@ -19,6 +19,8 @@
 @property (weak, nonatomic) IBOutlet UISwitch *question13cOfficeA;
 @property (weak, nonatomic) IBOutlet UILabel *question13cRestaurantsLL;
 @property (weak, nonatomic) IBOutlet UISwitch *question13cRestaurantsLA;
+@property (weak, nonatomic) IBOutlet UILabel *Question13cServiceLabel;
+@property (weak, nonatomic) IBOutlet UISwitch *Question13cServiceAnswer;
 @property (weak, nonatomic) IBOutlet UILabel *question13cOtherL;
 @property (weak, nonatomic) IBOutlet UISwitch *question13cOtherA;
 - (IBAction)question13cOtherAction:(UISwitch *)sender;
@@ -58,6 +60,7 @@
     self.question13cRetailL.text=NSLocalizedString(@"question13cRetailL", nil);
     self.question13cOfficeL.text=NSLocalizedString(@"question13cOfficeL", nil);
     self.question13cRestaurantsLL.text=NSLocalizedString(@"question13cRestaurantsLL", nil);
+    self.Question13cServiceLabel.text=NSLocalizedString(@"Question13cServiceLabel", nil);
     self.question13cOtherL.text=NSLocalizedString(@"question13cOtherL", nil);
     self.question13cOtherText.placeholder=NSLocalizedString(@"Ifother", nil);
     self.quetion13dL.text=NSLocalizedString(@"quetion13dL", nil);
@@ -96,6 +99,8 @@
     self.question13cOfficeA.hidden=!isYes;
     self.question13cRestaurantsLL.hidden=!isYes;
     self.question13cRestaurantsLA.hidden=!isYes;
+    self.Question13cServiceLabel.hidden=!isYes;
+    self.Question13cServiceAnswer.hidden=!isYes;
     self.question13cOtherL.hidden=!isYes;
     self.question13cOtherA.hidden=!isYes;
     self.question13cOtherText.hidden=!isYes||![self.question13cOtherA isOn];
@@ -118,7 +123,7 @@
     } else {
         question13bAnswerValue=selectedRow-1;
     }
-    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d",question13bAnswerValue],[NSString stringWithFormat:@"%d",[self.question13cRetailA isOn]],[NSString stringWithFormat:@"%d",[self.question13cOfficeA isOn]],[NSString stringWithFormat:@"%d",[self.question13cRestaurantsLA isOn]],[NSString stringWithFormat:@"%d",[self.question13cOtherA isOn]],self.question13cOtherText.text,[NSString stringWithFormat:@"%d",[self.quetion13dOfficeA isOn]],[NSString stringWithFormat:@"%d",[self.quetion13dCommercialA isOn]],[NSString stringWithFormat:@"%d",[self.quetion13dResidentialA isOn]],[NSString stringWithFormat:@"%d",[self.quetion13dOtherA isOn]],self.quetion13dOtherText.text, nil];
+    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d",question13bAnswerValue],[NSString stringWithFormat:@"%d",[self.question13cRetailA isOn]],[NSString stringWithFormat:@"%d",[self.question13cOfficeA isOn]],[NSString stringWithFormat:@"%d",[self.question13cRestaurantsLA isOn]],[NSString stringWithFormat:@"%d",[self.Question13cServiceAnswer isOn]],[NSString stringWithFormat:@"%d",[self.question13cOtherA isOn]],self.question13cOtherText.text,[NSString stringWithFormat:@"%d",[self.quetion13dOfficeA isOn]],[NSString stringWithFormat:@"%d",[self.quetion13dCommercialA isOn]],[NSString stringWithFormat:@"%d",[self.quetion13dResidentialA isOn]],[NSString stringWithFormat:@"%d",[self.quetion13dOtherA isOn]],self.quetion13dOtherText.text, nil];
 }
 
 - (IBAction)question13cOtherAction:(UISwitch *)sender {

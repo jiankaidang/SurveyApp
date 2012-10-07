@@ -7,7 +7,7 @@
 //
 
 #import "IMI-CQuestion17fDataViewController.h"
-
+#import "IMI_CModelController.h"
 @interface IMI_CQuestion17fDataViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *question17fL;
 @property (weak, nonatomic) IBOutlet UILabel *ParkedcarsL;
@@ -22,6 +22,8 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *FenceorguardrailA;
 @property (weak, nonatomic) IBOutlet UILabel *question17fOtherL;
 @property (weak, nonatomic) IBOutlet UIPickerView *question17fOtherA;
+@property (weak, nonatomic) IBOutlet UITextField *question17fOtherText;
+@property (weak, nonatomic) IBOutlet UILabel *SkiptonextpageLabel;
 @property (nonatomic, retain) NSArray *question17fAArray;
 @end
 
@@ -47,7 +49,12 @@
     self.StreettreesL.text=NSLocalizedString(@"StreettreesL", nil);
     self.FenceorguardrailL.text=NSLocalizedString(@"FenceorguardrailL", nil);
     self.question17fOtherL.text=NSLocalizedString(@"question17fOtherL", nil);
-    self.question17fAArray = [NSArray arrayWithObjects: NSLocalizedString(@"yesnoNA8", nil),NSLocalizedString(@"yesnoNA0", nil),NSLocalizedString(@"yesnoNA1", nil),nil];
+    self.question17fOtherText.placeholder=NSLocalizedString(@"Ifother", nil);
+    self.question17fAArray = [NSArray arrayWithObjects:NSLocalizedString(@"yesnoNA0", nil),NSLocalizedString(@"yesnoNA1", nil),nil];
+    self.question17fL.hidden=self.ParkedcarsL.hidden=self.ParkedcarsA.hidden=self.LandscapingL.hidden=self.LandscapingA.hidden=self.BollardsL.hidden=self.BollardsA.hidden=self.StreettreesL.hidden=self.StreettreesA.hidden=self.FenceorguardrailL.hidden=self.FenceorguardrailA.hidden=self.question17fOtherL.hidden=self.question17fOtherA.hidden=![[self.imi_cModelController.gloableData objectForKeyedSubscript:@"question17aAnswer"] boolValue];
+    self.question17fOtherText.hidden=![[self.imi_cModelController.gloableData objectForKeyedSubscript:@"question17aAnswer"] boolValue]||![self.question17fOtherA selectedRowInComponent:0];
+    self.SkiptonextpageLabel.text=NSLocalizedString(@"SkiptonextpageLabel", nil);
+    self.SkiptonextpageLabel.hidden=[[self.imi_cModelController.gloableData objectForKeyedSubscript:@"question17aAnswer"] boolValue];
 }
 
 - (void)didReceiveMemoryWarning
@@ -68,15 +75,20 @@
 {
 	return 1;
 }
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+    if (pickerView==self.question17fOtherA) {
+        self.question17fOtherText.hidden=![pickerView selectedRowInComponent:0];
+    }
+}
 -(void)setImi_cResults{
-    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", [self getPickerValue:self.ParkedcarsA]],[NSString stringWithFormat:@"%d", [self getPickerValue:self.LandscapingA]],[NSString stringWithFormat:@"%d", [self getPickerValue:self.BollardsA]],[NSString stringWithFormat:@"%d", [self getPickerValue:self.StreettreesA]],[NSString stringWithFormat:@"%d", [self getPickerValue:self.FenceorguardrailA]],[NSString stringWithFormat:@"%d", [self getPickerValue:self.question17fOtherA]], nil];
+    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", [self getPickerValue:self.ParkedcarsA]],[NSString stringWithFormat:@"%d", [self getPickerValue:self.LandscapingA]],[NSString stringWithFormat:@"%d", [self getPickerValue:self.BollardsA]],[NSString stringWithFormat:@"%d", [self getPickerValue:self.StreettreesA]],[NSString stringWithFormat:@"%d", [self getPickerValue:self.FenceorguardrailA]],[NSString stringWithFormat:@"%d", [self getPickerValue:self.question17fOtherA]],self.question17fOtherText.text, nil];
 }
 -(NSInteger)getPickerValue:(UIPickerView *)pickerView{
     NSInteger row=[pickerView selectedRowInComponent:0];
-    if (!row) {
+    if (pickerView.isHidden) {
         return 8;
     } else {
-        return row-1;
+        return row;
     }
 }
 @end

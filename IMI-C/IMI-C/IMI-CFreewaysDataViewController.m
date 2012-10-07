@@ -14,7 +14,9 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *question47Answer;
 @property (weak, nonatomic) IBOutlet UILabel *TrafficFeaturesLabel;
 @property (weak, nonatomic) IBOutlet UILabel *question48Label;
+@property (weak, nonatomic) IBOutlet UISwitch *question48Switch;
 @property (weak, nonatomic) IBOutlet UITextField *question48Answer;
+- (IBAction)question48Action:(UISwitch *)sender;
 @property (nonatomic, retain) NSArray *question47AnswerArray;
 @end
 
@@ -61,7 +63,10 @@
 	return 1;
 }
 -(void)setImi_cResults{
-    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", [self.question47Answer selectedRowInComponent:0]],self.question48Answer.text, nil];
+    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", [self.question47Answer selectedRowInComponent:0]],[NSString stringWithFormat:@"%d", [self.question48Switch isOn]],self.question48Answer.text, nil];
 }
 
+- (IBAction)question48Action:(UISwitch *)sender {
+    self.question48Answer.hidden=![sender isOn];
+}
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "IMI-CStreetscapeDataViewController.h"
-
+#import "IMI_CModelController.h"
 @interface IMI_CStreetscapeDataViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *StreetscapeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *question31Label;
@@ -40,9 +40,10 @@
     self.question31Label.text=NSLocalizedString(@"question31Label", nil);
     self.question31AnswerArray = [NSArray arrayWithObjects: NSLocalizedString(@"question31Answer0", nil),NSLocalizedString(@"question31Answer1", nil),nil];
     self.question32Label.text=NSLocalizedString(@"question32Label", nil);
-    self.question32AnswerArray = [NSArray arrayWithObjects: NSLocalizedString(@"largemediumsmallNA8", nil),NSLocalizedString(@"largemediumsmallNA0", nil),NSLocalizedString(@"largemediumsmallNA1", nil),NSLocalizedString(@"largemediumsmallNA2", nil),nil];
+    self.question32AnswerArray = [NSArray arrayWithObjects:NSLocalizedString(@"largemediumsmallNA0", nil),NSLocalizedString(@"largemediumsmallNA1", nil),NSLocalizedString(@"largemediumsmallNA2", nil),nil];
     self.question33Label.text=NSLocalizedString(@"question33Label", nil);
     self.question33AnswerArray = [NSArray arrayWithObjects: NSLocalizedString(@"somealotfewnoneNA8", nil),NSLocalizedString(@"somealotfewnoneNA0", nil),NSLocalizedString(@"somealotfewnoneNA1", nil),NSLocalizedString(@"somealotfewnoneNA2", nil),nil];
+    self.question32Label.hidden=self.question32Answer.hidden=[[self.imi_cModelController.gloableData objectForKeyedSubscript:@"isQuestion29aNAnobuildingsOn"] boolValue];
 }
 
 - (void)didReceiveMemoryWarning
@@ -79,13 +80,12 @@
 -(void)setImi_cResults{
     NSInteger question32AnswerValue=8;
     NSInteger question33AnswerValue=8;
-    NSInteger question32AnswerselectedRow=[self.question32Answer selectedRowInComponent:0];
-    if (question32AnswerselectedRow) {
+    if (!self.question32Answer.isHidden) {
         question32AnswerValue=[self.question32Answer selectedRowInComponent:0];
     }
     NSInteger question33AnswerselectedRow=[self.question33Answer selectedRowInComponent:0];
     if (question33AnswerselectedRow) {
-        question33AnswerValue=[self.question33Answer selectedRowInComponent:0];
+        question33AnswerValue=[self.question33Answer selectedRowInComponent:0]-1;
     }
     self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", [self.question31Answer selectedRowInComponent:0]],[NSString stringWithFormat:@"%d", question32AnswerValue],[NSString stringWithFormat:@"%d", question33AnswerValue], nil];
 }

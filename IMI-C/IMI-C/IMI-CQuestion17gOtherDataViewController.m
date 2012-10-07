@@ -7,7 +7,7 @@
 //
 
 #import "IMI-CQuestion17gOtherDataViewController.h"
-
+#import "IMI_CModelController.h"
 @interface IMI_CQuestion17gOtherDataViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *question17gOtherL;
 @property (weak, nonatomic) IBOutlet UIPickerView *question17gOtherA;
@@ -39,8 +39,10 @@
     self.question17gOtherText.placeholder=NSLocalizedString(@"Ifother", nil);
     self.question17hLabel.text=NSLocalizedString(@"question17hLabel", nil);
     self.question17gOtherAArray = [NSArray arrayWithObjects: NSLocalizedString(@"question17gA0", nil),NSLocalizedString(@"question17gA1", nil),NSLocalizedString(@"question17gA2", nil),nil];
-    self.question17hAnswerArray = [NSArray arrayWithObjects: NSLocalizedString(@"question17hAnswer8", nil),NSLocalizedString(@"question17hAnswer0", nil),NSLocalizedString(@"question17hAnswer1", nil),NSLocalizedString(@"question17hAnswer2", nil),nil];
+    self.question17hAnswerArray = [NSArray arrayWithObjects:NSLocalizedString(@"question17hAnswer0", nil),NSLocalizedString(@"question17hAnswer1", nil),NSLocalizedString(@"question17hAnswer2", nil),nil];
     self.question18Label.text=NSLocalizedString(@"question18Label", nil);
+    self.question17gOtherL.hidden=self.question17gOtherA.hidden=self.question17hLabel.hidden=self.question17hAnswer.hidden=![[self.imi_cModelController.gloableData objectForKeyedSubscript:@"question17aAnswer"] boolValue];
+    self.question17gOtherText.hidden=![[self.imi_cModelController.gloableData objectForKeyedSubscript:@"question17aAnswer"] boolValue]||![self.question17gOtherA selectedRowInComponent:0];
 
 }
 
@@ -69,17 +71,20 @@
 	return 1;
 }
 -(void)setImi_cResults{
-    NSInteger question17hAnswerAValue;
-    NSInteger question17hAnswerAValueValueselectedRow=[self.question17hAnswer selectedRowInComponent:0];
-    if (!question17hAnswerAValueValueselectedRow) {
-        question17hAnswerAValue=8;
-    } else {
-        question17hAnswerAValue=question17hAnswerAValueValueselectedRow-1;
-    }
-    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", [self.question17gOtherA selectedRowInComponent:0]],self.question17gOtherText.text,[NSString stringWithFormat:@"%d", question17hAnswerAValue],[NSString stringWithFormat:@"%d", [self.question18Answer isOn]], nil];
+    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", [self getPickerValue:self.question17gOtherA]],self.question17gOtherText.text,[NSString stringWithFormat:@"%d", [self getPickerValue:self.question17hAnswer]],[NSString stringWithFormat:@"%d", [self.question18Answer isOn]], nil];
 }
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    self.question17gOtherText.hidden=!row;
+    if (pickerView==self.question17gOtherA) {
+        self.question17gOtherText.hidden=!row;
+    }
+}
+-(NSInteger)getPickerValue:(UIPickerView *)pickerView{
+    NSInteger row=[pickerView selectedRowInComponent:0];
+    if (pickerView.isHidden) {
+        return 8;
+    } else {
+        return row;
+    }
 }
 @end

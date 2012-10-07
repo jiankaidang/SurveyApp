@@ -47,7 +47,7 @@
 	// Do any additional setup after loading the view.
     self.streetL.text=NSLocalizedString(@"streetL", nil);
     self.q11L.text=NSLocalizedString(@"q11L", nil);
-    self.q11AArray = [NSArray arrayWithObjects: NSLocalizedString(@"q11A1", nil),NSLocalizedString(@"q11A2", nil),nil];
+    self.q11AArray = [NSArray arrayWithObjects: NSLocalizedString(@"q11A2", nil),NSLocalizedString(@"q11A1", nil),nil];
     self.intendedL.text=NSLocalizedString(@"intendedL", nil);
     self.alleyL.text=NSLocalizedString(@"alleyL", nil);
     self.narrowL.text=NSLocalizedString(@"narrowL", nil);
@@ -79,7 +79,7 @@
 	return 1;
 }
 -(void)setImi_cResults{
-    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d",[self.q11A selectedRowInComponent:0]+1],[NSString stringWithFormat:@"%d",[self.intendedA isOn]],[NSString stringWithFormat:@"%d",[self.alleyA isOn]],[NSString stringWithFormat:@"%d",[self.narrowA isOn]],[NSString stringWithFormat:@"%d",[self.stairsA isOn]],self.q12aA.text,self.q12bA.text,self.q12cA.text, nil];
+    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d",2-[self.q11A selectedRowInComponent:0]],[NSString stringWithFormat:@"%d",[self.intendedA isOn]],[NSString stringWithFormat:@"%d",[self.alleyA isOn]],[NSString stringWithFormat:@"%d",[self.narrowA isOn]],[NSString stringWithFormat:@"%d",[self.stairsA isOn]],self.q12aA.text,self.q12bA.text,self.q12cA.text, nil];
 }
 
 

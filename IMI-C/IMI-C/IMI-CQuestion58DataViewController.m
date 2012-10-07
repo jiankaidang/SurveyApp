@@ -19,8 +19,7 @@
 @property (weak, nonatomic) IBOutlet UISwitch *question60Answer;
 @property (weak, nonatomic) IBOutlet UILabel *question61Label;
 @property (weak, nonatomic) IBOutlet UISwitch *question61Answer;
-@property (weak, nonatomic) IBOutlet UILabel *CommentsLabel;
-@property (weak, nonatomic) IBOutlet UITextField *CommentsAnswer;
+@property (weak, nonatomic) IBOutlet UILabel *GotonextpagetoinputcommentsLabel;
 @property (nonatomic, retain) NSArray *question58AnswerArray;
 @end
 
@@ -46,7 +45,7 @@
     self.OlfactoryLabel.text=NSLocalizedString(@"OlfactoryLabel", nil);
     self.question60Label.text=NSLocalizedString(@"question60Label", nil);
     self.question61Label.text=NSLocalizedString(@"question61Label", nil);
-    self.CommentsLabel.text=NSLocalizedString(@"CommentsLabel", nil);
+    self.GotonextpagetoinputcommentsLabel.text=NSLocalizedString(@"GotonextpagetoinputcommentsLabel", nil);
 }
 
 - (void)didReceiveMemoryWarning
@@ -68,7 +67,7 @@
 	return 1;
 }
 -(void)setImi_cResults{
-    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", [self.question58Answer selectedRowInComponent:0]],[NSString stringWithFormat:@"%d", [self.question59Answer isOn]],[NSString stringWithFormat:@"%d", [self.question60Answer isOn]],[NSString stringWithFormat:@"%d", [self.question61Answer isOn]],self.CommentsAnswer.text, nil];
+    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", [self.question58Answer selectedRowInComponent:0]],[NSString stringWithFormat:@"%d", [self.question59Answer isOn]],[NSString stringWithFormat:@"%d", [self.question60Answer isOn]],[NSString stringWithFormat:@"%d", [self.question61Answer isOn]], nil];
 }
 
 @end

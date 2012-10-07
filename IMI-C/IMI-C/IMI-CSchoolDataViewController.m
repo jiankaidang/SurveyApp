@@ -83,6 +83,7 @@
     self.GymfitnesscenterL.text=NSLocalizedString(@"GymfitnesscenterL", nil);
     self.MovietheaterL.text=NSLocalizedString(@"MovietheaterL", nil);
     self.RecreationalotherL.text=NSLocalizedString(@"RecreationalotherL", nil);
+    self.RecreationalotherText.placeholder=NSLocalizedString(@"Ifother", nil);
     self.PublicCivicBuildingL.text=NSLocalizedString(@"PublicCivicBuildingL", nil);
     self.CommunitycenterorlibraryL.text=NSLocalizedString(@"CommunitycenterorlibraryL", nil);
     self.MuseumauditoriumconcerthalltheaterL.text=NSLocalizedString(@"MuseumauditoriumconcerthalltheaterL", nil);

@@ -7,7 +7,7 @@
 //
 
 #import "IMI-CQuestioin14bDataViewController.h"
-
+#import "IMI_CModelController.h"
 @interface IMI_CQuestioin14bDataViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *question14bL;
 @property (weak, nonatomic) IBOutlet UIPickerView *question14bA;
@@ -33,9 +33,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.question14bL.text=NSLocalizedString(@"question14bL", nil);
-    self.question14bAArray = [NSArray arrayWithObjects: NSLocalizedString(@"question14b8", nil),NSLocalizedString(@"question14b0", nil),NSLocalizedString(@"question14b1", nil),NSLocalizedString(@"question14b2", nil),nil];
+    self.question14bAArray = [NSArray arrayWithObjects:NSLocalizedString(@"question14b0", nil),NSLocalizedString(@"question14b1", nil),NSLocalizedString(@"question14b2", nil),nil];
     self.question14cL.text=NSLocalizedString(@"question14cL", nil);
     self.question14cAArray = [NSArray arrayWithObjects: NSLocalizedString(@"question14c8", nil),NSLocalizedString(@"question14c0", nil),NSLocalizedString(@"question14c1", nil),NSLocalizedString(@"question14c2", nil),nil];
+    self.question14bL.hidden=self.question14bA.hidden=![[self.imi_cModelController.gloableData objectForKeyedSubscript:@"question14a"] boolValue];
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,17 +66,17 @@
 -(void)setImi_cResults{
     NSInteger question14bAValue;
     NSInteger selectedRow=[self.question14bA selectedRowInComponent:0];
-    if (!selectedRow) {
+    if (self.question14bA.isHidden) {
         question14bAValue=8;
     } else {
-        question14bAValue=selectedRow-1;
+        question14bAValue=selectedRow;
     }
     NSInteger question14cAValue;
     NSInteger question14cAselectedRow=[self.question14cA selectedRowInComponent:0];
     if (!question14cAselectedRow) {
         question14cAValue=8;
     } else {
-        question14cAValue=selectedRow-1;
+        question14cAValue=question14cAselectedRow-1;
     }
     self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", question14bAValue],[NSString stringWithFormat:@"%d",question14cAValue], nil];
 }

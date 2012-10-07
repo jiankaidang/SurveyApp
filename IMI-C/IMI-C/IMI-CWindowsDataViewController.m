@@ -7,7 +7,7 @@
 //
 
 #import "IMI-CWindowsDataViewController.h"
-
+#import "IMI_CModelController.h"
 @interface IMI_CWindowsDataViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *WindowsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *question34Label;
@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *OtherFeaturesofBuildingsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *question35Label;
 @property (weak, nonatomic) IBOutlet UIPickerView *question35Answer;
+@property (weak, nonatomic) IBOutlet UILabel *SkiptonextpageLabel;
 @property (nonatomic, retain) NSArray *windowsAnswerArray;
 @end
 
@@ -35,9 +36,12 @@
 	// Do any additional setup after loading the view.
     self.WindowsLabel.text=NSLocalizedString(@"WindowsLabel", nil);
     self.question34Label.text=NSLocalizedString(@"question34Label", nil);
-    self.windowsAnswerArray = [NSArray arrayWithObjects: NSLocalizedString(@"somealotfewnoneNA8", nil),NSLocalizedString(@"somealotfewnoneNA0", nil),NSLocalizedString(@"somealotfewnoneNA1", nil),NSLocalizedString(@"somealotfewnoneNA2", nil),nil];
+    self.windowsAnswerArray = [NSArray arrayWithObjects:NSLocalizedString(@"somealotfewnoneNA0", nil),NSLocalizedString(@"somealotfewnoneNA1", nil),NSLocalizedString(@"somealotfewnoneNA2", nil),nil];
     self.OtherFeaturesofBuildingsLabel.text=NSLocalizedString(@"OtherFeaturesofBuildingsLabel", nil);
     self.question35Label.text=NSLocalizedString(@"question35Label", nil);
+    self.WindowsLabel.hidden=self.question34Label.hidden=self.question34Answer.hidden=self.OtherFeaturesofBuildingsLabel.hidden=self.question35Label.hidden=self.question35Answer.hidden=[[self.imi_cModelController.gloableData objectForKeyedSubscript:@"isQuestion29aNAnobuildingsOn"] boolValue];
+    self.SkiptonextpageLabel.text=NSLocalizedString(@"SkiptonextpageLabel", nil);
+    self.SkiptonextpageLabel.hidden=![[self.imi_cModelController.gloableData objectForKeyedSubscript:@"isQuestion29aNAnobuildingsOn"] boolValue];
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,13 +65,11 @@
 -(void)setImi_cResults{
     NSInteger question34AnswerValue=8;
     NSInteger question35AnswerValue=8;
-    NSInteger question34AnswerselectedRow=[self.question34Answer selectedRowInComponent:0];
-    if (question34AnswerselectedRow) {
-        question34AnswerValue=[self.question34Answer selectedRowInComponent:0]-1;
+    if (!self.question34Answer.isHidden) {
+        question34AnswerValue=[self.question34Answer selectedRowInComponent:0];
     }
-    NSInteger question35AnswerselectedRow=[self.question35Answer selectedRowInComponent:0];
-    if (question35AnswerselectedRow) {
-        question35AnswerValue=[self.question35Answer selectedRowInComponent:0]-1;
+    if (!self.question35Answer.isHidden) {
+        question35AnswerValue=[self.question35Answer selectedRowInComponent:0];
     }
     self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", question34AnswerValue],[NSString stringWithFormat:@"%d", question35AnswerValue], nil];
 }

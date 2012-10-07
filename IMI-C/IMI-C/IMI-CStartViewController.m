@@ -126,7 +126,7 @@ enum {
 
 - (void)sendDidStopWithStatus:(NSString *)statusString
 {
-    [[[UIAlertView alloc] initWithTitle:@"Upload Survey Results" message:@"Upload succeeded!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
+    [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"uploadButton", nil) message:NSLocalizedString(@"Uploadsucceeded", nil) delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
     [[NetworkManager sharedInstance] didStopNetworkOperation];
 }
 

@@ -7,7 +7,7 @@
 //
 
 #import "IMI-CQuestion17gDataViewController.h"
-
+#import "IMI_CModelController.h"
 @interface IMI_CQuestion17gDataViewController ()
 @property (weak, nonatomic) IBOutlet UIPickerView *TreesplantedinthemiddleofthesidewalkA;
 @property (weak, nonatomic) IBOutlet UILabel *TreesplantedinthemiddleofthesidewalkL;
@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *ParkedcarsL;
 @property (weak, nonatomic) IBOutlet UILabel *question17gL;
 @property (weak, nonatomic) IBOutlet UIPickerView *ParkedcarsA;
+@property (weak, nonatomic) IBOutlet UILabel *SkiptonextpageLabel;
 @property (nonatomic, retain) NSArray *question17gAArray;
 @end
 
@@ -42,6 +43,9 @@
     self.ParkedbicyclesormotorcyclesL.text=NSLocalizedString(@"ParkedbicyclesormotorcyclesL", nil);
     self.StreetvendorsorinformalsellersL.text=NSLocalizedString(@"StreetvendorsorinformalsellersL", nil);
     self.TreesplantedinthemiddleofthesidewalkL.text=NSLocalizedString(@"TreesplantedinthemiddleofthesidewalkL", nil);
+    self.question17gL.hidden=self.ParkedcarsL.hidden=self.ParkedcarsA.hidden=self.ParkedbicyclesormotorcyclesL.hidden=self.ParkedbicyclesormotorcyclesA.hidden=self.StreetvendorsorinformalsellersL.hidden=self.StreetvendorsorinformalsellersA.hidden=self.TreesplantedinthemiddleofthesidewalkL.hidden=self.TreesplantedinthemiddleofthesidewalkA.hidden=![[self.imi_cModelController.gloableData objectForKeyedSubscript:@"question17aAnswer"] boolValue];
+    self.SkiptonextpageLabel.text=NSLocalizedString(@"SkiptonextpageLabel", nil);
+    self.SkiptonextpageLabel.hidden=[[self.imi_cModelController.gloableData objectForKeyedSubscript:@"question17aAnswer"] boolValue];
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,6 +67,14 @@
 	return 1;
 }
 -(void)setImi_cResults{
-    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", [self.ParkedcarsA selectedRowInComponent:0]],[NSString stringWithFormat:@"%d", [self.ParkedbicyclesormotorcyclesA selectedRowInComponent:0]],[NSString stringWithFormat:@"%d", [self.StreetvendorsorinformalsellersA selectedRowInComponent:0]],[NSString stringWithFormat:@"%d", [self.TreesplantedinthemiddleofthesidewalkA selectedRowInComponent:0]], nil];
+    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", [self getPickerValue:self.ParkedcarsA]],[NSString stringWithFormat:@"%d", [self getPickerValue:self.ParkedbicyclesormotorcyclesA]],[NSString stringWithFormat:@"%d", [self getPickerValue:self.StreetvendorsorinformalsellersA]],[NSString stringWithFormat:@"%d", [self getPickerValue:self.TreesplantedinthemiddleofthesidewalkA]], nil];
+}
+-(NSInteger)getPickerValue:(UIPickerView *)pickerView{
+    NSInteger row=[pickerView selectedRowInComponent:0];
+    if (pickerView.isHidden) {
+        return 8;
+    } else {
+        return row;
+    }
 }
 @end

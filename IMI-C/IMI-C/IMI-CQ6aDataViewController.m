@@ -7,7 +7,7 @@
 //
 
 #import "IMI-CQ6aDataViewController.h"
-
+#import "IMI_CModelController.h"
 @interface IMI_CQ6aDataViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *q6aT;
 @property (weak, nonatomic) IBOutlet UISwitch *q6aA;
@@ -41,6 +41,7 @@
     self.q6cT.text=NSLocalizedString(@"q6cT", nil);
     self.q7T.text=NSLocalizedString(@"q7T", nil);
     self.q7AArray = [NSArray arrayWithObjects: NSLocalizedString(@"q7A8", nil),NSLocalizedString(@"q7A0", nil),NSLocalizedString(@"q7A1", nil),NSLocalizedString(@"q7A2", nil),nil];
+    self.q6aT.hidden=self.q6aA.hidden=self.q6bT.hidden=self.q6bA.hidden=![[self.imi_cModelController.gloableData objectForKeyedSubscript:@"question5aTrafficsignalIsOn"] boolValue];
 }
 
 - (void)didReceiveMemoryWarning

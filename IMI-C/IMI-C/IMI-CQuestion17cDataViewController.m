@@ -7,12 +7,13 @@
 //
 
 #import "IMI-CQuestion17cDataViewController.h"
-
+#import "IMI_CModelController.h"
 @interface IMI_CQuestion17cDataViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *question17cL;
 @property (weak, nonatomic) IBOutlet UIPickerView *question17cA;
 @property (weak, nonatomic) IBOutlet UILabel *question17dL;
 @property (weak, nonatomic) IBOutlet UIPickerView *question17dA;
+@property (weak, nonatomic) IBOutlet UILabel *SkiptonextpageLabel;
 @property (nonatomic, retain) NSArray *question17cAArray;
 @property (nonatomic, retain) NSArray *question17dAArray;
 @end
@@ -34,8 +35,11 @@
 	// Do any additional setup after loading the view.
     self.question17cL.text=NSLocalizedString(@"question17cL", nil);
     self.question17dL.text=NSLocalizedString(@"question17dL", nil);
-    self.question17cAArray = [NSArray arrayWithObjects: NSLocalizedString(@"question17cA8", nil),NSLocalizedString(@"question17cA0", nil),NSLocalizedString(@"question17cA1", nil),NSLocalizedString(@"question17cA2", nil),nil];
-    self.question17dAArray = [NSArray arrayWithObjects: NSLocalizedString(@"yesnoNA8", nil),NSLocalizedString(@"yesnoNA0", nil),NSLocalizedString(@"yesnoNA1", nil),nil];
+    self.question17cAArray = [NSArray arrayWithObjects:NSLocalizedString(@"question17cA0", nil),NSLocalizedString(@"question17cA1", nil),NSLocalizedString(@"question17cA2", nil),nil];
+    self.question17dAArray = [NSArray arrayWithObjects:NSLocalizedString(@"yesnoNA0", nil),NSLocalizedString(@"yesnoNA1", nil),nil];
+    self.question17cL.hidden=self.question17cA.hidden=self.question17dL.hidden=self.question17dA.hidden=![[self.imi_cModelController.gloableData objectForKeyedSubscript:@"question17aAnswer"] boolValue];
+    self.SkiptonextpageLabel.text=NSLocalizedString(@"SkiptonextpageLabel", nil);
+    self.SkiptonextpageLabel.hidden=[[self.imi_cModelController.gloableData objectForKeyedSubscript:@"question17aAnswer"] boolValue];
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,17 +69,17 @@
 -(void)setImi_cResults{
     NSInteger question17cAValue;
     NSInteger question17cAValueselectedRow=[self.question17cA selectedRowInComponent:0];
-    if (!question17cAValueselectedRow) {
+    if (self.question17cA.isHidden) {
         question17cAValue=8;
     } else {
-        question17cAValue=question17cAValueselectedRow-1;
+        question17cAValue=question17cAValueselectedRow;
     }
     NSInteger question17dAValue;
     NSInteger selectedRow=[self.question17dA selectedRowInComponent:0];
-    if (!selectedRow) {
+    if (self.question17dA.isHidden) {
         question17dAValue=8;
     } else {
-        question17dAValue=selectedRow-1;
+        question17dAValue=selectedRow;
     }
     self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", question17cAValue],[NSString stringWithFormat:@"%d", question17dAValue], nil];
 }

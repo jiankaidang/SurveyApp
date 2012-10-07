@@ -16,4 +16,5 @@
 - (NSUInteger)indexOfViewController:(IMI_CDataViewController *)viewController;
 - (void)submitResults;
 +(void)initResultsFile;
+@property(strong,nonatomic)NSMutableDictionary *gloableData;
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "IMI-CQ5dDataViewController.h"
-
+#import "IMI_CModelController.h"
 @interface IMI_CQ5dDataViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *q5dT;
 @property (weak, nonatomic) IBOutlet UIPickerView *q5dA;
@@ -17,6 +17,7 @@
 @property (nonatomic, retain) NSArray *q5eAArray;
 @property (weak, nonatomic) IBOutlet UILabel *q5fT;
 @property (weak, nonatomic) IBOutlet UISwitch *q5fA;
+@property (weak, nonatomic) IBOutlet UILabel *SkiptonextpageLabel;
 
 @end
 
@@ -40,6 +41,10 @@
     self.q5eT.text=NSLocalizedString(@"q5eT", nil);
     self.q5eAArray = [NSArray arrayWithObjects: NSLocalizedString(@"q5dA0", nil),NSLocalizedString(@"q5dA1", nil),NSLocalizedString(@"q5dA2", nil),nil];
     self.q5fT.text=NSLocalizedString(@"q5fT", nil);
+    self.SkiptonextpageLabel.text=NSLocalizedString(@"SkiptonextpageLabel", nil);
+    self.q5dT.hidden=self.q5dA.hidden=self.q5eT.hidden=self.q5eA.hidden=![[self.imi_cModelController.gloableData objectForKeyedSubscript:@"question5aPedestrianoverpassunderpassbridgeIsOn"] boolValue];
+    self.q5fT.hidden=self.q5fA.hidden=![[self.imi_cModelController.gloableData objectForKeyedSubscript:@"question5aPedestriansignalactivatedIsOn"] boolValue];
+    self.SkiptonextpageLabel.hidden=[[self.imi_cModelController.gloableData objectForKeyedSubscript:@"question5aPedestrianoverpassunderpassbridgeIsOn"] boolValue]||[[self.imi_cModelController.gloableData objectForKeyedSubscript:@"question5aPedestriansignalactivatedIsOn"] boolValue];
 }
 
 - (void)didReceiveMemoryWarning
