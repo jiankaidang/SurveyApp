@@ -43,5 +43,6 @@
 
 - (IBAction)submit:(UIButton *)sender {
     [self.imi_cModelController submitResults];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end
