@@ -15,15 +15,6 @@
 @property (strong, nonatomic) IBOutlet UITextField *observerText;
 @property (strong, nonatomic) IBOutlet UILabel *segmentLabel;
 @property (strong, nonatomic) IBOutlet UITextField *segmentText;
-@property (strong, nonatomic) IBOutlet UILabel *blockLabel;
-@property (strong, nonatomic) IBOutlet UITextField *blockText;
-@property (strong, nonatomic) IBOutlet UILabel *intersectionLabel;
-@property (strong, nonatomic) IBOutlet UITextField *intersectionText;
-@property (strong, nonatomic) IBOutlet UILabel *questions1_6Title;
-@property (strong, nonatomic) IBOutlet UILabel *intersectionTitle;
-@property (strong, nonatomic) IBOutlet UILabel *neighborhoodIdentificationTitle;
-@property (strong, nonatomic) IBOutlet UILabel *question1Title;
-@property (strong, nonatomic) IBOutlet UISwitch *question1Answer;
 
 @end
 
@@ -45,12 +36,6 @@
     self.settingLabel.text=NSLocalizedString(@"settingLabel", nil);
     self.observerLabel.text=NSLocalizedString(@"observerLabel", nil);
     self.segmentLabel.text=NSLocalizedString(@"segmentLabel", nil);
-    self.blockLabel.text=NSLocalizedString(@"blockLabel", nil);
-    self.intersectionLabel.text=NSLocalizedString(@"intersectionLabel", nil);
-    self.questions1_6Title.text=NSLocalizedString(@"questions1_6Title", nil);
-    self.intersectionTitle.text=NSLocalizedString(@"intersectionTitle", nil);
-    self.neighborhoodIdentificationTitle.text=NSLocalizedString(@"neighborhoodIdentificationTitle", nil);
-    self.question1Title.text=NSLocalizedString(@"question1Title", nil);
 
 }
 
@@ -66,7 +51,7 @@
     NSString *dateString=[dateFormatter stringFromDate:date];
     [dateFormatter setTimeStyle:NSDateFormatterShortStyle];
     [dateFormatter setDateStyle:NSDateFormatterNoStyle];
-    self.dataArray = [NSArray arrayWithObjects:dateString,[dateFormatter stringFromDate:date],self.settingText.text,self.observerText.text,self.segmentText.text,self.blockText.text,self.intersectionText.text, [self.question1Answer isOn] ? @"1" : @"0", nil];
+    self.dataArray = [NSArray arrayWithObjects:dateString,[dateFormatter stringFromDate:date],[NSString stringWithFormat:@"%u", arc4random()],self.settingText.text,self.observerText.text,self.segmentText.text, nil];
     [super setImi_cResults];
 }
 @end

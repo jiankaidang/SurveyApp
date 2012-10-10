@@ -40,7 +40,7 @@
     self.question38aLabel.text=NSLocalizedString(@"question38aLabel", nil);
     self.question38aAnswerArray = [NSArray arrayWithObjects: NSLocalizedString(@"question38aAnswer0", nil),NSLocalizedString(@"question38aAnswer1", nil),NSLocalizedString(@"question38aAnswer2", nil),nil];
     self.question38bLabel.text=NSLocalizedString(@"question38bLabel", nil);
-    self.question38bnswerArray = [NSArray arrayWithObjects:NSLocalizedString(@"largemediumsmallNA0", nil),NSLocalizedString(@"largemediumsmallNA1", nil),NSLocalizedString(@"largemediumsmallNA2", nil),nil];
+    self.question38bnswerArray = [NSArray arrayWithObjects:NSLocalizedString(@"question38banswer1", nil),NSLocalizedString(@"question38banswer2", nil),NSLocalizedString(@"question38banswer3", nil),NSLocalizedString(@"question38banswer4", nil),nil];
     self.question38cLabel.text=NSLocalizedString(@"question38cLabel", nil);
     self.question38cnswerArray = [NSArray arrayWithObjects: NSLocalizedString(@"somealotlittleNA1", nil),NSLocalizedString(@"somealotlittleNA2", nil),nil];
 }

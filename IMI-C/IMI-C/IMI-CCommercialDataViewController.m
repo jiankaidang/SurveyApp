@@ -30,6 +30,8 @@
 @property (weak, nonatomic) IBOutlet UISwitch *GasservicestationA;
 @property (weak, nonatomic) IBOutlet UILabel *BicyclerelatedretailL;
 @property (weak, nonatomic) IBOutlet UISwitch *BicyclerelatedretailA;
+@property (weak, nonatomic) IBOutlet UILabel *BankfinancialLabel;
+@property (weak, nonatomic) IBOutlet UISwitch *BankfinancialAnswer;
 @property (weak, nonatomic) IBOutlet UILabel *CommercialotherL;
 @property (weak, nonatomic) IBOutlet UISwitch *CommercialotherA;
 - (IBAction)CommercialotherAction:(UISwitch *)sender;
@@ -63,7 +65,7 @@
     self.CardealershipL.text=NSLocalizedString(@"CardealershipL", nil);
     self.GasservicestationL.text=NSLocalizedString(@"GasservicestationL", nil);
     self.BicyclerelatedretailL.text=NSLocalizedString(@"BicyclerelatedretailL", nil);
-    self.CommercialotherL.text=NSLocalizedString(@"CommercialotherL", nil);
+    self.BankfinancialLabel.text=NSLocalizedString(@"BankfinancialLabel", nil);    self.CommercialotherL.text=NSLocalizedString(@"CommercialotherL", nil);
     self.CommercialotherText.placeholder=NSLocalizedString(@"Ifother", nil);
 }
 
@@ -73,7 +75,7 @@
     // Dispose of any resources that can be recreated.
 }
 -(void)setImi_cResults{
-    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d",[self.SoftgoodretailstoresA isOn]],[NSString stringWithFormat:@"%d",[self.HardgoodretailstoresA isOn]],[NSString stringWithFormat:@"%d",[self.RestaurantsnonfastfoodA isOn]],[NSString stringWithFormat:@"%d",[self.FastfoodA isOn]],[NSString stringWithFormat:@"%d",[self.SmallgrocerystoreA isOn]],[NSString stringWithFormat:@"%d",[self.MediumorlargegrocerystoreA isOn]],[NSString stringWithFormat:@"%d",[self.HotelhospitalityA isOn]],[NSString stringWithFormat:@"%d",[self.CardealershipA isOn]],[NSString stringWithFormat:@"%d",[self.GasservicestationA isOn]],[NSString stringWithFormat:@"%d",[self.BicyclerelatedretailA isOn]],[NSString stringWithFormat:@"%d",[self.CommercialotherA isOn]],self.CommercialotherText.text, nil];
+    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d",[self.SoftgoodretailstoresA isOn]],[NSString stringWithFormat:@"%d",[self.HardgoodretailstoresA isOn]],[NSString stringWithFormat:@"%d",[self.RestaurantsnonfastfoodA isOn]],[NSString stringWithFormat:@"%d",[self.FastfoodA isOn]],[NSString stringWithFormat:@"%d",[self.SmallgrocerystoreA isOn]],[NSString stringWithFormat:@"%d",[self.MediumorlargegrocerystoreA isOn]],[NSString stringWithFormat:@"%d",[self.BankfinancialAnswer isOn]],[NSString stringWithFormat:@"%d",[self.HotelhospitalityA isOn]],[NSString stringWithFormat:@"%d",[self.CardealershipA isOn]],[NSString stringWithFormat:@"%d",[self.GasservicestationA isOn]],[NSString stringWithFormat:@"%d",[self.BicyclerelatedretailA isOn]],[NSString stringWithFormat:@"%d",[self.CommercialotherA isOn]],self.CommercialotherText.text, nil];
 }
 
 - (IBAction)CommercialotherAction:(UISwitch *)sender {

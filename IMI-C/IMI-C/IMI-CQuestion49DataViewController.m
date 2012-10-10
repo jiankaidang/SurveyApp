@@ -92,7 +92,7 @@
             question50bAnswerValue=question50bAnswerSelectedRow-1;
         }
     }
-    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", [self.question49SpeedAnswer isOn]],[NSString stringWithFormat:@"%d", [self.question49RumbleAnswer isOn]],[NSString stringWithFormat:@"%d", [self.question49CurbAnswer isOn]],[NSString stringWithFormat:@"%d", [self.question49TrafficAnswer isOn]],[NSString stringWithFormat:@"%d", [self.question49MedianAnswer isOn]],[NSString stringWithFormat:@"%d", [self.question49OtherAnswer isOn]],self.question49OtherText.text,[NSString stringWithFormat:@"%d", question50aAnswerValue],[NSString stringWithFormat:@"%d", question50bAnswerValue], nil];
+    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", [self.question49SpeedAnswer isOn]],[NSString stringWithFormat:@"%d", [self.question49RumbleAnswer isOn]],[NSString stringWithFormat:@"%d", [self.question49CurbAnswer isOn]],[NSString stringWithFormat:@"%d", [self.question49TrafficAnswer isOn]],[NSString stringWithFormat:@"%d", [self.question49MedianAnswer isOn]],[NSString stringWithFormat:@"%d", [self.question49AngledAnswer isOn]],[NSString stringWithFormat:@"%d", [self.question49OtherAnswer isOn]],self.question49OtherText.text,[NSString stringWithFormat:@"%d", question50aAnswerValue],[NSString stringWithFormat:@"%d", question50bAnswerValue], nil];
 }
 
 - (IBAction)question49OtherAction:(UISwitch *)sender {

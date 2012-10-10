@@ -31,7 +31,7 @@
     self = [super init];
     if (self) {
         // Create the data model.
-        _pageData = [NSArray arrayWithObjects:@"Setting",@"Community",@"StreetCrossing",@"Question4a",@"Question4c",@"Q5d",@"Q6a",@"Q8",@"Q11",@"Residentialbyheight",@"Residentialbytype",@"School",@"Commercial",@"Office",@"Question13b",@"Question13e",@"Question14a",@"Questioin14b",@"Question15",@"Question16",@"Sidewalks",@"Question17c",@"Question17e",@"Question17f",@"Question17g",@"Question17gOther",@"Bicycles",@"Question20",@"MidBlockCrossing",@"Question26",@"StreetTrees",@"Buildings",@"Streetscape",@"Windows",@"Qustion36",@"Parking",@"Question39a",@"Maintenance",@"Question43",@"Freeways",@"Question49",@"Architecture",@"Question53",@"Question55",@"Question58",@"Comments",@"Submit", nil ];
+        _pageData = [NSArray arrayWithObjects:@"Setting",@"Question1_9",@"Community",@"StreetCrossing",@"Question4a",@"Question4c",@"Q5d",@"Q6a",@"Q8",@"Question10_12",@"Q11",@"Residentialbyheight",@"Residentialbytype",@"School",@"Commercial",@"Office",@"Question13b",@"Question13e",@"Question14a",@"Questioin14b",@"Question15",@"Question16",@"Sidewalks",@"Question17c",@"Question17e",@"Question17f",@"Question17g",@"Question17gOther",@"Bicycles",@"Question20",@"MidBlockCrossing",@"Question26",@"StreetTrees",@"Buildings",@"Streetscape",@"Windows",@"Qustion36",@"Parking",@"Question39a",@"Maintenance",@"Question43",@"Freeways",@"Question49",@"Architecture",@"Question53",@"Question55",@"Question58",@"Question1_9",@"Community",@"StreetCrossing",@"Question4a",@"Question4c",@"Q5d",@"Q6a",@"Q8",@"Comments",@"Submit", nil ];
         self.pageDataViewController=[NSMutableArray arrayWithCapacity:[_pageData count]];
         self.gloableData=[NSMutableDictionary dictionary];
     }
@@ -48,6 +48,7 @@
         dataViewController = [storyboard instantiateViewControllerWithIdentifier:[[@"IMI_C" stringByAppendingString:imc_cPageData] stringByAppendingString:@"DataViewController"]];
         dataViewController.dataObject = imc_cPageData;
         dataViewController.imi_cModelController = self;
+        dataViewController.index=index;
         [self.pageDataViewController setObject:dataViewController atIndexedSubscript:index];
         return dataViewController;
     }
@@ -60,7 +61,7 @@
 {   
      // Return the index of the given data view controller.
      // For simplicity, this implementation uses a static array of model objects and the view controller stores the model object; you can therefore use the model object to identify the index.
-    return [self.pageData indexOfObject:viewController.dataObject];
+    return viewController.index;
 }
 
 #pragma mark - Page View Controller Data Source
@@ -113,8 +114,7 @@
     for (int i = 1; i < capacity; i++) {
         [questionNumbers addObject:[NSString stringWithFormat:@"%u", i]];
     }
-    NSMutableArray * titleRow=(NSMutableArray *)[NSMutableArray arrayWithObjects:@"Date", @"Time",@"Setting",@"Observer",@"Segment",@"Block",@"Intersection", nil];
-    [titleRow addObjectsFromArray:questionNumbers];
+    NSMutableArray * titleRow=(NSMutableArray *)[NSMutableArray arrayWithObjects:@"Date", @"Time",@"ID",@"Setting",@"Observer",@"SgmntID",@"Block1",@"Intersc1",@"Monument", @"Gated",@"GateEntr",@"GateAccs",@"Crosswalk",@"WhitLine",@"ColrLine",@"ZebraStp",@"DiffRdSf", @"CmOther",@"CmOtherTxt",@"CrssCnvt",@"MarkSfCn",@"Curbcuts",@"CurbCLoc",@"CurbCond",@"TraffSig", @"StopSign",@"YieldSgn",@"PedActSgn",@"PedAuto",@"PedCntDwn",@"PedSound",@"PedCrsSgn",@"PdUnOvPs", @"TrfPdSfConv",@"PdPassConv",@"PdPassMaint",@"CrssTime",@"CarsLeft",@"Safecros",@"Convcros",@"PedIsle", @"Banners",@"Streetdir",@"Pedstreet",@"Alley",@"Narrow",@"Stairs",@"VehLanes",@"RghtLane", @"LeftLane",@"LowRise",@"MidRise",@"MHghRise",@"HghR1318",@"HghR1924",@"HghR25-40",@"SuperHR", @"SFHdtach",@"SFHatach",@"Townhome",@"CondoApt",@"Vernacular",@"DormUni",@"InfSet",@"ResOther", @"ResOtherTxt",@"Kinder",@"PrimSchl",@"ScndSchl",@"HighSchl",@"College",@"SchOther",@"SchOtherTxt", @"GymFitns",@"MovieTh",@"RecOher",@"RecOherTxt",@"ComCtLib",@"MusTheat",@"PubCivic",@"CivOther", @"CivOtherTxt",@"Religion",@"Medicine",@"InsOther",@"InsOtherTxt",@"SoftGood",@"HardGood",@"Restaurant", @"FastFood",@"SmlGrcer",@"MLGrcer",@"Financl",@"HotelHos",@"Cardeal",@"GasServ",@"BikeRetl", @"CommOthr",@"CommOthrTxt",@"Offices",@"Service",@"OfSerOth",@"OfSerOthTxt",@"LghtInd",@"MdHvInd", @"IndsOthr",@"IndsOthrTxt",@"HarMarin",@"UndevLnd",@"AgricLnd",@"Nature",@"UndrCnstr",@"Other", @"OtherTxt",@"VerMixUs",@"MURetail",@"MUGOff",@"MUGRest",@"MUGServ",@"MUGOther",@"MUGOtherTxt", @"MUUOff",@"MUUComm",@"MUURes",@"MUUOther",@"MUUOtherTxt",@"PredomLU",@"BigBox",@"ShopMall", @"StrpMall",@"DrivThru",@"VacntComm",@"ParkPlay",@"Exercise",@"PlaySprt",@"PlazaSq",@"PubGardn", @"Beach",@"PbSpOthr",@"PbSpOthrTxt",@"AccessPb",@"PubSSze",@"BarsClub",@"AdultUse",@"ChckCash", @"OthrLULU",@"OthrLULUTxt",@"Restarnt",@"CoffShop",@"TeaHse",@"LibBkStr",@"CornerSt",@"ArtGllry", @"WineBar",@"FarnerMk",@"InfSell",@"Sidewalk",@"SdWkComp",@"SdWkCndt",@"SdWkPave",@"Arcades", @"Awnings",@"SWPtcOth",@"SWPtcOthTxt",@"BuffPkCr",@"BuffLndScp",@"BuffBoll",@"BuffStTr",@"BuffFence", @"BuffOthr",@"BuffOthrTxt",@"BarrPkCr",@"BarrBike",@"BarrStVnd",@"BarrTree",@"BarrOthr",@"BarrOthrTxt", @"RaisedMk",@"OthrSdWk",@"BikeLane",@"BkLnType",@"BBrrPkCr",@"BBrrBike",@"BBrrBus",@"BBrrVeh", @"BBrrPeds",@"BBrrOthr",@"BBrrOthrTxt",@"BikePkd",@"BikeRack",@"BkPrkC",@"BkPrkUC",@"BkPrkOthr", @"BkPrkOthrTxt",@"Bikeshre",@"Midblock",@"MbWtLn",@"MbClLn",@"MbZebra",@"MbDfRdSf",@"MbOther", @"MbOtherTxt",@"MbConv",@"FlatSlpe",@"ModrSlpe",@"StpSlpe",@"Dining",@"Benches",@"BusStops", @"Ledges",@"HeatLamp",@"PubRestr",@"StrtTree",@"TreeSize",@"SdWkShde",@"NoBuildings",@"BldgStry1",@"BldgStry23", @"BldgStry48",@"BldgStry812",@"BldgStry1339",@"BldgStry40",@"PrmntBldgH",@"AbndBldg",@"StreetScpe",@"AvgStbck", @"Gates",@"WindBars",@"BlnkWall",@"Transp",@"Podium",@"SurfPkng",@"SizePark",@"PrctPkng", @"ParkStrc",@"Prdusprk",@"Driveway",@"MntBuild",@"MntLndScp",@"Grafitti",@"Litter",@"Dumpster", @"Lighting",@"LghtAdeq",@"LghtAttr",@"Freeway",@"SpLmtPst",@"SpeedLim",@"SpdBump",@"RumbleSp", @"CurbBulb",@"TrafCrcl",@"Median",@"TrCmPark",@"TCOthr",@"TCOthrTxt",@"CulDeSac",@"PedAcsPt", @"Attrtve",@"BldgAge",@"Intrstng",@"StVendor",@"PubArt",@"BillBrd",@"Safepple",@"NumPPl", @"Dogs",@"DmntSmll",@"Pollution",@"Block2",@"Intersc2",@"Monumnt2",@"Gated2",@"GateEntr2",@"GateAccs2",@"Crosswalk2",@"WhitLine2",@"ColrLine2",@"ZebraStp2",@"DiffRdSf2", @"CmOther2",@"CmOtherTxt2",@"CrssCnvt2",@"MarkSfCn2",@"Curbcuts2",@"CurbCLoc2",@"CurbCond2",@"TraffSig2", @"StopSign2",@"YieldSgn2",@"PedActSgn2",@"PedAuto2",@"PedCntDwn2",@"PedSound2",@"PedCrsSgn2",@"PdUnOvPs2", @"TrfPdSfConv2",@"PdPassConv2",@"PdPassMaint2",@"CrssTime2",@"CarsLeft2",@"Safecros2",@"Convcros2",@"PedIsle2",@"Comments", nil];
     [[[CHCSVWriter alloc] initWithCSVFile:[manager resultsFilePath] atomic:NO] writeLineWithFields:titleRow];
 }
 

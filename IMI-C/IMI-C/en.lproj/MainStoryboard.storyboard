@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="11G56" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="7bw-7t-9U0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="11G63" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="7bw-7t-9U0">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
     </dependencies>
@@ -108,41 +108,6 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Intersection" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ucw-Xe-2QC">
-                                        <rect key="frame" x="177" y="195" width="240" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name of Block" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h9E-N7-XJy">
-                                        <rect key="frame" x="177" y="237" width="240" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name of Intersection" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="941-Sz-fzT">
-                                        <rect key="frame" x="177" y="274" width="240" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Neighborhood Identification" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JwP-zB-g8h">
-                                        <rect key="frame" x="92" y="430" width="240" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Answer questions 1-6 based on this end of the segment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="E3V-ns-Xou">
-                                        <rect key="frame" x="182" y="155" width="550" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="mHr-xM-HnJ">
                                         <rect key="frame" x="496" y="19" width="236" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -161,30 +126,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="S6s-6I-nUZ">
-                                        <rect key="frame" x="496" y="233" width="236" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="2XH-Jt-Adt">
-                                        <rect key="frame" x="496" y="271" width="236" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZGv-gQ-YbZ">
-                                        <rect key="frame" x="92" y="480" width="640" height="41"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <string key="text">1. Are there monuments or markers including neighborhood entry signs that indicate that one is entering a special district or area?</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="xsY-ii-g1f">
-                                        <rect key="frame" x="740" y="487" width="79" height="27"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </switch>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
@@ -195,17 +136,8 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <outlet property="blockLabel" destination="h9E-N7-XJy" id="Wta-Jt-qog"/>
-                        <outlet property="blockText" destination="S6s-6I-nUZ" id="XaL-v2-t4c"/>
-                        <outlet property="intersectionLabel" destination="941-Sz-fzT" id="BT8-yH-XDM"/>
-                        <outlet property="intersectionText" destination="2XH-Jt-Adt" id="SQk-SC-UVg"/>
-                        <outlet property="intersectionTitle" destination="Ucw-Xe-2QC" id="wCD-e6-CuV"/>
-                        <outlet property="neighborhoodIdentificationTitle" destination="JwP-zB-g8h" id="d7Q-I5-4gr"/>
                         <outlet property="observerLabel" destination="bdu-w7-otG" id="8hL-2F-pWZ"/>
                         <outlet property="observerText" destination="zf4-ye-D10" id="Duz-oh-PVj"/>
-                        <outlet property="question1Answer" destination="xsY-ii-g1f" id="5sC-Pu-aJB"/>
-                        <outlet property="question1Title" destination="ZGv-gQ-YbZ" id="RH9-CT-ygH"/>
-                        <outlet property="questions1_6Title" destination="E3V-ns-Xou" id="ecL-27-e0p"/>
                         <outlet property="segmentLabel" destination="buN-xZ-0l6" id="r5D-o0-GPl"/>
                         <outlet property="segmentText" destination="HI1-lg-lsG" id="CFV-qh-GCu"/>
                         <outlet property="settingLabel" destination="A26-ub-AtF" id="cGx-f5-ds7"/>
@@ -214,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="862" y="-209"/>
+            <point key="canvasLocation" x="-221" y="759"/>
         </scene>
         <!--Community View Controller-->
         <scene sceneID="84Z-Dg-ZTP">
@@ -614,7 +546,7 @@
                                 <rect key="frame" x="20" y="49" width="984" height="679"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fD0-SW-kHA">
+                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fD0-SW-kHA">
                                         <rect key="frame" x="20" y="20" width="756" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <string key="text">6a. For intersetions with a traffic signal: Is the time between the red light signal and the green light signal sufficient for pedestrians to cross?</string>
@@ -622,7 +554,7 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m7m-UI-RVk">
+                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m7m-UI-RVk">
                                         <rect key="frame" x="20" y="96" width="756" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <string key="text">6b. For intersetions with a traffic signal: Is the time of the yellow light signal sufficient for pedestrians to finish crossing the street?</string>
@@ -638,11 +570,11 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="aog-0E-ILG">
+                                    <switch hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="aog-0E-ILG">
                                         <rect key="frame" x="784" y="31" width="79" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </switch>
-                                    <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="XfP-2o-Jpy">
+                                    <switch hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="XfP-2o-Jpy">
                                         <rect key="frame" x="784" y="107" width="79" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </switch>
@@ -702,7 +634,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="a9P-4N-GyK">
-                                        <rect key="frame" x="20" y="0.0" width="872" height="68"/>
+                                        <rect key="frame" x="20" y="20" width="872" height="68"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <string key="text">8. For an individual who is on this segment, is THE DESIGN OF THE ENVIRONMENT convenient (traffic wise) to cross the street from this segment? Consider children, older adults, and people with disabilities when answering this question.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -710,51 +642,22 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <pickerView contentMode="scaleToFill" id="Vdv-3D-RkX">
-                                        <rect key="frame" x="20" y="70" width="484" height="216"/>
+                                        <rect key="frame" x="20" y="96" width="484" height="216"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <outlet property="dataSource" destination="xqP-8H-aCl" id="Zpc-6i-eRT"/>
                                             <outlet property="delegate" destination="xqP-8H-aCl" id="V0N-1w-DPs"/>
                                         </connections>
                                     </pickerView>
-                                    <pickerView contentMode="scaleToFill" id="3om-mS-LsI">
-                                        <rect key="frame" x="20" y="379" width="484" height="216"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                        <connections>
-                                            <outlet property="dataSource" destination="xqP-8H-aCl" id="VP9-Dd-Biw"/>
-                                            <outlet property="delegate" destination="xqP-8H-aCl" id="YYj-2r-QoT"/>
-                                        </connections>
-                                    </pickerView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="9. Is there a pedestrian island in the middle of the intersection?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MEl-NL-JTy">
-                                        <rect key="frame" x="20" y="287" width="473" height="21"/>
+                                        <rect key="frame" x="20" y="320" width="473" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="10. Does the segment have banners that identify the neighborhood?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DYQ-qa-aHy">
-                                        <rect key="frame" x="20" y="350" width="513" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Answer questions 7-11 while standing at the beginning of the segment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4YA-qA-EsD">
-                                        <rect key="frame" x="20" y="309" width="589" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Neighborhood Identification" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P3n-7t-gIB">
-                                        <rect key="frame" x="20" y="329" width="589" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="KRg-r3-WXf">
-                                        <rect key="frame" x="532" y="284" width="79" height="27"/>
+                                        <rect key="frame" x="574" y="317" width="79" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </switch>
                                 </subviews>
@@ -767,10 +670,6 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <outlet property="NeighborhoodIdentificationLabel" destination="P3n-7t-gIB" id="Kg9-QR-532"/>
-                        <outlet property="q10A" destination="3om-mS-LsI" id="9Jq-JV-IAg"/>
-                        <outlet property="q10T" destination="DYQ-qa-aHy" id="G0V-ps-GBY"/>
-                        <outlet property="q7_11T" destination="4YA-qA-EsD" id="nUk-jo-Mhu"/>
                         <outlet property="q8A" destination="Vdv-3D-RkX" id="XaX-ZB-m8h"/>
                         <outlet property="q8T" destination="a9P-4N-GyK" id="Djd-SY-QXQ"/>
                         <outlet property="q9A" destination="KRg-r3-WXf" id="6Oa-SX-NJU"/>
@@ -779,7 +678,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iLX-tU-rep" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8546" y="-192"/>
+            <point key="canvasLocation" x="7498" y="680"/>
         </scene>
         <!--Data View Controller-->
         <scene sceneID="OfR-rD-8ma">
@@ -5214,7 +5113,7 @@
                                         <rect key="frame" x="759" y="416" width="79" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </switch>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Go to next page to input comments." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KCc-3W-WhT">
+                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Go to next page to input comments." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KCc-3W-WhT">
                                         <rect key="frame" x="20" y="448" width="270" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -5871,7 +5770,164 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="szv-ux-HgK" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18370" y="680"/>
+            <point key="canvasLocation" x="18378" y="680"/>
+        </scene>
+        <!--Question19 Data View Controller-->
+        <scene sceneID="fW6-9M-Bf3">
+            <objects>
+                <viewController storyboardIdentifier="IMI_CQuestion1_9DataViewController" id="qxb-q6-sC2" customClass="IMI_CQuestion1_9DataViewController" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="FHn-8M-sCB">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="ON3-3M-dUP">
+                                <rect key="frame" x="20" y="49" width="984" height="679"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Intersection" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ucw-Xe-2QC">
+                                        <rect key="frame" x="105" y="60" width="240" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name of Block" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h9E-N7-XJy">
+                                        <rect key="frame" x="105" y="102" width="240" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name of Intersection" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="941-Sz-fzT">
+                                        <rect key="frame" x="105" y="139" width="240" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Neighborhood Identification" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JwP-zB-g8h">
+                                        <rect key="frame" x="20" y="295" width="240" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Answer questions 1-6 based on this end of the segment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="E3V-ns-Xou">
+                                        <rect key="frame" x="110" y="20" width="550" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="S6s-6I-nUZ">
+                                        <rect key="frame" x="424" y="98" width="236" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="2XH-Jt-Adt">
+                                        <rect key="frame" x="424" y="136" width="236" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZGv-gQ-YbZ">
+                                        <rect key="frame" x="20" y="345" width="640" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">1. Are there monuments or markers including neighborhood entry signs that indicate that one is entering a special district or area?</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="xsY-ii-g1f">
+                                        <rect key="frame" x="668" y="352" width="79" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97826086960000003" green="0.91848131079999995" blue="0.73914263440000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="blockLabel" destination="h9E-N7-XJy" id="nWi-mo-QBi"/>
+                        <outlet property="blockText" destination="S6s-6I-nUZ" id="DsE-dp-qCF"/>
+                        <outlet property="intersectionLabel" destination="941-Sz-fzT" id="aEq-CB-PFP"/>
+                        <outlet property="intersectionText" destination="2XH-Jt-Adt" id="Saf-KC-heq"/>
+                        <outlet property="intersectionTitle" destination="Ucw-Xe-2QC" id="GBn-a1-sYb"/>
+                        <outlet property="neighborhoodIdentificationTitle" destination="JwP-zB-g8h" id="lKL-O8-PAr"/>
+                        <outlet property="question1Answer" destination="xsY-ii-g1f" id="aAf-ua-8EY"/>
+                        <outlet property="question1Title" destination="ZGv-gQ-YbZ" id="hOy-WI-YgO"/>
+                        <outlet property="questions1_6Title" destination="E3V-ns-Xou" id="X7s-qt-tlF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="efd-g9-2aU" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="854" y="752"/>
+        </scene>
+        <!--Question1012 Data View Controller-->
+        <scene sceneID="jDW-Yj-ZZx">
+            <objects>
+                <viewController storyboardIdentifier="IMI_CQuestion10_12DataViewController" id="QW5-og-vQQ" customClass="IMI_CQuestion10_12DataViewController" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="jGw-he-1PL">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="Jqn-fF-xpE">
+                                <rect key="frame" x="20" y="49" width="984" height="679"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" id="3om-mS-LsI">
+                                        <rect key="frame" x="20" y="107" width="484" height="216"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="QW5-og-vQQ" id="Zri-Ub-tjs"/>
+                                            <outlet property="delegate" destination="QW5-og-vQQ" id="yWJ-1i-Tz8"/>
+                                        </connections>
+                                    </pickerView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="10. Does the segment have banners that identify the neighborhood?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DYQ-qa-aHy">
+                                        <rect key="frame" x="20" y="78" width="513" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Answer questions 7-11 while standing at the beginning of the segment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4YA-qA-EsD">
+                                        <rect key="frame" x="20" y="20" width="589" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Neighborhood Identification" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P3n-7t-gIB">
+                                        <rect key="frame" x="20" y="49" width="589" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97826086960000003" green="0.91848131079999995" blue="0.73914263440000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="NeighborhoodIdentificationLabel" destination="P3n-7t-gIB" id="xcn-bq-oXL"/>
+                        <outlet property="q10A" destination="3om-mS-LsI" id="tBv-jt-J77"/>
+                        <outlet property="q10T" destination="DYQ-qa-aHy" id="4r6-Yv-ohr"/>
+                        <outlet property="q7_11T" destination="4YA-qA-EsD" id="C9v-jo-Won"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r6B-eG-dON" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8546" y="680"/>
         </scene>
         <!--Comments Data View Controller-->
         <scene sceneID="lJG-wZ-nw2">
@@ -6771,21 +6827,28 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hotel/hospitality" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mta-gh-Tuz">
-                                        <rect key="frame" x="130" y="256" width="316" height="21"/>
+                                        <rect key="frame" x="130" y="291" width="316" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Gas/service station" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pSa-tt-8Ik">
-                                        <rect key="frame" x="130" y="329" width="316" height="21"/>
+                                        <rect key="frame" x="130" y="361" width="316" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="   Commercial, other" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tNg-7B-OUx">
-                                        <rect key="frame" x="130" y="396" width="316" height="21"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bank/financial" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tNg-7B-OUx">
+                                        <rect key="frame" x="130" y="256" width="316" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="   Commercial, other" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HLE-gc-Dja">
+                                        <rect key="frame" x="130" y="431" width="316" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -6806,14 +6869,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Car dealership" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sSi-gE-Ar9">
-                                        <rect key="frame" x="153" y="291" width="293" height="21"/>
+                                        <rect key="frame" x="153" y="326" width="293" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bicycle-related retail (bicycle repair shops, etc.) " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="y2N-k5-QRk">
-                                        <rect key="frame" x="90" y="361" width="361" height="21"/>
+                                        <rect key="frame" x="85" y="396" width="361" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -6836,11 +6899,11 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="amI-3K-hkt">
-                                        <rect key="frame" x="454" y="288" width="79" height="27"/>
+                                        <rect key="frame" x="454" y="323" width="79" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="WI2-1A-Zcc">
-                                        <rect key="frame" x="454" y="358" width="79" height="27"/>
+                                        <rect key="frame" x="454" y="393" width="79" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="geQ-RO-W8z">
@@ -6852,22 +6915,26 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="6a7-yf-rQc">
-                                        <rect key="frame" x="454" y="253" width="79" height="27"/>
+                                        <rect key="frame" x="454" y="288" width="79" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="pjU-9I-5Kr">
-                                        <rect key="frame" x="454" y="323" width="79" height="27"/>
+                                        <rect key="frame" x="454" y="358" width="79" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="kPg-e6-eDM">
-                                        <rect key="frame" x="454" y="393" width="79" height="27"/>
+                                        <rect key="frame" x="454" y="253" width="79" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="tqw-Sv-rUC">
+                                        <rect key="frame" x="454" y="428" width="79" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <action selector="CommercialotherAction:" destination="feH-T3-LrG" eventType="valueChanged" id="3wZ-Qa-T9y"/>
+                                            <action selector="CommercialotherAction:" destination="feH-T3-LrG" eventType="valueChanged" id="qcY-Cj-uQ4"/>
                                         </connections>
                                     </switch>
                                     <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="If &quot;other&quot;, please explain." minimumFontSize="17" id="NCi-TF-dyF">
-                                        <rect key="frame" x="90" y="428" width="441" height="30"/>
+                                        <rect key="frame" x="90" y="463" width="441" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -6882,13 +6949,15 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="BankfinancialAnswer" destination="kPg-e6-eDM" id="op3-pn-7k8"/>
+                        <outlet property="BankfinancialLabel" destination="tNg-7B-OUx" id="XEW-Xr-AQp"/>
                         <outlet property="BicyclerelatedretailA" destination="WI2-1A-Zcc" id="hYO-ex-JVH"/>
                         <outlet property="BicyclerelatedretailL" destination="y2N-k5-QRk" id="U56-Lh-WTr"/>
                         <outlet property="CardealershipA" destination="amI-3K-hkt" id="9dw-Af-IMd"/>
                         <outlet property="CardealershipL" destination="sSi-gE-Ar9" id="jYd-pJ-VB0"/>
                         <outlet property="CommercialL" destination="mRS-PN-tCw" id="apE-Kx-L6Q"/>
-                        <outlet property="CommercialotherA" destination="kPg-e6-eDM" id="1IW-bt-WQG"/>
-                        <outlet property="CommercialotherL" destination="tNg-7B-OUx" id="3Zq-XM-Mg7"/>
+                        <outlet property="CommercialotherA" destination="tqw-Sv-rUC" id="bpK-Q7-JVq"/>
+                        <outlet property="CommercialotherL" destination="HLE-gc-Dja" id="S0a-o9-aVy"/>
                         <outlet property="CommercialotherText" destination="NCi-TF-dyF" id="gwp-IN-EDG"/>
                         <outlet property="FastfoodA" destination="mci-C4-C1s" id="WuC-fP-mt0"/>
                         <outlet property="FastfoodL" destination="eyn-wb-HTn" id="Bu5-eR-6bI"/>
@@ -6945,7 +7014,7 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="5c. For intersections with pedestrian signals, are pedestrians given sufficient time to cross?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="p7I-Hs-EzX">
+                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="5c. For intersections with pedestrian signals, are pedestrians given sufficient time to cross?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="p7I-Hs-EzX">
                                         <rect key="frame" x="20" y="563" width="685" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -7090,7 +7159,7 @@
                                         <rect key="frame" x="804" y="531" width="79" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </switch>
-                                    <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="wcd-Nd-5og">
+                                    <switch hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="wcd-Nd-5og">
                                         <rect key="frame" x="804" y="560" width="79" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </switch>
@@ -7262,6 +7331,8 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/IMI_CCommercialDataViewController.h"/>
             <relationships>
                 <relationship kind="action" name="CommercialotherAction:" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="BankfinancialAnswer" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="BankfinancialLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="BicyclerelatedretailA" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="BicyclerelatedretailL" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="CardealershipA" candidateClass="UISwitch"/>
@@ -7659,10 +7730,6 @@
         <class className="IMI_CQ8DataViewController" superclassName="IMI_CDataViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/IMI_CQ8DataViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="NeighborhoodIdentificationLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="q10A" candidateClass="UIPickerView"/>
-                <relationship kind="outlet" name="q10T" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="q7_11T" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="q8A" candidateClass="UIPickerView"/>
                 <relationship kind="outlet" name="q8T" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="q9A" candidateClass="UISwitch"/>
@@ -7676,6 +7743,15 @@
                 <relationship kind="outlet" name="question14bL" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="question14cA" candidateClass="UIPickerView"/>
                 <relationship kind="outlet" name="question14cL" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="IMI_CQuestion10_12DataViewController" superclassName="IMI_CDataViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IMI_CQuestion10_12DataViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="NeighborhoodIdentificationLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="q10A" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="q10T" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="q7_11T" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="IMI_CQuestion13bDataViewController" superclassName="IMI_CDataViewController">
@@ -7857,6 +7933,20 @@
                 <relationship kind="outlet" name="question17hLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="question18Answer" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="question18Label" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="IMI_CQuestion1_9DataViewController" superclassName="IMI_CDataViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IMI_CQuestion1_9DataViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="blockLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="blockText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="intersectionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="intersectionText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="intersectionTitle" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="neighborhoodIdentificationTitle" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="question1Answer" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="question1Title" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="questions1_6Title" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="IMI_CQuestion20DataViewController" superclassName="IMI_CDataViewController">
@@ -8150,17 +8240,8 @@
         <class className="IMI_CSettingDataViewController" superclassName="IMI_CDataViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/IMI_CSettingDataViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="blockLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="blockText" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="intersectionLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="intersectionText" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="intersectionTitle" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="neighborhoodIdentificationTitle" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="observerLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="observerText" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="question1Answer" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="question1Title" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="questions1_6Title" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="segmentLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="segmentText" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="settingLabel" candidateClass="UILabel"/>

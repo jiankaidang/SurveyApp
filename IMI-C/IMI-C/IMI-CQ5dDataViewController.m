@@ -43,8 +43,8 @@
     self.q5fT.text=NSLocalizedString(@"q5fT", nil);
     self.SkiptonextpageLabel.text=NSLocalizedString(@"SkiptonextpageLabel", nil);
     self.q5dT.hidden=self.q5dA.hidden=self.q5eT.hidden=self.q5eA.hidden=![[self.imi_cModelController.gloableData objectForKeyedSubscript:@"question5aPedestrianoverpassunderpassbridgeIsOn"] boolValue];
-    self.q5fT.hidden=self.q5fA.hidden=![[self.imi_cModelController.gloableData objectForKeyedSubscript:@"question5aPedestriansignalactivatedIsOn"] boolValue];
-    self.SkiptonextpageLabel.hidden=[[self.imi_cModelController.gloableData objectForKeyedSubscript:@"question5aPedestrianoverpassunderpassbridgeIsOn"] boolValue]||[[self.imi_cModelController.gloableData objectForKeyedSubscript:@"question5aPedestriansignalactivatedIsOn"] boolValue];
+    //self.q5fT.hidden=self.q5fA.hidden=![[self.imi_cModelController.gloableData objectForKeyedSubscript:@"question5aPedestriansignalactivatedIsOn"] boolValue];
+    //self.SkiptonextpageLabel.hidden=[[self.imi_cModelController.gloableData objectForKeyedSubscript:@"question5aPedestrianoverpassunderpassbridgeIsOn"] boolValue]||[[self.imi_cModelController.gloableData objectForKeyedSubscript:@"question5aPedestriansignalactivatedIsOn"] boolValue];
 }
 
 - (void)didReceiveMemoryWarning
@@ -72,7 +72,13 @@
 	return 1;
 }
 -(void)setImi_cResults{
-    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", [self.q5dA selectedRowInComponent:0]],[NSString stringWithFormat:@"%d",[self.q5eA selectedRowInComponent:0]],[NSString stringWithFormat:@"%d", [self.q5fA isOn]], nil];
+    NSInteger question5dAnswerValue=8;
+    NSInteger question5eAnswerValue=8;
+    if (!self.q5dA.isHidden) {
+        question5dAnswerValue=[self.q5dA selectedRowInComponent:0];
+        question5eAnswerValue=[self.q5eA selectedRowInComponent:0];
+    }
+    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", question5dAnswerValue],[NSString stringWithFormat:@"%d",question5eAnswerValue],[NSString stringWithFormat:@"%d", [self.q5fA isOn]], nil];
 }
 
 @end

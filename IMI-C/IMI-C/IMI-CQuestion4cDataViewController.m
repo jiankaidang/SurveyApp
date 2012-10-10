@@ -104,7 +104,11 @@
     } else {
         question4cAnswerValue=selectedRow-1;
     }
-    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", question4cAnswerValue],[NSString stringWithFormat:@"%d",[self.trafficA isOn]],[NSString stringWithFormat:@"%d",[self.stopA isOn]],[NSString stringWithFormat:@"%d",[self.yieldA isOn]],[NSString stringWithFormat:@"%d",[self.activatedA isOn]],[NSString stringWithFormat:@"%d",[self.automatedA isOn]],[NSString stringWithFormat:@"%d",[self.countdownA isOn]],[NSString stringWithFormat:@"%d",[self.soundA isOn]],[NSString stringWithFormat:@"%d",[self.crossingA isOn]],[NSString stringWithFormat:@"%d",[self.overpassA isOn]],[NSString stringWithFormat:@"%d",[self.q5bA isOn]],[NSString stringWithFormat:@"%d",[self.q5cA isOn]], nil];
+    NSInteger question5bAnswerValue=8;
+    if (!self.q5bA.isHidden) {
+        question5bAnswerValue=[self.q5bA isOn];
+    }
+    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", question4cAnswerValue],[NSString stringWithFormat:@"%d",[self.trafficA isOn]],[NSString stringWithFormat:@"%d",[self.stopA isOn]],[NSString stringWithFormat:@"%d",[self.yieldA isOn]],[NSString stringWithFormat:@"%d",[self.activatedA isOn]],[NSString stringWithFormat:@"%d",[self.automatedA isOn]],[NSString stringWithFormat:@"%d",[self.countdownA isOn]],[NSString stringWithFormat:@"%d",[self.soundA isOn]],[NSString stringWithFormat:@"%d",[self.crossingA isOn]],[NSString stringWithFormat:@"%d",[self.overpassA isOn]],[NSString stringWithFormat:@"%d",question5bAnswerValue]/*,[NSString stringWithFormat:@"%d",[self.q5cA isOn]]*/, nil];
 }
 
 - (IBAction)TrafficsignalAction:(UISwitch *)sender {

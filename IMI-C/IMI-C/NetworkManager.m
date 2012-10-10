@@ -316,7 +316,7 @@
         return [NSString stringWithFormat:@"%@/%@",resultsDirPath, [[[NSFileManager defaultManager] contentsOfDirectoryAtPath:resultsDirPath error:nil] objectAtIndex:0]];
     }
     
-    return [[[[NetworkManager sharedInstance] resultsDir] URLByAppendingPathComponent:[NSString stringWithFormat:@"results%u.csv",arc4random()]] path];
+    return [[[[NetworkManager sharedInstance] resultsDir] URLByAppendingPathComponent:[NSString stringWithFormat:@"IMIC%u.csv",arc4random()]] path];
 }
 -(BOOL)isResultsDirExisted{
     return [[NSFileManager defaultManager] fileExistsAtPath:[[[self applicationDirectory] URLByAppendingPathComponent:@"results"] path]];

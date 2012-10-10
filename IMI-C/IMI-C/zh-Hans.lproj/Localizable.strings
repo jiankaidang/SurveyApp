@@ -6,9 +6,9 @@
  Copyright (c) 2012 Jiankai Dang. All rights reserved.
  */
 "settingLabel"="设置（小区）";
-"observerLabel"="观测员";
+"observerLabel"="观测员(输入姓名首字母缩写)";
 "segmentLabel"="街段号";
-"questions1_6Title"="基于街段的这一端回答问题1-6";
+"questions1_6Title"="基于街段的这一端回答问题1-9";
 "intersectionTitle"="交叉路口";
 "blockLabel"="街段名称";
 "intersectionLabel"="交叉路口名称";
@@ -47,7 +47,7 @@
 "question4aAnswer0"="没有";
 "question4aAnswer1"="部分";
 "question4aAnswer2"="全部";
-"question4bTitle"="4b. 这个接地路沿的位置方便吗？";
+"question4bTitle"="4b. 这个接地路沿方便吗？";
 "question4bAnswer8"="NA";
 "question4bAnswer0"="否";
 "question4bAnswer1"="是";
@@ -72,10 +72,10 @@
 "q5dA1"="部分";
 "q5dA2"="全部";
 "q5eT"="5e. 对那些设有行人天桥/地道的，这些设施是否有较好的维护？";
-"q5fT"="5f. 对有行人信号灯的交叉路口，行人是否有充足的时间过街？回答此问题时，以小孩，老年人以及残疾人为考虑对象。";
+"q5fT"="5f. 行人是否有充足的时间过街？回答此问题时，以小孩，老年人以及残疾人为考虑对象。";
 "q6aT"="6a. 对于有交通信号灯的路口：红绿信号灯之间切换的时间是否足够行人过街？";
 "q6bT"="6b. 对于有交通信号灯的路口：黄色信号灯的时间是否足够行人过街？";
-"q6cT"="6c. 路口的左转车辆是否会对行人造成不安全？";
+"q6cT"="6. 路口的左转车辆是否会对行人造成不安全？";
 "q7T"="7. 对于此街段的行人，从此街段过街的相关环境设计（从交通的角度）是否安全？回答此问题时，以小孩，老年人以及残疾人为考虑对象。";
 "q7A8"="死胡同, N/A";
 "q7A0"="没有";
@@ -150,6 +150,7 @@
 "CardealershipL"="汽车经销处";
 "GasservicestationL"="加油站";
 "BicyclerelatedretailL"="自行车有关的零售店（自行车修理店等）";
+"BankfinancialLabel"="银行/金融";
 "CommercialotherL"="商业用地，其他";
 "OfficeServiceL"="办公/服务";
 "OfficesL"="办公室";
@@ -364,6 +365,11 @@
 "question31Answer0"="没有";
 "question31Answer1"="绝大多数或一些";
 "question32Label"="32. 人行道(或道路)和建筑物之间的平均间隔有多大？";
+"question32Answer0"="没有";
+"question32Answer1"="小";
+"question32Answer2"="中等";
+"question32Answer3"="大";
+"question32Answer4"="特大";
 "largemediumsmallNA8"="NA";
 "largemediumsmallNA0"="小";
 "largemediumsmallNA1"="中等";
@@ -384,6 +390,10 @@
 "question38aAnswer1"="一边";
 "question38aAnswer2"="两边";
 "question38bLabel"="38b. 停车位的平均大小如何？";
+"question38banswer1"="小";
+"question38banswer2"="中等";
+"question38banswer3"="大";
+"question38banswer4"="特大";
 "question38cLabel"="38c. 停车场占整个街段的多少比例？";
 "question39aLabel"="39a. 停车场所在此街段内可见吗？（不包括完全在地面以下的设施）";
 "question39bLabel"="39b. 从地面往停车场的正面看去，什么是主要的用途？";

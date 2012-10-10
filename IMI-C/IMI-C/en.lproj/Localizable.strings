@@ -8,7 +8,7 @@
 "settingLabel"="Setting (Neighborhood)";
 "observerLabel"="Observer (Enter Initials)";
 "segmentLabel"="Segment #";
-"questions1_6Title"="Answer questions 1-6 based on this end of the segment";
+"questions1_6Title"="Answer questions 1-9 based on this end of the segment";
 "intersectionTitle"="Intersection";
 "blockLabel"="Name of Block";
 "intersectionLabel"="Name of Intersection";
@@ -47,7 +47,7 @@
 "question4aAnswer0"="none";
 "question4aAnswer1"="some";
 "question4aAnswer2"="all";
-"question4bTitle"="4b. Is the location of the curb cut convenient?";
+"question4bTitle"="4b. Is the curb cut convenient?";
 "question4bAnswer8"="NA";
 "question4bAnswer0"="no";
 "question4bAnswer1"="yes";
@@ -67,15 +67,15 @@
 "overpassL"="Pedestrian overpass/underpass/bridge";
 "q5bT"="5b. If no, would this intersection be safer or more convenient if there were a traffic or pedestrian signal?";
 "q5cL"="5c. For intersections with pedestrian signals, are pedestrians given sufficient time to cross?";
-"q5dT"="5d. For intersections with pedestrian overpasses/underpasses, is the location of the overpass/underpass convenient?";
+"q5dT"="5c. For intersections with pedestrian overpasses/underpasses, is the location of the overpass/underpass convenient?";
 "q5dA0"="no";
 "q5dA1"="somewhat";
 "q5dA2"="yes";
-"q5eT"="5e. For intersections with pedestrian overpasses/underpasses, are overpasses/underpasses well maintained? ";
-"q5fT"="5f. For intersections with a pedestrian signal, are wait times for crosswalks long enough for pedestrians to get across the street? Consider children, older adults, and people with disabilities when answering this question.";
+"q5eT"="5d. For intersections with pedestrian overpasses/underpasses, are overpasses/underpasses well maintained? ";
+"q5fT"="5e. Are wait times for crosswalks long enough for pedestrians to get across the street? Consider children, older adults, and people with disabilities when answering this question.";
 "q6aT"="6a. For intersetions with a traffic signal: Is the time between the red light signal and the green light signal sufficient for pedestrians to cross?";
 "q6bT"="6b. For intersetions with a traffic signal: Is the time of the yellow light signal sufficient for pedestrians to finish crossing the street?";
-"q6cT"="6c. Do cars turning left make it unsafe for pedestrians to cross this intersection?";
+"q6cT"="6. Do cars turning left make it unsafe for pedestrians to cross this intersection?";
 "q7T"="7. For an individual who is on this segment, is THE DESIGN OF THE ENVIRONMENT safe (traffic wise) to cross the street from this segment? Consider children, older adults, and people with disabilities when answering this question.";
 "q7A8"="cul de sac, N/A";
 "q7A0"="no";
@@ -150,6 +150,7 @@
 "CardealershipL"="Car dealership";
 "GasservicestationL"="Gas/service station";
 "BicyclerelatedretailL"="Bicycle-related retail (bicycle repair shops, etc.) ";
+"BankfinancialLabel"="Bank/financial";
 "CommercialotherL"="Commercial, other";
 "OfficeServiceL"="Office/Service";
 "OfficesL"="Offices";
@@ -236,7 +237,7 @@
 "ArtorcraftgalleriesL"="Art or craft galleries";
 "WinebarsloungesL"="Wine bars/lounges";
 "FarmersmarketL"="Farmers market";
-"InformalsellersL"="Informal sellers that are not officially approved";
+"InformalsellersL"="Informal sellers";
 "SidewalksL"="Sidewalks";
 "question17aL"="17a. How many sides of the street have sidewalks?";
 "question17aA"="count 0 or 1 or 2";
@@ -364,6 +365,11 @@
 "question31Answer0"="no";
 "question31Answer1"="mostly or somewhat";
 "question32Label"="32. What is the average setback between the sidewalk and the buildings, or from street (if no sidewalk)?";
+"question32Answer0"="none";
+"question32Answer1"="small";
+"question32Answer2"="medium";
+"question32Answer3"="large";
+"question32Answer4"="extra large";
 "largemediumsmallNA8"="NA";
 "largemediumsmallNA0"="small";
 "largemediumsmallNA1"="medium";
@@ -384,6 +390,10 @@
 "question38aAnswer1"="one side";
 "question38aAnswer2"="both sides";
 "question38bLabel"="38b. What is the average size of the parking lot(s)?";
+"question38banswer1"="small";
+"question38banswer2"="medium";
+"question38banswer3"="large";
+"question38banswer4"="extra large";
 "question38cLabel"="38c. How much of the segment does the parking lot cover?";
 "question39aLabel"="39a. Is there a parking structure visible on this segment (do not include parking structures that are completely underground)?";
 "question39bLabel"="39b. Looking at the front of the parking structure on the street level floor, what is the predominant use that is visible to you?";

@@ -40,7 +40,7 @@
     self.question31Label.text=NSLocalizedString(@"question31Label", nil);
     self.question31AnswerArray = [NSArray arrayWithObjects: NSLocalizedString(@"question31Answer0", nil),NSLocalizedString(@"question31Answer1", nil),nil];
     self.question32Label.text=NSLocalizedString(@"question32Label", nil);
-    self.question32AnswerArray = [NSArray arrayWithObjects:NSLocalizedString(@"largemediumsmallNA0", nil),NSLocalizedString(@"largemediumsmallNA1", nil),NSLocalizedString(@"largemediumsmallNA2", nil),nil];
+    self.question32AnswerArray = [NSArray arrayWithObjects:NSLocalizedString(@"question32Answer0", nil),NSLocalizedString(@"question32Answer1", nil),NSLocalizedString(@"question32Answer2", nil),NSLocalizedString(@"question32Answer3", nil),NSLocalizedString(@"question32Answer4", nil),nil];
     self.question33Label.text=NSLocalizedString(@"question33Label", nil);
     self.question33AnswerArray = [NSArray arrayWithObjects: NSLocalizedString(@"somealotfewnoneNA8", nil),NSLocalizedString(@"somealotfewnoneNA0", nil),NSLocalizedString(@"somealotfewnoneNA1", nil),NSLocalizedString(@"somealotfewnoneNA2", nil),nil];
     self.question32Label.hidden=self.question32Answer.hidden=[[self.imi_cModelController.gloableData objectForKeyedSubscript:@"isQuestion29aNAnobuildingsOn"] boolValue];

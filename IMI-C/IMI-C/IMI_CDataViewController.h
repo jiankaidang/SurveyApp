@@ -12,5 +12,6 @@
 @property (strong, nonatomic) id dataObject;
 @property (strong,nonatomic) IMI_CModelController *imi_cModelController;
 @property (strong, nonatomic)NSMutableArray *dataArray;
+@property(nonatomic)NSUInteger index;
 -(void)setImi_cResults;
 @end
