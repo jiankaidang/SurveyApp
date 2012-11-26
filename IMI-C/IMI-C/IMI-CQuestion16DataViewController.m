@@ -19,16 +19,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *LibrariesbookstoresL;
 @property (weak, nonatomic) IBOutlet UIPickerView *LibrariesbookstoresA;
 @property (nonatomic, retain) NSArray *otherLandUsesAArray;
-@property (weak, nonatomic) IBOutlet UILabel *ConveniencestoreL;
-@property (weak, nonatomic) IBOutlet UIPickerView *ConveniencestoreA;
-@property (weak, nonatomic) IBOutlet UILabel *ArtorcraftgalleriesL;
-@property (weak, nonatomic) IBOutlet UIPickerView *ArtorcraftgalleriesA;
-@property (weak, nonatomic) IBOutlet UILabel *WinebarsloungesL;
-@property (weak, nonatomic) IBOutlet UIPickerView *WinebarsloungesA;
-@property (weak, nonatomic) IBOutlet UILabel *FarmersmarketL;
-@property (weak, nonatomic) IBOutlet UISwitch *FarmersmarketA;
-@property (weak, nonatomic) IBOutlet UILabel *InformalsellersL;
-@property (weak, nonatomic) IBOutlet UISwitch *InformalsellersA;
 
 @end
 
@@ -53,11 +43,6 @@
     self.TeahousesL.text=NSLocalizedString(@"TeahousesL", nil);
     self.LibrariesbookstoresL.text=NSLocalizedString(@"LibrariesbookstoresL", nil);
     self.otherLandUsesAArray = [NSArray arrayWithObjects: NSLocalizedString(@"otherLandUsesA0", nil),NSLocalizedString(@"otherLandUsesA1", nil),NSLocalizedString(@"otherLandUsesA2", nil),nil];
-    self.ConveniencestoreL.text=NSLocalizedString(@"ConveniencestoreL", nil);
-    self.ArtorcraftgalleriesL.text=NSLocalizedString(@"ArtorcraftgalleriesL", nil);
-    self.WinebarsloungesL.text=NSLocalizedString(@"WinebarsloungesL", nil);
-    self.FarmersmarketL.text=NSLocalizedString(@"FarmersmarketL", nil);
-    self.InformalsellersL.text=NSLocalizedString(@"InformalsellersL", nil);
 }
 
 - (void)didReceiveMemoryWarning
@@ -79,7 +64,7 @@
 	return 1;
 }
 -(void)setImi_cResults{
-    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d",[self.question16RestaurantsA selectedRowInComponent:0]],[NSString stringWithFormat:@"%d",[self.CoffeeshopsA selectedRowInComponent:0]],[NSString stringWithFormat:@"%d",[self.TeahousesA selectedRowInComponent:0]],[NSString stringWithFormat:@"%d",[self.LibrariesbookstoresA selectedRowInComponent:0]],[NSString stringWithFormat:@"%d",[self.ConveniencestoreA selectedRowInComponent:0]],[NSString stringWithFormat:@"%d",[self.ArtorcraftgalleriesA selectedRowInComponent:0]],[NSString stringWithFormat:@"%d",[self.WinebarsloungesA selectedRowInComponent:0]],[NSString stringWithFormat:@"%d",[self.FarmersmarketA isOn]],[NSString stringWithFormat:@"%d",[self.InformalsellersA isOn]], nil];
+    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d",[self.question16RestaurantsA selectedRowInComponent:0]],[NSString stringWithFormat:@"%d",[self.CoffeeshopsA selectedRowInComponent:0]],[NSString stringWithFormat:@"%d",[self.TeahousesA selectedRowInComponent:0]],[NSString stringWithFormat:@"%d",[self.LibrariesbookstoresA selectedRowInComponent:0]], nil];
 }
 
 @end

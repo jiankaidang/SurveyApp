@@ -7,7 +7,7 @@
 //
 
 #import "IMI-CStreetCrossingViewController.h"
-
+#import "IMI_CModelController.h"
 @interface IMI_CStreetCrossingViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *streetCrossingTitle;
 @property (weak, nonatomic) IBOutlet UILabel *question3aTitle;
@@ -26,10 +26,6 @@
 @property (weak, nonatomic) IBOutlet UISwitch *otherAnswer;
 - (IBAction)question3bOtherAction:(UISwitch *)sender;
 @property (weak, nonatomic) IBOutlet UITextField *question3bOtherText;
-@property (weak, nonatomic) IBOutlet UILabel *question3cTitle;
-@property (weak, nonatomic) IBOutlet UISwitch *question3cAnswer;
-@property (weak, nonatomic) IBOutlet UILabel *question3dTitle;
-@property (weak, nonatomic) IBOutlet UISwitch *question3dAnswer;
 
 @end
 
@@ -58,8 +54,6 @@
     self.roadSurfaceLabel.text=NSLocalizedString(@"roadSurfaceLabel", nil);
     self.otherLabel.text=NSLocalizedString(@"otherLabel", nil);
     self.question3bOtherText.placeholder=NSLocalizedString(@"Ifother", nil);
-    self.question3cTitle.text=NSLocalizedString(@"question3cTitle", nil);
-    self.question3dTitle.text=NSLocalizedString(@"question3dTitle", nil);
 }
 
 - (void)didReceiveMemoryWarning
@@ -95,10 +89,7 @@
     self.otherLabel.hidden=!isYes;
     self.otherAnswer.hidden=!isYes;
     self.question3bOtherText.hidden=!isYes||![self.otherAnswer isOn];
-    self.question3cTitle.hidden=!isYes;
-    self.question3cAnswer.hidden=!isYes;
-    self.question3dTitle.hidden=isYes;
-    self.question3dAnswer.hidden=isYes;
+    [self.imi_cModelController.gloableData setObject:[NSNumber numberWithBool:isYes] forKeyedSubscript:@"question2aAnswerIsYes"];
 }
 -(void)setImi_cResults{
     NSInteger question3aAnswerValue;
@@ -116,7 +107,7 @@
     if (question3aAnswerValue==8||!question3aAnswerValue) {
         whitePaintedAnswerValue=colorPaintedAnswerValue=zebraAnswerValue=roadSurfaceAnswerValue=otherAnswerValue=8;
     }
-    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", question3aAnswerValue],[NSString stringWithFormat:@"%d",whitePaintedAnswerValue],[NSString stringWithFormat:@"%d",colorPaintedAnswerValue],[NSString stringWithFormat:@"%d",zebraAnswerValue],[NSString stringWithFormat:@"%d",roadSurfaceAnswerValue],[NSString stringWithFormat:@"%d",otherAnswerValue],self.question3bOtherText.text,[NSString stringWithFormat:@"%d",[self.question3cAnswer isOn]],[NSString stringWithFormat:@"%d",[self.question3dAnswer isOn]], nil];
+    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", question3aAnswerValue],[NSString stringWithFormat:@"%d",whitePaintedAnswerValue],[NSString stringWithFormat:@"%d",colorPaintedAnswerValue],[NSString stringWithFormat:@"%d",zebraAnswerValue],[NSString stringWithFormat:@"%d",roadSurfaceAnswerValue],[NSString stringWithFormat:@"%d",otherAnswerValue],self.question3bOtherText.text, nil];
 }
 - (IBAction)question3bOtherAction:(UISwitch *)sender {
     self.question3bOtherText.hidden=![self.otherAnswer isOn];

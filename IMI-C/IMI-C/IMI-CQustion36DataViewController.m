@@ -34,7 +34,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.question36Label.text=NSLocalizedString(@"question36Label", nil);
-    self.question36AnswerArray = [NSArray arrayWithObjects:NSLocalizedString(@"yesnoNA0", nil),NSLocalizedString(@"yesnoNA1", nil),nil];
+    self.question36AnswerArray = [NSArray arrayWithObjects:NSLocalizedString(@"question36AnswerArray0", nil),NSLocalizedString(@"question36AnswerArray1", nil),NSLocalizedString(@"question36AnswerArray2", nil),nil];
     self.question37Label.text=NSLocalizedString(@"question37Label", nil);
     self.question37AnswerArray = [NSArray arrayWithObjects:NSLocalizedString(@"somealotfewnoneNA0", nil),NSLocalizedString(@"somealotfewnoneNA1", nil),NSLocalizedString(@"somealotfewnoneNA2", nil),nil];
     self.question36Label.hidden=self.question36Answer.hidden=self.question37Label.hidden=self.question37Answer.hidden=[[self.imi_cModelController.gloableData objectForKeyedSubscript:@"isQuestion29aNAnobuildingsOn"] boolValue];

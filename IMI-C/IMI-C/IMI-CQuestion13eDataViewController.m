@@ -19,6 +19,8 @@
 @property (weak, nonatomic) IBOutlet UISwitch *ShoppingmallA;
 @property (weak, nonatomic) IBOutlet UILabel *StripmallrowofshopsL;
 @property (weak, nonatomic) IBOutlet UISwitch *StripmallrowofshopsA;
+@property (weak, nonatomic) IBOutlet UILabel *RowofshopsL;
+@property (weak, nonatomic) IBOutlet UISwitch *RowofshopsA;
 @property (weak, nonatomic) IBOutlet UILabel *DrivethruL;
 @property (weak, nonatomic) IBOutlet UISwitch *DrivethruA;
 @property (weak, nonatomic) IBOutlet UILabel *question13gL;
@@ -47,6 +49,7 @@
     self.BigboxshopsL.text=NSLocalizedString(@"BigboxshopsL", nil);
     self.ShoppingmallL.text=NSLocalizedString(@"ShoppingmallL", nil);
     self.StripmallrowofshopsL.text=NSLocalizedString(@"StripmallrowofshopsL", nil);
+    self.RowofshopsL.text=NSLocalizedString(@"RowofshopsL", nil);
     self.DrivethruL.text=NSLocalizedString(@"DrivethruL", nil);
     self.question13gL.text=NSLocalizedString(@"question13gL", nil);
     self.question13gAArray = [NSArray arrayWithObjects: NSLocalizedString(@"question13gA0", nil),NSLocalizedString(@"question13gA1", nil),NSLocalizedString(@"question13gA2", nil),nil];
@@ -84,7 +87,7 @@
     } else {
         question13eAValue=selectedRow+1;
     }
-    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", question13eAValue],[NSString stringWithFormat:@"%d",[self.BigboxshopsA isOn]],[NSString stringWithFormat:@"%d",[self.ShoppingmallA isOn]],[NSString stringWithFormat:@"%d",[self.StripmallrowofshopsA isOn]],[NSString stringWithFormat:@"%d",[self.DrivethruA isOn]],[NSString stringWithFormat:@"%d",[self.question13gA selectedRowInComponent:0]], nil];
+    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", question13eAValue],[NSString stringWithFormat:@"%d",[self.BigboxshopsA isOn]],[NSString stringWithFormat:@"%d",[self.ShoppingmallA isOn]],[NSString stringWithFormat:@"%d",[self.StripmallrowofshopsA isOn]],[NSString stringWithFormat:@"%d",[self.RowofshopsA isOn]],[NSString stringWithFormat:@"%d",[self.DrivethruA isOn]],[NSString stringWithFormat:@"%d",[self.question13gA selectedRowInComponent:0]], nil];
 }
 
 @end

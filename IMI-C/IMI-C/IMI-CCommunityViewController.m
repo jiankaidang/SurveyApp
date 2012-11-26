@@ -70,7 +70,7 @@
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     if (pickerView == self.question2aAnswer) {
-        BOOL isHidden=!row;
+        BOOL isHidden=!row||row==1;
         self.question2bTitle.hidden=isHidden;
         self.question2bAnswer.hidden=isHidden;
         self.question2cTitle.hidden=isHidden;

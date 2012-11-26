@@ -27,19 +27,8 @@
 - (IBAction)question23bOtherAction:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *question23bOtherText;
 @property (weak, nonatomic) IBOutlet UILabel *question23cLabel;
-@property (weak, nonatomic) IBOutlet UISwitch *question23cAnswer;
-@property (weak, nonatomic) IBOutlet UILabel *SteepnessLabel;
-@property (weak, nonatomic) IBOutlet UILabel *question24Label;
-@property (weak, nonatomic) IBOutlet UILabel *question24FlatorgentleLabel;
-@property (weak, nonatomic) IBOutlet UISwitch *question24FlatorgentleAnswer;
-@property (weak, nonatomic) IBOutlet UILabel *question24ModerateLabel;
-@property (weak, nonatomic) IBOutlet UISwitch *question24ModerateAnswer;
-@property (weak, nonatomic) IBOutlet UILabel *question24SteepLabel;
-@property (weak, nonatomic) IBOutlet UISwitch *question24SteepAnswer;
-@property (weak, nonatomic) IBOutlet UILabel *SidewalkAmenitiesLabel;
-@property (weak, nonatomic) IBOutlet UILabel *question25Label;
-@property (weak, nonatomic) IBOutlet UIPickerView *question25Answer;
-@property (nonatomic, retain) NSArray *question25AnswerArray;
+@property (weak, nonatomic) IBOutlet UIPickerView *question23cAnswer;
+@property (nonatomic, retain) NSArray *question23cAnswerArray;
 @end
 
 @implementation IMI_CMidBlockCrossingDataViewController
@@ -68,14 +57,7 @@
     self.question23bOtherLabel.text=NSLocalizedString(@"question23bOtherLabel", nil);
     self.question23bOtherText.placeholder=NSLocalizedString(@"Ifother", nil);
     self.question23cLabel.text=NSLocalizedString(@"question23cLabel", nil);
-    self.SteepnessLabel.text=NSLocalizedString(@"SteepnessLabel", nil);
-    self.question24Label.text=NSLocalizedString(@"question24Label", nil);
-    self.question24FlatorgentleLabel.text=NSLocalizedString(@"question24FlatorgentleLabel", nil);
-    self.question24ModerateLabel.text=NSLocalizedString(@"question24ModerateLabel", nil);
-    self.question24SteepLabel.text=NSLocalizedString(@"question24SteepLabel", nil);
-    self.SidewalkAmenitiesLabel.text=NSLocalizedString(@"SidewalkAmenitiesLabel", nil);
-    self.question25Label.text=NSLocalizedString(@"question25Label", nil);
-    self.question25AnswerArray = [NSArray arrayWithObjects: NSLocalizedString(@"question20_21Answer0", nil),NSLocalizedString(@"question20_21Answer1", nil),NSLocalizedString(@"question20_21Answer2", nil),nil];
+        self.question23cAnswerArray = [NSArray arrayWithObjects: NSLocalizedString(@"question23Answer0", nil),NSLocalizedString(@"question23Answer1", nil),NSLocalizedString(@"question23Answer2", nil),nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -85,11 +67,11 @@
 }
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
-    return [self.question25AnswerArray objectAtIndex:row];
+    return [self.question23cAnswerArray objectAtIndex:row];
 }
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-    return [self.question25AnswerArray count];
+    return [self.question23cAnswerArray count];
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
@@ -111,9 +93,9 @@
         question23bDifferentroadsurfaceorpavingAnswerValue=[self.question23bDifferentroadsurfaceorpavingAnswer isOn];
         question23bOtherAnswerValue=[self.question23bOtherAnswer isOn];
     }else{
-        question23cAnswerValue=[self.question23cAnswer isOn];
+        question23cAnswerValue=[self.question23cAnswer selectedRowInComponent:0];
     }
-    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", question23aAnswerValue],[NSString stringWithFormat:@"%d", question23bWhitepaintedlinesAnswerValue],[NSString stringWithFormat:@"%d", question23bColoredpaintedlinesAnswerValue],[NSString stringWithFormat:@"%d", question23bZebrastripingAnswerValue],[NSString stringWithFormat:@"%d", question23bDifferentroadsurfaceorpavingAnswerValue],[NSString stringWithFormat:@"%d", question23bOtherAnswerValue],self.question23bOtherText.text,[NSString stringWithFormat:@"%d", question23cAnswerValue],[NSString stringWithFormat:@"%d", [self.question24FlatorgentleAnswer isOn]],[NSString stringWithFormat:@"%d", [self.question24ModerateAnswer isOn]],[NSString stringWithFormat:@"%d", [self.question24SteepAnswer isOn]],[NSString stringWithFormat:@"%d", [self.question25Answer selectedRowInComponent:0]], nil];
+    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", question23aAnswerValue],[NSString stringWithFormat:@"%d", question23bWhitepaintedlinesAnswerValue],[NSString stringWithFormat:@"%d", question23bColoredpaintedlinesAnswerValue],[NSString stringWithFormat:@"%d", question23bZebrastripingAnswerValue],[NSString stringWithFormat:@"%d", question23bDifferentroadsurfaceorpavingAnswerValue],[NSString stringWithFormat:@"%d", question23bOtherAnswerValue],self.question23bOtherText.text,[NSString stringWithFormat:@"%d", question23cAnswerValue], nil];
 }
 - (IBAction)question23aAction:(id)sender {
     BOOL isHidden=![(UISwitch *)sender isOn];

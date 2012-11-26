@@ -50,7 +50,7 @@
     self.FenceorguardrailL.text=NSLocalizedString(@"FenceorguardrailL", nil);
     self.question17fOtherL.text=NSLocalizedString(@"question17fOtherL", nil);
     self.question17fOtherText.placeholder=NSLocalizedString(@"Ifother", nil);
-    self.question17fAArray = [NSArray arrayWithObjects:NSLocalizedString(@"yesnoNA0", nil),NSLocalizedString(@"yesnoNA1", nil),nil];
+    self.question17fAArray = [NSArray arrayWithObjects:NSLocalizedString(@"question18gAnswer0", nil),NSLocalizedString(@"question18gAnswer1", nil),NSLocalizedString(@"question18gAnswer2", nil),nil];
     self.question17fL.hidden=self.ParkedcarsL.hidden=self.ParkedcarsA.hidden=self.LandscapingL.hidden=self.LandscapingA.hidden=self.BollardsL.hidden=self.BollardsA.hidden=self.StreettreesL.hidden=self.StreettreesA.hidden=self.FenceorguardrailL.hidden=self.FenceorguardrailA.hidden=self.question17fOtherL.hidden=self.question17fOtherA.hidden=![[self.imi_cModelController.gloableData objectForKeyedSubscript:@"question17aAnswer"] boolValue];
     self.question17fOtherText.hidden=![[self.imi_cModelController.gloableData objectForKeyedSubscript:@"question17aAnswer"] boolValue]||![self.question17fOtherA selectedRowInComponent:0];
     self.SkiptonextpageLabel.text=NSLocalizedString(@"SkiptonextpageLabel", nil);

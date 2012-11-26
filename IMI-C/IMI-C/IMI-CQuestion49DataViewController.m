@@ -21,17 +21,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *question49MedianLabel;
 @property (weak, nonatomic) IBOutlet UISwitch *question49MedianAnswer;
 @property (weak, nonatomic) IBOutlet UILabel *question49AngledLabel;
-@property (weak, nonatomic) IBOutlet UISwitch *question49AngledAnswer;
+@property (weak, nonatomic) IBOutlet UIPickerView *question49AngledAnswer;
 @property (weak, nonatomic) IBOutlet UILabel *question49OtherLabel;
 @property (weak, nonatomic) IBOutlet UISwitch *question49OtherAnswer;
 - (IBAction)question49OtherAction:(UISwitch *)sender;
 @property (weak, nonatomic) IBOutlet UITextField *question49OtherText;
-@property (weak, nonatomic) IBOutlet UILabel *question50aLabel;
-@property (weak, nonatomic) IBOutlet UISwitch *question50aAnswer;
-- (IBAction)question50aAction:(UISwitch *)sender;
-@property (weak, nonatomic) IBOutlet UILabel *question50bLabel;
-@property (weak, nonatomic) IBOutlet UIPickerView *question50bAnswer;
-@property (nonatomic, retain) NSArray *question50bAnswerArray;
+@property (nonatomic, retain) NSArray *question49AngledAnswerArray;
 @end
 
 @implementation IMI_CQuestion49DataViewController
@@ -58,9 +53,7 @@
     self.question49AngledLabel.text=NSLocalizedString(@"question49AngledLabel", nil);
     self.question49OtherLabel.text=NSLocalizedString(@"question49OtherLabel", nil);
     self.question49OtherText.placeholder=NSLocalizedString(@"Ifother", nil);
-    self.question50aLabel.text=NSLocalizedString(@"question50aLabel", nil);
-    self.question50bLabel.text=NSLocalizedString(@"question50bLabel", nil);
-    self.question50bAnswerArray = [NSArray arrayWithObjects: NSLocalizedString(@"question50bAnswer7", nil),NSLocalizedString(@"question50bAnswer0", nil),NSLocalizedString(@"question50bAnswer1", nil),nil];
+    self.question49AngledAnswerArray = [NSArray arrayWithObjects: NSLocalizedString(@"question49AngledAnswer0", nil),NSLocalizedString(@"question49AngledAnswer1", nil),NSLocalizedString(@"question49AngledAnswer2", nil),nil];
     }
 
 - (void)didReceiveMemoryWarning
@@ -71,11 +64,11 @@
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
-    return [self.question50bAnswerArray objectAtIndex:row];
+    return [self.question49AngledAnswerArray objectAtIndex:row];
 }
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-	return [self.question50bAnswerArray count];
+	return [self.question49AngledAnswerArray count];
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
@@ -83,22 +76,10 @@
 	return 1;
 }
 -(void)setImi_cResults{
-    BOOL question50aAnswerValue=[self.question50aAnswer isOn];
-    NSInteger question50bAnswerValue=8;
-    if (question50aAnswerValue) {
-        NSInteger question50bAnswerSelectedRow=[self.question50bAnswer selectedRowInComponent:0];
-        question50bAnswerValue=7;
-        if (question50bAnswerSelectedRow) {
-            question50bAnswerValue=question50bAnswerSelectedRow-1;
-        }
-    }
-    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", [self.question49SpeedAnswer isOn]],[NSString stringWithFormat:@"%d", [self.question49RumbleAnswer isOn]],[NSString stringWithFormat:@"%d", [self.question49CurbAnswer isOn]],[NSString stringWithFormat:@"%d", [self.question49TrafficAnswer isOn]],[NSString stringWithFormat:@"%d", [self.question49MedianAnswer isOn]],[NSString stringWithFormat:@"%d", [self.question49AngledAnswer isOn]],[NSString stringWithFormat:@"%d", [self.question49OtherAnswer isOn]],self.question49OtherText.text,[NSString stringWithFormat:@"%d", question50aAnswerValue],[NSString stringWithFormat:@"%d", question50bAnswerValue], nil];
+    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d", [self.question49SpeedAnswer isOn]],[NSString stringWithFormat:@"%d", [self.question49RumbleAnswer isOn]],[NSString stringWithFormat:@"%d", [self.question49CurbAnswer isOn]],[NSString stringWithFormat:@"%d", [self.question49TrafficAnswer isOn]],[NSString stringWithFormat:@"%d", [self.question49MedianAnswer isOn]],[NSString stringWithFormat:@"%d", [self.question49AngledAnswer selectedRowInComponent:0]],[NSString stringWithFormat:@"%d", [self.question49OtherAnswer isOn]],self.question49OtherText.text, nil];
 }
 
 - (IBAction)question49OtherAction:(UISwitch *)sender {
     self.question49OtherText.hidden=![sender isOn];
-}
-- (IBAction)question50aAction:(UISwitch *)sender {
-    self.question50bLabel.hidden=self.question50bAnswer.hidden=![sender isOn];
 }
 @end

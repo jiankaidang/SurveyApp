@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *TrafficFeaturesLabel;
 @property (weak, nonatomic) IBOutlet UILabel *question48Label;
 @property (weak, nonatomic) IBOutlet UISwitch *question48Switch;
+@property (weak, nonatomic) IBOutlet UILabel *question49b;
 @property (weak, nonatomic) IBOutlet UITextField *question48Answer;
 - (IBAction)question48Action:(UISwitch *)sender;
 @property (nonatomic, retain) NSArray *question47AnswerArray;
@@ -40,6 +41,7 @@
     self.question47AnswerArray = [NSArray arrayWithObjects: NSLocalizedString(@"question47Answer0", nil),NSLocalizedString(@"question47Answer1", nil),NSLocalizedString(@"question47Answer2", nil),NSLocalizedString(@"question47Answer3", nil),nil];
     self.TrafficFeaturesLabel.text=NSLocalizedString(@"TrafficFeaturesLabel", nil);
     self.question48Label.text=NSLocalizedString(@"question48Label", nil);
+    self.question49b.text=NSLocalizedString(@"question49b", nil);
     self.question48Answer.placeholder=NSLocalizedString(@"question48Answer", nil);
 }
 
@@ -67,6 +69,6 @@
 }
 
 - (IBAction)question48Action:(UISwitch *)sender {
-    self.question48Answer.hidden=![sender isOn];
+    self.question49b.hidden=self.question48Answer.hidden=![sender isOn];
 }
 @end

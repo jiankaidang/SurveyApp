@@ -19,7 +19,6 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *CheckcashingstoresA;
 @property (weak, nonatomic) IBOutlet UILabel *question15OtherL;
 @property (weak, nonatomic) IBOutlet UIPickerView *question15OtherA;
-@property (weak, nonatomic) IBOutlet UITextField *question15OtherText;
 @property (nonatomic, retain) NSArray *otherLandUsesAArray;
 
 @end
@@ -45,7 +44,6 @@
     self.AdultusesL.text=NSLocalizedString(@"AdultusesL", nil);
     self.CheckcashingstoresL.text=NSLocalizedString(@"CheckcashingstoresL", nil);
     self.question15OtherL.text=NSLocalizedString(@"question15OtherL", nil);
-    self.question15OtherText.placeholder=NSLocalizedString(@"Ifother", nil);
     self.otherLandUsesAArray = [NSArray arrayWithObjects: NSLocalizedString(@"otherLandUsesA0", nil),NSLocalizedString(@"otherLandUsesA1", nil),NSLocalizedString(@"otherLandUsesA2", nil),nil];
 }
 
@@ -67,13 +65,8 @@
 {
 	return 1;
 }
--(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-    if (pickerView==self.question15OtherA) {
-        self.question15OtherText.hidden=![self.question15OtherA selectedRowInComponent:0];
-    }
-}
 -(void)setImi_cResults{
-    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d",[self.BarsnightclubsA selectedRowInComponent:0]],[NSString stringWithFormat:@"%d",[self.AdultusesA selectedRowInComponent:0]],[NSString stringWithFormat:@"%d",[self.CheckcashingstoresA selectedRowInComponent:0]],[NSString stringWithFormat:@"%d",[self.question15OtherA selectedRowInComponent:0]],self.question15OtherText.text, nil];
+    self.dataArray=[NSArray arrayWithObjects:[NSString stringWithFormat:@"%d",[self.BarsnightclubsA selectedRowInComponent:0]],[NSString stringWithFormat:@"%d",[self.AdultusesA selectedRowInComponent:0]],[NSString stringWithFormat:@"%d",[self.CheckcashingstoresA selectedRowInComponent:0]],[NSString stringWithFormat:@"%d",[self.question15OtherA selectedRowInComponent:0]], nil];
 }
 
 @end

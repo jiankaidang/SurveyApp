@@ -38,7 +38,7 @@
 	// Do any additional setup after loading the view.
     self.StreetTreesLabel.text=NSLocalizedString(@"StreetTreesLabel", nil);
     self.question28aLabel.text=NSLocalizedString(@"question28aLabel", nil);
-    self.question28aAnswerArray = [NSArray arrayWithObjects: NSLocalizedString(@"question28aAnswer0", nil),NSLocalizedString(@"question28aAnswer1", nil),nil];
+    self.question28aAnswerArray = [NSArray arrayWithObjects: NSLocalizedString(@"somealotfewnoneNA0", nil),NSLocalizedString(@"somealotfewnoneNA1", nil),NSLocalizedString(@"somealotfewnoneNA2", nil),nil];
     self.question28bLabel.text=NSLocalizedString(@"question28bLabel", nil);
     self.question28bAnswerArray = [NSArray arrayWithObjects: NSLocalizedString(@"question28bAnswer1", nil),NSLocalizedString(@"question28bAnswer2", nil),nil];
     self.question28cLabel.text=NSLocalizedString(@"question28cLabel", nil);
